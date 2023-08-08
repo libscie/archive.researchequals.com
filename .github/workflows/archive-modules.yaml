@@ -1,0 +1,19 @@
+name: Archive the latest modules
+
+on: workflow_dispatch
+# on: 
+  # schedule:
+  #   - cron: '0 0 * * * '
+
+jobs:
+  run:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Check out repository
+      - uses: actions/checkout@v3
+      - uses: actions/setup-node@v3
+          with:
+          node-version: 18
+      - name: Run a script to download all information
+      - run: node ./.github/workflows/archive-modules.js
+      - name: Commit all new files 
