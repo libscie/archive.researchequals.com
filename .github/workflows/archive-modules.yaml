@@ -16,4 +16,4 @@ jobs:
           node-version: 18
       - name: Run a script to download all information
         run: node ./.github/workflows/archive-modules.js
-      - name: Commit all new files 
+      # - name: Commit all new files 
