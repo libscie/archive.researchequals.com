@@ -14,6 +14,7 @@ jobs:
       - uses: actions/setup-node@v3
         with:
           node-version: 18
+          cache: 'npm'
       - name: Run a script to download all information
         run: node ./.github/workflows/archive-modules.js
       # - name: Commit all new files 
