@@ -3,7 +3,6 @@
   "version": "1.0.0",
   "description": "This repository contains the ResearchEquals archive code and content.",
   "main": "index.js",
-  "type": "module",
   "scripts": {
     "build": "npx eleventy",
     "serve": "npx eleventy --serve",
@@ -24,7 +23,7 @@
   "homepage": "https://github.com/libscie/archive.researchequals.com#readme",
   "dependencies": {
     "@11ty/eleventy": "^2.0.1",
-    "fs-extra": "^11.1.1",
-    "got": "^13.0.0"
+    "axios": "^1.4.0",
+    "fs-extra": "^11.1.1"
   }
 }
