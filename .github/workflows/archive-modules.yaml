@@ -16,6 +16,8 @@ jobs:
           node-version: 18
           cache: 'npm'
       - run: npm install
-      - name: Run a script to download all information
+      - name: Run a script to download all information for modules
         run: node ./.github/workflows/archive-modules.js
+      - name: Run a script to download all information for collections
+        run: node ./.github/workflows/archive-collections.js
       # - name: Commit all new files 
