@@ -5,7 +5,7 @@ async function doRun() {
   // Read date file
   let dateRun;
   try {
-    dateRun = fs.readFileSync("./date-run-collections").toString();
+    dateRun = fs.readFileSync("./.github/date-run-collections").toString();
   } catch (e) {
     console.log("No previous run found for collections.");
   }
@@ -49,7 +49,7 @@ doi: {{ prefix }}.{{ suffix }}
   // Write out date file
   // dateRun = new Date()
   // console.log(dateRun)
-  // await fs.writeFile('date-run', dateRun.toISOString(), (err) => {
+  // await fs.writeFile('./.github/date-run-collections', dateRun.toISOString(), (err) => {
   //     if (err) console.log(err)})
 }
 

@@ -5,7 +5,7 @@ async function doRun() {
   // Read date file
   let dateRun;
   try {
-    dateRun = fs.readFileSync("./date-run").toString();
+    dateRun = fs.readFileSync("./.github/date-run-modules").toString();
   } catch (e) {
     console.log("No previous run found.");
   }
@@ -91,7 +91,7 @@ These are the original supporting files as uploaded by the author.
   // Write out date file
   // dateRun = new Date()
   // console.log(dateRun)
-  // await fs.writeFile('date-run', dateRun.toISOString(), (err) => {
+  // await fs.writeFile('./.github/date-run-modules', dateRun.toISOString(), (err) => {
   //     if (err) console.log(err)})
 }
 
