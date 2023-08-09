@@ -14,16 +14,15 @@ async function doRun() {
   if (dateRun) {
     apiCall = await axios.get(
       // TODO: Replace with actual URL
-      `http://localhost:3000/api/modules?from=${dateRun}`
+      `https://www.researchequals.com/api/modules?from=${dateRun}`
     );
   } else {
     // TODO: Replace with actual URL
-    apiCall = await axios.get("http://localhost:3000/api/modules");
+    apiCall = await axios.get("https://www.researchequals.com/api/modules");
   }
-  console.log(apiCall.data.modules);
   apiCall.data.modules.map(async (module, index) => {
-    if (index === 0) {
-      console.log(module.main);
+    if (index === 12) {
+      console.log(module)
       // create the relevant paths
       await fs.ensureDir(`./modules/${module.suffix}`);
       // add the metadata
@@ -34,23 +33,32 @@ async function doRun() {
       await fs.writeFile(
         `./modules/${module.suffix}/${module.suffix}.md`,
         `
----
-title: {{ title }}
-subtitle: {{ prefix }}.{{ suffix }}
----
+# {{ title }}
+
+doi: {{ prefix }}.{{ suffix }}
+
+Originally published on ${module.publishedAt.substr(0, 10)}, by <AUTHORS> under a <LICENSE>.
 
 ## Summary
 
-{{ publishedAt }}
+{{ description }}
 
-${module.description} {{ id }}
+## Main file
 
-{{ authors }}
+<a href="{{ main.name }}">{{ main.name }}</a>
+
+## Supporting files
+
+These are the original supporting files as uploaded by the author.
+
+{%- for file in supporting.files -%}
+  <li><a href="supporting/{{ file.original_filename }}">{{ file.original_filename }}</a></li>
+{%- endfor -%}
 `
       );
 
       // download the main file
-      axios({
+      await axios({
         method: "get",
         url: module.main.cdnUrl,
         responseType: "stream",
@@ -60,6 +68,23 @@ ${module.description} {{ id }}
         );
       });
       // download the supporting files
+      if (module.supporting.files.length > 0) {
+        // create the relevant paths
+        await fs.ensureDir(`./modules/${module.suffix}/supporting`);
+        module.supporting.files.map(async file => {
+          await axios({
+            method: "get",
+            url: file.original_file_url,
+            responseType: "stream",
+          }).then(function (response) {
+            response.data.pipe(
+              fs.createWriteStream(`./modules/${module.suffix}/supporting/${file.original_filename}`)
+            );
+          });
+        })
+      }
+
+
     }
   });
 
