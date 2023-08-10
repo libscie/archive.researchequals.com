@@ -1,7 +1,11 @@
 
 # {{ title }}
 
-doi: {{ prefix }}.{{ suffix }}
+doi: <a href="https://doi.org/{{ prefix }}/{{ suffix }}">{{ prefix }}/{{ suffix }}</a>
+
+Authors: {%- for author in authors -%}
+{{ author.workspace.firstName }} {{ author.workspace.lastName }}
+{%- endfor -%}
 
 Originally published on 2022-02-10, by <AUTHORS> under a <LICENSE>.
 
