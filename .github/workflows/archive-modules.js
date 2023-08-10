@@ -35,7 +35,11 @@ async function doRun() {
         `
 # {{ title }}
 
-doi: {{ prefix }}.{{ suffix }}
+doi: <a href="https://doi.org/{{ prefix }}/{{ suffix }}">{{ prefix }}/{{ suffix }}</a>
+
+Authors: {%- for author in authors -%}
+{{ author.workspace.firstName }} {{ author.workspace.lastName }}
+{%- endfor -%}
 
 Originally published on ${module.publishedAt.substr(0, 10)}, by <AUTHORS> under a <LICENSE>.
 
