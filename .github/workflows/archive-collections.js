@@ -20,10 +20,17 @@ async function doRun() {
     // TODO: Replace with actual URL
     apiCall = await axios.get("https://www.researchequals.com/api/collections");
   }
+
+  let collectionMeta = { collection: [] };
   apiCall.data.collections.map(async (collection, index) => {
-    if (index === 0) {
-      console.log(collection);
+    if (index === 1) {
+      collectionMeta.collection.push({
+        id: collection.id,
+        suffix: collection.suffix,
+        title: collection.title,
+      });
       // create the relevant paths
+      await fs.ensureDir(`./collections/`);
       await fs.ensureDir(`./collections/${collection.suffix}`);
       // add the metadata
       await fs.writeFile(
@@ -45,6 +52,24 @@ doi: {{ prefix }}.{{ suffix }}
       );
     }
   });
+
+  await fs.writeFile(
+    `./collections/collections.json`,
+    await JSON.stringify(collectionMeta)
+  );
+
+  await fs.writeFile(
+    `./collections/collections.md`,
+    `
+# Collections
+
+This is a list of all the ResearchEquals Collections.
+
+{%- for collection in collection -%}
+<li><a href="./{{ collection.suffix }}">{{ collection.title }}</a></li>
+{%- endfor -%}
+`
+  );
 
   // Write out date file
   // dateRun = new Date()

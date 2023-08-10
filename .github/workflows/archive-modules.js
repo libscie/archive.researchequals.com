@@ -14,16 +14,24 @@ async function doRun() {
   if (dateRun) {
     apiCall = await axios.get(
       // TODO: Replace with actual URL
-      `https://www.researchequals.com/api/modules?from=${dateRun}`
+      `http://localhost:3000/api/modules?from=${dateRun}`
     );
   } else {
     // TODO: Replace with actual URL
-    apiCall = await axios.get("https://www.researchequals.com/api/modules");
+    apiCall = await axios.get("http://localhost:3000/api/modules");
   }
-  apiCall.data.modules.map(async (module, index) => {
-    if (index === 12) {
-      console.log(module)
+  let moduleMeta = { modules: [] };
+  await apiCall.data.modules.map(async (module, index) => {
+    if (module.title === "DOI Primer") {
+      moduleMeta.modules.push({
+        id: module.id,
+        prefix: module.prefix,
+        suffix: module.suffix,
+        title: module.title,
+      });
+
       // create the relevant paths
+      await fs.ensureDir(`./modules/`);
       await fs.ensureDir(`./modules/${module.suffix}`);
       // add the metadata
       await fs.writeFile(
@@ -41,7 +49,10 @@ Authors: {%- for author in authors -%}
 {{ author.workspace.firstName }} {{ author.workspace.lastName }}
 {%- endfor -%}
 
-Originally published on ${module.publishedAt.substr(0, 10)}, by <AUTHORS> under a <LICENSE>.
+Originally published on ${module.publishedAt.substr(
+          0,
+          10
+        )}, by <AUTHORS> under a <LICENSE>.
 
 ## Summary
 
@@ -75,22 +86,40 @@ These are the original supporting files as uploaded by the author.
       if (module.supporting.files.length > 0) {
         // create the relevant paths
         await fs.ensureDir(`./modules/${module.suffix}/supporting`);
-        module.supporting.files.map(async file => {
+        module.supporting.files.map(async (file) => {
           await axios({
             method: "get",
             url: file.original_file_url,
             responseType: "stream",
           }).then(function (response) {
             response.data.pipe(
-              fs.createWriteStream(`./modules/${module.suffix}/supporting/${file.original_filename}`)
+              fs.createWriteStream(
+                `./modules/${module.suffix}/supporting/${file.original_filename}`
+              )
             );
           });
-        })
+        });
       }
-
-
     }
   });
+
+  await fs.writeFile(
+    `./modules/modules.json`,
+    await JSON.stringify(moduleMeta)
+  );
+
+  await fs.writeFile(
+    `./modules/modules.md`,
+    `
+# Modules
+
+This is a list of all the published modules
+
+{%- for module in modules -%}
+<li><a href="./{{ module.suffix }}">{{ module.title }}</a></li>
+{%- endfor -%}
+`
+  );
 
   // Write out date file
   // dateRun = new Date()
