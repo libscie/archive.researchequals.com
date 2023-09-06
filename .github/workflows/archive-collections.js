@@ -21,7 +21,7 @@ async function doRun() {
 
   let collectionMeta = { collection: [] };
   apiCall.data.collections.map(async (collection, index) => {
-    if (index === 1) {
+    if (index < 10) {
       collectionMeta.collection.push({
         id: collection.id,
         suffix: collection.suffix,

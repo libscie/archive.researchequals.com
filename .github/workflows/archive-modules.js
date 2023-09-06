@@ -73,12 +73,23 @@ Originally published on ${module.publishedAt.substr(
 {% if supporting.files[0] %}
 ## Supporting files
 
-These are the original supporting files as uploaded by the author.
-
+<ul>
 {%- for file in supporting.files -%}
   <li><a href="supporting/{{ file.original_filename }}">{{ file.original_filename }}</a></li>
 {%- endfor -%}
+</ul>
 {% endif %}
+
+{% if references[0] %}
+## References
+
+<ul>
+{%- for reference in references -%}
+<li><a href="https://doi.org/{{reference.prefix}}/{{reference.suffix}}">{{ reference.title }}</a></li>
+{%- endfor -%}
+</ul>
+{% endif %}
+
 `
       );
 
