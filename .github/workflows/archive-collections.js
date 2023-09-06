@@ -16,7 +16,6 @@ async function doRun() {
       `https://www.researchequals.com/api/collections?from=${dateRun}`
     );
   } else {
-    // TODO: Replace with actual URL
     apiCall = await axios.get("https://www.researchequals.com/api/collections");
   }
 

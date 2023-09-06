@@ -13,11 +13,9 @@ async function doRun() {
   let apiCall;
   if (dateRun) {
     apiCall = await axios.get(
-      // TODO: Replace with actual URL
       `https://www.researchequals.com/api/modules?from=${dateRun}`
     );
   } else {
-    // TODO: Replace with actual URL
     apiCall = await axios.get("https://www.researchequals.com/api/modules");
   }
   let moduleMeta = { modules: [] };
