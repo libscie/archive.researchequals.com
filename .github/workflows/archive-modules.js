@@ -22,7 +22,7 @@ async function doRun() {
   }
   let moduleMeta = { modules: [] };
   await apiCall.data.modules.map(async (module, index) => {
-    if (module.title === "DOI Primer") {
+    if (module.id === 1) {
       moduleMeta.modules.push({
         id: module.id,
         prefix: module.prefix,
@@ -45,14 +45,24 @@ async function doRun() {
 
 doi: <a href="https://doi.org/{{ prefix }}/{{ suffix }}">{{ prefix }}/{{ suffix }}</a>
 
-Authors: {%- for author in authors -%}
-{{ author.workspace.firstName }} {{ author.workspace.lastName }}
-{%- endfor -%}
-
 Originally published on ${module.publishedAt.substr(
           0,
           10
-        )}, by <AUTHORS> under a <LICENSE>.
+        )} under a <a href="{{ license.url }}">{{ license.name }}</a> 
+
+## Authors
+
+<ul>
+{%- for author in authors -%}
+ <li>
+ {% if author.workspace.orcid %}
+ <a href="https://orcid.org/{{ author.workspace.orcid }}">{{ author.workspace.firstName }} {{ author.workspace.lastName }}</a>
+ {% else %}
+ {{ author.workspace.firstName }} {{ author.workspace.lastName }}
+ {% endif %}
+ </li>
+{%- endfor -%}
+</ul>
 
 ## Summary
 
@@ -62,6 +72,7 @@ Originally published on ${module.publishedAt.substr(
 
 <a href="{{ main.name }}">{{ main.name }}</a>
 
+{% if supporting.files[0] %}
 ## Supporting files
 
 These are the original supporting files as uploaded by the author.
@@ -69,6 +80,7 @@ These are the original supporting files as uploaded by the author.
 {%- for file in supporting.files -%}
   <li><a href="supporting/{{ file.original_filename }}">{{ file.original_filename }}</a></li>
 {%- endfor -%}
+{% endif %}
 `
       );
 
