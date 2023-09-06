@@ -98,6 +98,30 @@ Last updated on  ${collection.updatedAt.substr(
 {% endif %}
 `
       );
+      if (collection.type.type != "INDIVIDUAL") {
+        await axios({
+          method: "get",
+          url: collection.icon.cdnUrl,
+          responseType: "stream",
+        }).then(function (response) {
+          response.data.pipe(
+            fs.createWriteStream(`./collections/${collection.suffix}/icon.${collection.icon.cdnUrl.split('.').pop()}`)
+          );
+        });
+      }
+    
+      if (collection.type.type === "COMMUNITY") {
+        await axios({
+          method: "get",
+          url: collection.header.cdnUrl,
+          responseType: "stream",
+        }).then(function (response) {
+          response.data.pipe(
+            fs.createWriteStream(`./collections/${collection.suffix}/header.${collection.header.cdnUrl.split('.').pop()}`)
+          );
+        });
+      }
+    
     }
   });
 
@@ -119,6 +143,7 @@ This is a list of all the ResearchEquals Collections.
 `
   );
 
+  
   // Write out date file
   // dateRun = new Date()
   // console.log(dateRun)
