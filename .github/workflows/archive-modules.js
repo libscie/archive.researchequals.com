@@ -14,11 +14,11 @@ async function doRun() {
   if (dateRun) {
     apiCall = await axios.get(
       // TODO: Replace with actual URL
-      `http://localhost:3000/api/modules?from=${dateRun}`
+      `https://www.researchequals.com/api/modules?from=${dateRun}`
     );
   } else {
     // TODO: Replace with actual URL
-    apiCall = await axios.get("http://localhost:3000/api/modules");
+    apiCall = await axios.get("https://www.researchequals.com/api/modules");
   }
   let moduleMeta = { modules: [] };
   await apiCall.data.modules.map(async (module, index) => {
