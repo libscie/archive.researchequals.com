@@ -25,5 +25,3 @@ jobs:
           default_author: github_actions
           committer_name: ResearchEquals Archiver
           message: 'Nightly archive update'
-
-      # - name: Commit all new files 
