@@ -131,7 +131,9 @@ Originally published on ${module.publishedAt.substr(
 
   await fs.writeFile(
     `./modules/modules.md`,
-    `
+    `---
+layout: mylayout.njk
+---
 # Modules
 
 This is a list of all the published modules

@@ -105,7 +105,7 @@ Last updated on  ${collection.updatedAt.substr(
           responseType: "stream",
         }).then(function (response) {
           response.data.pipe(
-            fs.createWriteStream(`./collections/${collection.suffix}/icon.${collection.icon.cdnUrl.split('.').pop()}`)
+            fs.createWriteStream(`./collections/${collection.suffix}/icon.${collection.icon.name ? collection.icon.name.split('.').pop() : collection.icon.cdnUrl.split('.').pop()}`)
           );
         });
       }
@@ -117,7 +117,7 @@ Last updated on  ${collection.updatedAt.substr(
           responseType: "stream",
         }).then(function (response) {
           response.data.pipe(
-            fs.createWriteStream(`./collections/${collection.suffix}/header.${collection.header.cdnUrl.split('.').pop()}`)
+            fs.createWriteStream(`./collections/${collection.suffix}/header.${collection.header.name ? collection.header.name.split('.').pop() : collection.header.cdnUrl.split('.').pop()}`)
           );
         });
       }
@@ -132,7 +132,9 @@ Last updated on  ${collection.updatedAt.substr(
 
   await fs.writeFile(
     `./collections/collections.md`,
-    `
+    `---
+layout: mylayout.njk
+---
 # Collections
 
 This is a list of all the ResearchEquals Collections.
