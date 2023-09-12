@@ -14,7 +14,10 @@ async function doRun() {
     // regen template
     await fs.writeFile(
       `./modules/${module.suffix}/${module.suffix}.md`,
-      `# {{ title }}
+      `---
+layout: mylayout.njk
+---
+# {{ title }}
 
 doi: <a href="https://doi.org/{{ prefix }}/{{ suffix }}">{{ prefix }}/{{ suffix }}</a>
 

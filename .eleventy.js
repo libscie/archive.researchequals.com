@@ -4,5 +4,5 @@ module.exports = function(eleventyConfig) {
     // Keeps the same directory structure.
     eleventyConfig.addPassthroughCopy("./modules/**");
     eleventyConfig.addPassthroughCopy("./collections/**");
-    eleventyConfig.addPassthroughCopy("./_includes/bundle.css");    
+    eleventyConfig.addPassthroughCopy("./_includes/*");    
   };

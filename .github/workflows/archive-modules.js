@@ -20,7 +20,7 @@ async function doRun() {
   }
   let moduleMeta = { modules: [] };
   await apiCall.data.modules.map(async (module, index) => {
-    if (module.id === 63) {
+    // if (module.id === 63) {
       moduleMeta.modules.push({
         id: module.id,
         prefix: module.prefix,
@@ -38,7 +38,9 @@ async function doRun() {
       );
       await fs.writeFile(
         `./modules/${module.suffix}/${module.suffix}.md`,
-        `
+        `---
+layout: module.njk
+---
 # {{ title }}
 
 doi: <a href="https://doi.org/{{ prefix }}/{{ suffix }}">{{ prefix }}/{{ suffix }}</a>
@@ -83,11 +85,11 @@ Originally published on ${module.publishedAt.substr(
 {% if references[0] %}
 ## References
 
-<ul>
+<ol>
 {%- for reference in references -%}
-<li><a href="https://doi.org/{{reference.prefix}}/{{reference.suffix}}">{{ reference.title }}</a></li>
+<li>{{ reference.title }}. <a href="https://doi.org/{{reference.prefix}}/{{reference.suffix}}">doi: {{reference.prefix}}/{{reference.suffix}}</a></li>
 {%- endfor -%}
-</ul>
+</ol>
 {% endif %}
 
 `
@@ -121,7 +123,7 @@ Originally published on ${module.publishedAt.substr(
           });
         });
       }
-    }
+    // }
   });
 
   await fs.writeFile(
@@ -136,19 +138,18 @@ layout: mylayout.njk
 ---
 # Modules
 
-This is a list of all the published modules
-
+<div>
 {%- for module in modules -%}
-<li><a href="./{{ module.suffix }}">{{ module.title }}</a></li>
+<div><a href="./{{ module.suffix }}">{{ module.title }}</a></div>
 {%- endfor -%}
+</div>
 `
   );
 
   // Write out date file
-  // dateRun = new Date()
-  // console.log(dateRun)
-  // await fs.writeFile('./.github/date-run-modules', dateRun.toISOString(), (err) => {
-  //     if (err) console.log(err)})
+  dateRun = new Date()
+  await fs.writeFile('./.github/date-run-modules', dateRun.toISOString(), (err) => {
+      if (err) console.log(err)})
 }
 
 doRun();

@@ -37,17 +37,19 @@ async function doRun() {
       );
       await fs.writeFile(
         `./collections/${collection.suffix}/${collection.suffix}.md`,
-        `
+        `---
+layout: collection.njk
+---
 # {{ title }}
 {% if subtitle %}
 <div role="doc-subtitle">{{ subtitle }}</div>
 {% endif %}
-
+        
 {% if type.type == "COMMUNITY" %}
-Add header
+<img class="header-image" src="${`header.${collection.header.name ? collection.header.name.split('.').pop() : collection.header.cdnUrl.split('.').pop()}`}" />
 {% endif %}
 {% if type.type == "COLLABORATIVE" or type.type == "COMMUNITY" %}
-Add icon
+<img class="icon-image" src="${`icon.${collection.icon.name ? collection.icon.name.split('.').pop() : collection.icon.cdnUrl.split('.').pop()}`}" />
 {% endif %}
 
 doi: <a href="https://doi.org/10.53962/{{ suffix }}">10.53962/{{ suffix }}</a>
@@ -86,10 +88,11 @@ Last updated on  ${collection.updatedAt.substr(
 {%- for submission in submissions -%}
  {% if submission.accepted %} 
  <li>
- <a href="{{ submission.module.url }}">{{ submission.module.title }}</a>
- {% if submission.comment %}
+ <p>{{ submission.module.title }}</p>
+ <p><a href="https://doi.org/{{ submission.module.prefix }}/{{ submission.module.suffix }}">doi: {{ submission.module.prefix }}/{{ submission.module.suffix }}</a></p>
+ {% if submission.comment and submission.comment != "" %}
  <blockquote>{{ submission.comment }}
- <footer>—{{ submission.editor.workspace.firstName }} {{ submission.editor.workspace.lastName }}</cite></footer></blockquote>
+ <div class="quote-footer">—{{ submission.editor.workspace.firstName }} {{ submission.editor.workspace.lastName }}</cite></div class="quote-footer"></blockquote>
  {% endif %}
  </li>
  {% endif %}
@@ -137,11 +140,11 @@ layout: mylayout.njk
 ---
 # Collections
 
-This is a list of all the ResearchEquals Collections.
-
+<div>
 {%- for collection in collection -%}
-<li><a href="./{{ collection.suffix }}">{{ collection.title }}</a></li>
+<div><a href="./{{ collection.suffix }}">{{ collection.title }}</a></div>
 {%- endfor -%}
+</div>
 `
   );
 
