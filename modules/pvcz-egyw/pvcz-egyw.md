@@ -1,4 +1,6 @@
-
+---
+layout: module.njk
+---
 # {{ title }}
 
 doi: <a href="https://doi.org/{{ prefix }}/{{ suffix }}">{{ prefix }}/{{ suffix }}</a>
@@ -30,9 +32,20 @@ Originally published on 2022-02-10 under a <a href="{{ license.url }}">{{ licens
 {% if supporting.files[0] %}
 ## Supporting files
 
-These are the original supporting files as uploaded by the author.
-
+<ul>
 {%- for file in supporting.files -%}
   <li><a href="supporting/{{ file.original_filename }}">{{ file.original_filename }}</a></li>
 {%- endfor -%}
+</ul>
 {% endif %}
+
+{% if references[0] %}
+## References
+
+<ol>
+{%- for reference in references -%}
+<li>{{ reference.title }}. <a href="https://doi.org/{{reference.prefix}}/{{reference.suffix}}">doi: {{reference.prefix}}/{{reference.suffix}}</a></li>
+{%- endfor -%}
+</ol>
+{% endif %}
+

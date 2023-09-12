@@ -1,8 +1,10 @@
-
+---
+layout: mylayout.njk
+---
 # Collections
 
-This is a list of all the ResearchEquals Collections.
-
+<div>
 {%- for collection in collection -%}
-<li><a href="./{{ collection.suffix }}">{{ collection.title }}</a></li>
+<div><a href="./{{ collection.suffix }}">{{ collection.title }}</a></div>
 {%- endfor -%}
+</div>

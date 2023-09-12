@@ -10,14 +10,14 @@ layout: collection.njk
 <img class="header-image" src="header.jpg" />
 {% endif %}
 {% if type.type == "COLLABORATIVE" or type.type == "COMMUNITY" %}
-<img class="icon-image" src="icon.svg" />
+<img class="icon-image" src="icon.jpg" />
 {% endif %}
 
 doi: <a href="https://doi.org/10.53962/{{ suffix }}">10.53962/{{ suffix }}</a>
 
-Created on 2023-07-27.
+Created on 2023-02-20.
 
-Last updated on  2023-07-27.
+Last updated on  2023-02-20.
 
 ## Editors
 

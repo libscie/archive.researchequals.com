@@ -1,8 +1,10 @@
-
+---
+layout: mylayout.njk
+---
 # Modules
 
-This is a list of all the published modules
-
+<div>
 {%- for module in modules -%}
-<li><a href="./{{ module.suffix }}">{{ module.title }}</a></li>
+<div><a href="./{{ module.suffix }}">{{ module.title }}</a></div>
 {%- endfor -%}
+</div>

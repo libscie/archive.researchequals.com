@@ -7,17 +7,17 @@ layout: collection.njk
 {% endif %}
         
 {% if type.type == "COMMUNITY" %}
-<img class="header-image" src="header.jpg" />
+<img class="header-image" src="header.png" />
 {% endif %}
 {% if type.type == "COLLABORATIVE" or type.type == "COMMUNITY" %}
-<img class="icon-image" src="icon.svg" />
+<img class="icon-image" src="icon.jpeg" />
 {% endif %}
 
 doi: <a href="https://doi.org/10.53962/{{ suffix }}">10.53962/{{ suffix }}</a>
 
-Created on 2023-07-27.
+Created on 2023-02-28.
 
-Last updated on  2023-07-27.
+Last updated on  2023-03-02.
 
 ## Editors
 
