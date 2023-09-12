@@ -20,7 +20,7 @@ async function doRun() {
   }
   let moduleMeta = { modules: [] };
   await apiCall.data.modules.map(async (module, index) => {
-    // if (module.id === 63) {
+    if (module.id === 63) {
       moduleMeta.modules.push({
         id: module.id,
         prefix: module.prefix,
@@ -123,7 +123,7 @@ Originally published on ${module.publishedAt.substr(
           });
         });
       }
-    // }
+    }
   });
 
   await fs.writeFile(
@@ -147,9 +147,9 @@ layout: mylayout.njk
   );
 
   // Write out date file
-  dateRun = new Date()
-  await fs.writeFile('./.github/date-run-modules', dateRun.toISOString(), (err) => {
-      if (err) console.log(err)})
+  // dateRun = new Date()
+  // await fs.writeFile('./.github/date-run-modules', dateRun.toISOString(), (err) => {
+  //     if (err) console.log(err)})
 }
 
 doRun();

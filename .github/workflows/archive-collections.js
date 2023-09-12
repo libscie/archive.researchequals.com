@@ -21,7 +21,7 @@ async function doRun() {
 
   let collectionMeta = { collection: [] };
   apiCall.data.collections.map(async (collection, index) => {
-    if (index < 10) {
+    // if (index < 10) {
       collectionMeta.collection.push({
         id: collection.id,
         suffix: collection.suffix,
@@ -125,7 +125,7 @@ Last updated on  ${collection.updatedAt.substr(
         });
       }
     
-    }
+    // }
   });
 
   await fs.writeFile(
@@ -150,10 +150,10 @@ layout: mylayout.njk
 
   
   // Write out date file
-  // dateRun = new Date()
-  // console.log(dateRun)
-  // await fs.writeFile('./.github/date-run-collections', dateRun.toISOString(), (err) => {
-  //     if (err) console.log(err)})
+  dateRun = new Date()
+  console.log(dateRun)
+  await fs.writeFile('./.github/date-run-collections', dateRun.toISOString(), (err) => {
+      if (err) console.log(err)})
 }
 
 doRun();
