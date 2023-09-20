@@ -27,7 +27,7 @@ async function doRun() {
       title: module.title,
     });
     
-    if (index > 100 && index < 150) {
+    if (index > 150) {
       // create the relevant paths
       await fs.ensureDir(`./modules/`);
       await fs.ensureDir(`./modules/${module.suffix}`);
@@ -147,9 +147,9 @@ layout: mylayout.njk
   );
 
   // Write out date file
-  // dateRun = new Date()
-  // await fs.writeFile('./.github/date-run-modules', dateRun.toISOString(), (err) => {
-  //     if (err) console.log(err)})
+  dateRun = new Date()
+  await fs.writeFile('./.github/date-run-modules', dateRun.toISOString(), (err) => {
+      if (err) console.log(err)})
 }
 
 doRun();
