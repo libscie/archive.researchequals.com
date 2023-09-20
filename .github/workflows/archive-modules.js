@@ -27,7 +27,7 @@ async function doRun() {
       title: module.title,
     });
     
-    if (index > 150) {
+    // if (index > 150) {
       // create the relevant paths
       await fs.ensureDir(`./modules/`);
       await fs.ensureDir(`./modules/${module.suffix}`);
@@ -123,7 +123,7 @@ Originally published on ${module.publishedAt.substr(
           });
         });
       }
-    }
+    // }
   });
 
   await fs.writeFile(

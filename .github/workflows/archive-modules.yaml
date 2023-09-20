@@ -1,9 +1,9 @@
 name: Archive the latest modules
 
 on: workflow_dispatch
-# on: 
-  # schedule:
-  #   - cron: '0 0 * * * '
+on: 
+  schedule:
+    - cron: '0 0 * * * '
 
 jobs:
   run:
