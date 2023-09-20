@@ -1,0 +1,68 @@
+﻿No.;S;R;P;T;Name;Nash;K-index;selfish superrational;collective maximizer;individualist heuristic;collectivist heuristic;selfish projection ;prosocial superrational;indifferent behavior (any p possible);sd;different;all >.5;all <.5
+1;1;1;1;4;Basic Dilemma;0;0;0.5;0.5;0.000;0.500;0;0.5;collectivist heuristic;0.267261242;TRUE;FALSE;FALSE
+2;1;1;2;4;Low Lock minor;0;0;0.25;0.25;0.000;0.000;0;0.25;;0.129387292;FALSE;FALSE;TRUE
+3;1;1;3;4;Low Lock;0;0;0;0;0.000;0.000;0;0;;0;FALSE;FALSE;TRUE
+4;1;1;4;4;Double Compromise;0;0;0;0;0.000;0.000;0;0;;0;FALSE;FALSE;TRUE
+5;1;2;1;4;Low Dilemma minor;0;0.333;0.75;0.75;0.000;1.000;0;0.75;;0.41292967;TRUE;FALSE;FALSE
+6;1;2;2;4;Mid Lock minor;0;0;0.5;0.5;0.000;0.500;0;0.5;collectivist heuristic;0.267261242;TRUE;FALSE;FALSE
+7;1;2;3;4;Deadlock;0;0;0;0;0.000;0.000;0;0;;0;FALSE;FALSE;TRUE
+8;1;2;4;4;High Lock;0;0;0;0;0.000;0.000;0;0;;0;FALSE;FALSE;TRUE
+9;1;3;1;4;Low Dilemma;0;0.667;1;1;0.000;1.000;1;1;;0.452067561;TRUE;FALSE;FALSE
+10;1;3;2;4;Prisoner's Dilemma;0;0.333;1;1;0.000;1.000;0;1;;0.501980206;TRUE;FALSE;FALSE
+11;1;3;3;4;Mid Lock;0;0.000;0;0.5;0.000;0.500;0;0.5;collectivist heuristic;0.258774585;TRUE;FALSE;FALSE
+12;1;3;4;4;High Lock major;0;0.000;0;0.75;0.000;0.000;0;0;;0.265165043;TRUE;FALSE;FALSE
+13;1;4;1;1;Basic Harmony;1;1.000;1;1;1.000;1.000;1;1;;0;FALSE;TRUE;FALSE
+14;1;4;1;2;Low Concord minor;1;1.000;1;1;1.000;1.000;1;1;;0;FALSE;TRUE;FALSE
+15;1;4;1;3;Low Concord;1;1.000;1;1;1.000;1.000;1;1;;0;FALSE;TRUE;FALSE
+16;1;4;1;4;Double Hunt/Dilemma;0.5;1.000;1;1;0.500;1.000;1;1;individualistic heuristic;0.231455025;TRUE;FALSE;FALSE
+17;1;4;2;1;Low Coordination minor;0.25;1;1;0.25;1.000;1.000;1;1;;0.347182537;TRUE;FALSE;FALSE
+18;1;4;2;2;Mid Hunt minor;0.333333333;1;1;0.166666667;1.000;1.000;1;1;;0.350028344;TRUE;FALSE;FALSE
+19;1;4;2;3;Stag Hunt;0.5;1;1;1;0.500;1.000;1;1;individualistic heuristic;0.231455025;TRUE;FALSE;FALSE
+20;1;4;2;4;High Hunt/Dilemma;1;0.667;1;1;0.000;1.000;1;1;;0.356348323;TRUE;FALSE;FALSE
+21;1;4;3;1;Low Coordination;0.4;1;1;0.4;1.000;1.000;1;1;;0.27774603;TRUE;FALSE;FALSE
+22;1;4;3;2;Assurance;0.5;1;1;0.375;0.500;1.000;1;1;individualistic heuristic;0.282980786;TRUE;FALSE;FALSE
+23;1;4;3;3;Mid Hunt;0.666666667;0.500;1;0.333333333;0.000;1.000;0.5;1;projection;0.364604591;TRUE;FALSE;FALSE
+24;1;4;3;4;High Hunt/Dilemma major;0;0.333;1;0.25;0.000;1.000;0;1;;0.473373363;TRUE;FALSE;FALSE
+25;1;4;4;1;Double Coordination;0.5;0.5;0.5;0.5;0.500;0.500;0.5;0.5;"K-index; individualistic heuristic; collectivist heuristic; projection";0;TRUE;FALSE;FALSE
+26;1;4;4;2;High Assurance;0.6;0;0;0.5;0.000;0.500;0;0.5;collectivist heuristic;0.282526863;TRUE;FALSE;FALSE
+27;1;4;4;3;High Assurance major;0.75;0;0;0.5;0.000;0.500;0;0.5;collectivist heuristic;0.311605864;TRUE;FALSE;FALSE
+28;1;4;4;4;Reverse Triple Lock;0;0;0;0.5;0.000;0.500;0;0.5;collectivist heuristic;0.258774585;TRUE;FALSE;FALSE
+29;2;1;1;4;Low Battle minor;0.25;0;0.5;0.5;0.000;0.500;0;0.5;collectivist heuristic;0.247757802;TRUE;FALSE;FALSE
+30;2;1;2;4;Mid Compromise minor;0;0;0.333333333;0.333333333;0.000;0.000;0;0.333333333;;0.17251639;FALSE;FALSE;TRUE
+31;2;1;3;4;Compromise;0;0;0;0;0.000;0.000;0;0;;0;FALSE;FALSE;TRUE
+32;2;1;4;4;High Compromise;0;0;0;0;0.000;0.000;0;0;;0;FALSE;FALSE;TRUE
+33;2;2;1;4;Mid Battle / VoD minor;0.333333333;0.500;0.666666667;0.666666667;0.000;1.000;0.5;0.666666667;projection;0.292091527;TRUE;FALSE;FALSE
+34;2;3;1;4;Chicken;0.5;1;1;1;0.500;1.000;1;1;individualistic heuristic;0.231455025;TRUE;FALSE;FALSE
+35;2;4;1;1;Low Harmony minor;1;1;1;1;1.000;1.000;1;1;;0;FALSE;TRUE;FALSE
+36;2;4;1;2;Mid Harmony minor;1;1;1;1;1.000;1.000;1;1;;0;FALSE;TRUE;FALSE
+37;2;4;1;3;Concord;1;1;1;1;1.000;1.000;1;1;;0;FALSE;TRUE;FALSE
+38;2;4;1;4;High Chicken/Concord;1;1;1;1;1.000;1.000;1;1;;0;FALSE;TRUE;FALSE
+39;2;4;2;1;Mid Peace minor;1;1;1;0.166666667;1.000;1.000;1;1;;0.294627825;TRUE;FALSE;FALSE
+40;2;4;3;1;Coordination;0.25;1;1;0.375;1.000;1.000;1;1;;0.319999302;TRUE;FALSE;FALSE
+41;2;4;4;1;High Coordination;0.4;1;1;0.5;1.000;0.500;1;0.5;collectivist heuristic;0.282526863;TRUE;FALSE;FALSE
+42;3;1;1;4;Low Battle;0.4;0;0.5;0.5;0.000;0.500;0;0.5;collectivist heuristic;0.250713268;TRUE;FALSE;FALSE
+43;3;1;2;4;Hero;0.25;0;0.375;0.375;0.000;0.000;0;0.375;;0.188242577;FALSE;FALSE;TRUE
+44;3;1;3;4;Mid Compromise;0;0;0.167;0.166666667;0.000;0.000;0;0.166666667;;0.086258195;FALSE;FALSE;TRUE
+45;3;1;4;4;High Compromise major;0;0;0;0;0.000;0.000;0;0;;0;FALSE;FALSE;TRUE
+46;3;2;1;4;Battle;0.5;1;0.625;0.625;0.500;1.000;1;0.625;individualistic heuristic;0.225965192;TRUE;FALSE;FALSE
+47;3;3;1;4;Mid Battle / VoD;0.666666667;1;0.833333333;0.833333333;1.000;1.000;1;0.833333333;;0.124003968;FALSE;TRUE;FALSE
+48;3;4;1;1;Low Harmony;1;1;1;1;1.000;1.000;1;1;;0;FALSE;TRUE;FALSE
+49;3;4;1;2;Harmony;1;1;1;1;1.000;1.000;1;1;;0;FALSE;TRUE;FALSE
+50;3;4;1;3;Mid Harmony;1;1;1;1;1.000;1.000;1;1;;0;FALSE;TRUE;FALSE
+51;3;4;1;4;High Chicken/Concord major;1;1;1;1;1.000;1.000;1;1;;0;FALSE;TRUE;FALSE
+52;3;4;2;1;Peace;1;1;1;1;1.000;1.000;1;1;;0;FALSE;TRUE;FALSE
+53;3;4;3;1;Mid Peace;1;1;1;0.333333333;1.000;1.000;1;1;;0.23570226;TRUE;FALSE;FALSE
+54;3;4;4;1;High Coordination major;0.25;1;1;0.5;1.000;0.500;1;0.5;collectivist heuristic;0.311605864;TRUE;FALSE;FALSE
+55;4;1;1;4;Double Hero;0.5;0.5;0.5;0.5;0.500;0.500;0.5;0.5;"K-index; individualistic heuristic; collectivist heuristic; projection";0;TRUE;FALSE;FALSE
+56;4;1;2;4;High Hero;0.4;0;0.4;0.4;0.000;0.000;0;0.4;;0.213808994;FALSE;FALSE;TRUE
+57;4;1;3;4;High Hero major;0.25;0;0.25;0.25;0.000;0.000;0;0.25;;0.133630621;FALSE;FALSE;TRUE
+58;4;1;4;4;Reverse Triple Harmony;0;0;0;0;0.000;0.000;0;0;;0;FALSE;FALSE;TRUE
+59;4;2;1;4;High Battle;0.6;1;0.6;0.6;1.000;1.000;1;0.6;;0.213808994;FALSE;TRUE;FALSE
+60;4;3;1;4;High Battle major;0.75;1.000;0.75;0.75;1.000;1.000;1;0.75;;0.133630621;FALSE;TRUE;FALSE
+61;4;4;1;1;Double Harmony;1;1;1;1;1.000;1.000;1;1;;0;FALSE;TRUE;FALSE
+62;4;4;1;2;High Harmony;1;1;1;1;1.000;1.000;1;1;;0;FALSE;TRUE;FALSE
+63;4;4;1;3;High Harmony major;1;1;1;1;1.000;1.000;1;1;;0;FALSE;TRUE;FALSE
+64;4;4;1;4;Triple Harmony;1;1;1;1;1.000;1.000;1;1;;0;FALSE;TRUE;FALSE
+65;4;4;2;1;High Peace;1;1;1;1;1.000;1.000;1;1;;0;FALSE;TRUE;FALSE
+66;4;4;3;1;High Peace major;1;1;1;0.25;1.000;1.000;1;1;;0.265165043;TRUE;FALSE;FALSE
+67;4;4;4;1;Triple Lock;1;1;1;0.5;1.000;0.500;1;0.5;collectivist heuristic;0.258774585;TRUE;FALSE;FALSE

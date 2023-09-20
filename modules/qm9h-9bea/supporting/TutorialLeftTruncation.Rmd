@@ -1,0 +1,655 @@
+---
+title: "Tutorial on left-truncation"
+author: "[Judith ter Schure](https://www.cwi.nl/people/judith-ter-schure)"
+date: "`r Sys.Date()`"
+output:
+  html_document
+---
+
+Participants in a study often not all enter on the same day, such that their dates of randomization differ. This leads to one of two phenomena in the statistical analysis that we -- following the literature -- will call 'left-truncation' and 'staggered entry'. Whether our analysis has to deal with either of the two depends on the chosen time scale most relevant to the occurrence of the events. 
+
+On the one hand, time-to-event can be calendar time, e.g. time to an infection that occurs in (epidemic) waves. All participants in a risk set share a hazard if they are in follow-up and event-free on the same calendar date, such that late entry occurs as left-truncated event times. Left-truncation means that participants only enter the risk set once they enter the study but have already 'survived' some calendar time that might have observed an event for other participants. Nevertheless, they should not be part of the risk set to evaluate events that happened before they entered, since we know that an event before entry is impossible, e.g. because being alive or more general event-free is an inclusion criterion for study enrollment.
+
+On the other hand, time-to-event can be participant time, specific to each participant, e.g. time since surgery. All participants in a risk set of an event share a hazard if they are in follow-up and event-free for the same time since their own specific date of enrollment/randomization/intervention, such that late entry occurs as 'staggered entry'. Staggered entry means that participants that enter late could still enter the risk set of events that happened earlier, for events of participants that had the same participant time since their own date of intervention, as the late entered participant experienced since its date of intervention.
+
+Hence in a 'left-truncation' analysis, participants that enter late can only enter the risk set of events that happen after (in calendar time) they enter the study, while in 'staggered entry' analysis, participants that enter late can enter the risk set of events that already happened. We provide a tutorial on each scenario to illustrate the difference and the right statistical analysis for the sequential Safe logrank test. This is the tutorial on left-truncation. You can find the tutorial on staggered entry [here](https://projects.cwi.nl/safestats/TutorialStaggeredEntry.html).
+
+
+## Sequential analysis under left-truncation
+
+
+In case of sequential analysis under left-truncation we need to supplement the event times with the time of study entry. The main thing for an analysis of a data set per calendar time is that it needs to be aware that participants not yet included in the study can also not provide (censored) information. This tutorial illustrates how to process a time-to-event data set into a sequence of logrank e-values per calendar date that takes time of entry into account.
+
+
+## A toy example data set
+
+Please also find the complete R markdown file [here](https://projects.cwi.nl/safestats/TutorialLeftTruncation.Rmd).
+
+```{r, warning = F, message = F, results = "hide"}
+library(devtools)
+devtools::install_github("AlexanderLyNL/Safestats", ref = "logrank")
+library(safestats)
+library(survival)
+library(knitr)
+```
+
+
+Consider the following small data set:
+
+```{r}
+enrollment <- 10     # 5 treatment, 5 placebo, so:
+ratio <- 1           # ratio = nT/nP = 1
+fup <- 40            # folow up of 40 days
+nEventsC <- 8        # 8 events in 40 days among 10
+                     # this defines the baseline hazard
+hr1 <- 0.5           # hazard ratio between treatment en placebo group
+                     # (hr1: alternative hypothesis is true)
+                     # 6 events anticipated within 40 days 
+                     # if treatment reduces risk with hr1:
+anticipNevents <- nEventsC*(1/(1 + ratio)) + 
+                  nEventsC*(ratio/(1 + ratio))*hr1  
+
+# assuming constant hazard, we simulate the following baseline hazard and data:
+lambdaC <- 1 - (1 - (nEventsC/enrollment))^(1/fup)  
+data <- generateSurvData(nP = enrollment*(1/(1 + ratio)),
+                         nT = enrollment*(ratio/(1 + ratio)),
+                         lambdaP = lambdaC,
+                         lambdaT = hr1*lambdaC,
+                         endTime = fup,
+                         seed = 2006)  # set seed to make the result reproducible
+```
+
+```{r, echo = F}
+plot(survfit(Surv(data$"time", data$"status") ~ data$"group"),
+     xlim = c(0, fup), las = 1,
+     ylab = "Survival", xlab = "d (days) after randomization", lwd = 2,
+     main = paste("Hazard ratio = ", hr1))
+
+kable(data, row.names = F)
+```
+
+We see events occurring in either the treatment (`T`) or the placebo control group (`P`) at days after randomization (participant time) `d = `r unique(head(data$"time", n = 10))`,...` (events have `status = 2`, censoring has `status = 1`). Our event times now do not have a calendar date yet, nor do they have a date of study entry. The Kaplan-Meier plot above gives the survival by event time assuming that everyone entered the study at the same time, which we shall change below.
+
+```{r, include = F}
+dateRand.start <- as.Date("2020-05-04")
+dateRand.end <- as.Date("2020-05-15")
+```
+
+
+### Participants entering the study
+
+Now suppose that it took us two weeks to enroll and randomize everyone. We started on `dateRand.start = `r dateRand.start`` and finished on `dateRand.end = `r dateRand.end``. So we assign our participants a random start date and order them by date of enrollment/randomization:
+
+
+```{r}
+set.seed(2005)
+data$"dateRand" <- sample(seq.Date(from = dateRand.start, to = dateRand.end, by = "day"), 
+                          size = enrollment, replace = TRUE)
+data$"dateEvent/LastFup" <- as.Date(data$"dateRand" + data$"time")
+data$"dateLastFup" <- as.Date("2020-06-15")
+
+# We must allign all risks in calendar time, so we set all t = 0 to the start date of randomization:
+data$"time" <- data$"dateEvent/LastFup" - dateRand.start
+
+# Order the participants by date of enrollment/randomization:
+data$"participantID" <- 1:nrow(data)
+data$"participantID"[order(data$"dateRand")] <- 1:nrow(data)
+data <- data[order(data$"dateRand"), ]
+```
+
+```{r, include = F}
+data$"dateEvent/LastFup"[data$"participantID" == 3] <- data$"dateEvent/LastFup"[data$"participantID" == 5]
+data$"time"[data$"participantID" == 3] <- data$"dateEvent/LastFup"[data$"participantID" == 3] - dateRand.start
+data$"dateRand"[data$"participantID" == 3] <- data$"dateEvent/LastFup"[data$"participantID" == 3] - 
+                                          data$"time"[data$"participantID" == 3]
+```
+
+```{r, echo = F}
+plot(NULL, xlim = as.Date(c(as.Date("2020-05-04"), as.Date("2020-06-15"))),
+           ylim = c(-2, 10), 
+           ylab = "ParticipantID", xlab = "Calendar days", yaxt = "n", xaxt = "n",
+           main = "Calendar time and study entry")
+axis.Date(side = 1, at = seq.Date(from = as.Date("2020-03-23"),
+                                  to = as.Date("2020-06-15"), by = "week"), 
+          format = "%g-%m-%d", tick = TRUE, tck = 1, 
+          col.ticks = "lightgrey", lty = "dotted")
+axis(side = 2, at = 1:nrow(data), labels = nrow(data):1, las = 1, cex.axis = 0.7)
+                  
+legend(x = as.Date("2020-06-01"), y = 0.5, legend = c("T", "P"), fill = c("darkgreen", "darkgrey"), inset = 0.1, box.col = "white")
+legend(x = as.Date("2020-06-07"), y = 0.5, legend = c("event", "censored"), pch = c(4, 1), box.col = "white", inset = 0.5)
+
+for (i in 1:nrow(data)) {
+  inverseID <-  nrow(data) + 1 - data$"participantID"[i]
+  lines(x = data[i, c("dateRand", "dateEvent/LastFup")], 
+        y = c(inverseID, inverseID), 
+        col = c("darkgreen", "darkgrey")[data$"group"[i] == c("T", "P")])
+  lines(x = c(dateRand.start, data[i, "dateRand"]), 
+        y = c(inverseID, inverseID), lty = "dashed",
+        col = c("darkgreen", "darkgrey")[data$"group"[i] == c("T", "P")])
+  points(x = data[i, "dateEvent/LastFup"], y = inverseID,
+         pch = c(1, 4)[data$"status"[i] == c(1, 2)],
+         col = c("darkgreen", "darkgrey")[data$"group"[i] == c("T", "P")])
+}
+```
+
+This change of time scale changes the Kaplan-Meier plot, since we now see events occurring in either the treatment (`T`) or the placebo control group (`P`) at days after the start of the study (calendar time) `d = `r sort(unique(head(data$"time", n = 10)))`,...`. 
+
+```{r, echo = F}
+plot(survfit(Surv(time = data$"dateRand" - dateRand.start,
+                  time2 = data$"time", 
+                  event = data$"status",
+                  type = "counting") ~ data$"group"),
+     xlim = c(0, fup), las = 1,
+     ylab = "Survival", xlab = "d (days)", lwd = 2,
+     main = paste("Hazard ratio = ", hr1))
+```
+
+The interpretation of this Kaplan-Meier plot has also changed: the survival at d days is now not the probability of surviving d days, but the probability of surviving d days given that you entered the study (it is conditional on surviving to the smallest of entry times).
+
+However, in tests such as the sequential Safe logrank test we describe in this tutorial, we are not concerned with estimating the survival itself, or its interpretation, but in whether there is a difference in hazards between two groups. For that, only the ranks of the events are concerned, as we demonstrate below. It can be shown that if the date of study entry is independent of the event, then the hazard conditional on study entry and the unconditional hazard are equivalent. In performing these tests, our main concern is to specify correctly who is part of the risk set of the events observed, based on study entry.
+
+
+
+### A first event
+
+```{r}
+calDate <- sort(data$"dateEvent/LastFup")[1]
+d <- data$"time"[data$"dateEvent/LastFup" == calDate]
+```
+
+We do our first interim analysis at `calDate = `r calDate``. We assume that everyone who is randomized on exactly `r calDate`, is only at risk starting from the next day, so on this exact calendar day we have `r sum(data$"dateRand" < calDate)` participants at risk of the event, `r sum(data$"dateRand" < calDate & data$"group" == "P")` in the placebo control group (grey) and `r sum(data$"dateRand" < calDate & data$"group" == "T")` in the treatment group (green).
+
+```{r, echo = F}
+plot(NULL, xlim = as.Date(c(as.Date("2020-05-04"), as.Date("2020-06-15"))),
+           ylim = c(-2, 10), 
+           ylab = "ParticipantID", xlab = "Calendar days", yaxt = "n", xaxt = "n",
+           main = "Calendar time and study entry")
+axis.Date(side = 1, at = seq.Date(from = as.Date("2020-03-23"),
+                                  to = as.Date("2020-06-15"), by = "week"), 
+          format = "%g-%m-%d", tick = TRUE, tck = 1, 
+          col.ticks = "lightgrey", lty = "dotted")
+axis(side = 2, at = 1:nrow(data), labels = nrow(data):1, las = 1, cex.axis = 0.7)
+                  
+legend(x = as.Date("2020-06-01"), y = 0.5, legend = c("T", "P"), fill = c("darkgreen", "darkgrey"), inset = 0.1, box.col = "white")
+legend(x = as.Date("2020-06-07"), y = 0.5, legend = c("event", "censored"), pch = c(4, 1), box.col = "white", inset = 0.5)
+
+for (i in 1:nrow(data)) {
+  inverseID <-  nrow(data) + 1 - data$"participantID"[i]
+  lines(x = data[i, c("dateRand", "dateEvent/LastFup")], 
+        y = c(inverseID, inverseID), 
+        col = c("darkgreen", "darkgrey")[data$"group"[i] == c("T", "P")])
+  lines(x = c(dateRand.start, data[i, "dateRand"]), 
+        y = c(inverseID, inverseID), lty = "dashed",
+        col = c("darkgreen", "darkgrey")[data$"group"[i] == c("T", "P")])
+  points(x = data[i, "dateEvent/LastFup"], y = inverseID,
+         pch = c(1, 4)[data$"status"[i] == c(1, 2)],
+         col = c("darkgreen", "darkgrey")[data$"group"[i] == c("T", "P")])
+}
+abline("v" = calDate, lty = 3)
+text(x = calDate, y = -1, label = calDate)
+```
+
+```{r, include = F}
+N1 <- sum(data$"dateRand" < calDate)
+NT1 <- sum(data$"dateRand" < calDate & data$"group" == "T")
+NP1 <- sum(data$"dateRand" < calDate & data$"group" == "P")
+O1 <- sum(data$"dateEvent/LastFup" == calDate)
+OT1 <- sum(data$"dateEvent/LastFup" == calDate & data$"group" == "T")
+names(O1) <- ifelse(OT1, "treatment", "placebo control")
+ET1 <- NT1*O1/N1
+```
+
+Because the time scale is calendar time, we also have `r N1` participants at risk for this first event (\(N_1 = `r N1`\)), `r NP1` in the placebo control group and `r NT1` in the treatment group (\(N_{T, 1} = `r NT1`\)). 
+
+
+Our first logrank statistic on `r calDate` contains `r O1` event (\(O_1 = `r O1`\)), which is an event in the `r names(O1)` group, so the number of events in the treatment group is `r OT1` (\(O_{T, 1} = `r OT1`\)). The expected number of events in the treatment group is \(E_{T, 1} = N_{T, 1} \cdot \frac{O_1}{N_1} = `r NT1` \cdot \frac{`r O1`}{`r N1`} = \frac{`r NT1 * O1`}{`r N1`}\).
+
+So our logrank \(Z\)-score at this first event is:
+
+\begin{equation}
+Z^{(1)} = \frac{O_{T, 1} - E_{T, 1}}{\sqrt{V_{T, 1}}} = \frac{`r OT1` - \frac{`r NT1 * O1`}{`r N1`}}{\sqrt{\frac{`r NT1 * O1`}{`r N1`} \cdot (1 - \frac{`r NT1 * O1`}{`r N1`})}} = `r (OT1 - ET1)/sqrt(ET1 * (1 - ET1))`
+\end{equation}
+
+with \(V_{T, 1}\) the variance of the Bernoulli distribution with probability \(E_{T, 1}\):
+
+\begin{equation}
+V_{T, 1} = E_{T, 1} \cdot (1 - E_{T, 1}) = \frac{`r NT1 * O1`}{`r N1`} \cdot (1 - \frac{`r NT1 * O1`}{`r N1`})
+\end{equation}
+
+Our Safe logrank test should consider this exact logrank statistic for the first event at calendar time `d = `r d`` and calendar date `calDate = `r calDate``, so we need to tell the function that we have not yet observed participants or events randomized at a calender date later than `r calDate`. We define the `dataSoFar` as follows:
+
+```{r}
+dataSoFar <- data[data$"dateRand" < calDate, ]
+dataSoFar$"dateLastFup" <- calDate
+
+# We do not yet know the event times in the future,
+# only that these participants are in follow-up until this date
+dataSoFar$"time" <- pmin(dataSoFar$"time", calDate - dateRand.start)
+# The status of future event times is censored for now:
+dataSoFar$"status"[dataSoFar$"dateEvent/LastFup" > calDate] <- 1
+# And we can assign the following survival object
+dataSoFar$"survObj" <- Surv(dataSoFar$"time", dataSoFar$"status")
+
+kable(dataSoFar, row.names = F)
+```
+
+The third and fourth line in the above code redefine the participant time as we know them on `calDate = `r calDate``. So we can calculate our logrank test based on this `calDate = `r calDate`` version of our temporary data set `dataSoFar`:
+
+```{r, include = F}
+designObjL <- designSafeLogrank(hrMin = 0.7,
+                                alpha = 0.05,
+                                alternative = "less",  # one-sided test hr < 1
+                                ratio = 1)
+designObjG <- designSafeLogrank(hrMin = 1/0.7,
+                                alpha = 1/400,
+                                alternative = "greater",  # one-sided test hr > 1
+                                ratio = 1)
+```
+
+```{r}
+safeLogrankTest(exact = FALSE,           # to get the approximate safe logrank test  
+                designObj = designObjL,  # (based on the logrank Z-statistic)
+                dataSoFar$"survObj" ~ dataSoFar$"group")
+```
+(The object `designObjL` is defined below.)
+
+
+
+### The second event
+
+We have to take a different approach for second event:
+
+```{r}
+calDate <- sort(data$"dateEvent/LastFup")[2]
+d <- data$"time"[data$"dateEvent/LastFup" == calDate]
+```
+
+
+```{r, echo = F}
+plot(NULL, xlim = as.Date(c(as.Date("2020-05-04"), as.Date("2020-06-15"))),
+           ylim = c(-2, 10), 
+           ylab = "ParticipantID", xlab = "Calendar days", yaxt = "n", xaxt = "n",
+           main = "Calendar time and study entry")
+axis.Date(side = 1, at = seq.Date(from = as.Date("2020-03-23"),
+                                  to = as.Date("2020-06-15"), by = "week"), 
+          format = "%g-%m-%d", tick = TRUE, tck = 1, 
+          col.ticks = "lightgrey", lty = "dotted")
+axis(side = 2, at = 1:nrow(data), labels = nrow(data):1, las = 1, cex.axis = 0.7)
+                  
+legend(x = as.Date("2020-06-01"), y = 0.5, legend = c("T", "P"), fill = c("darkgreen", "darkgrey"), inset = 0.1, box.col = "white")
+legend(x = as.Date("2020-06-07"), y = 0.5, legend = c("event", "censored"), pch = c(4, 1), box.col = "white", inset = 0.5)
+
+for (i in 1:nrow(data)) {
+  inverseID <-  nrow(data) + 1 - data$"participantID"[i]
+  lines(x = data[i, c("dateRand", "dateEvent/LastFup")], 
+        y = c(inverseID, inverseID), 
+        col = c("darkgreen", "darkgrey")[data$"group"[i] == c("T", "P")])
+  lines(x = c(dateRand.start, data[i, "dateRand"]), 
+        y = c(inverseID, inverseID), lty = "dashed",
+        col = c("darkgreen", "darkgrey")[data$"group"[i] == c("T", "P")])
+  points(x = data[i, "dateEvent/LastFup"], y = inverseID,
+         pch = c(1, 4)[data$"status"[i] == c(1, 2)],
+         col = c("darkgreen", "darkgrey")[data$"group"[i] == c("T", "P")])
+}
+abline("v" = calDate, lty = 3)
+text(x = calDate, y = -1, label = calDate)
+```
+
+```{r, include = F}
+N2 <- sum(data$"dateRand" < calDate & data$"dateEvent/LastFup" >= calDate)
+NT2 <- sum(data$"dateRand" < calDate & data$"dateEvent/LastFup" >= calDate & data$"group" == "T")
+NP2 <- sum(data$"dateRand" < calDate & data$"dateEvent/LastFup" >= calDate & data$"group" == "P")
+O2 <- sum(data$"dateEvent/LastFup" == calDate)
+OT2 <- sum(data$"dateEvent/LastFup" == calDate & data$"group" == "T")
+names(O2) <- ifelse(OT2, "treatment", "placebo control")
+ET2 <- NT2*O2/N2
+```
+
+
+At our second date of interim analysis, `calDate = `r calDate`` where we observe `r O2` event in the `r names(O2)` group with event calendar time `d = `r d``. New participants entered our study, so we need to be aware that they are in the risk set of our current event, but not in the risk set of our previous event.The code below shows that if we do not explicitly state the date of randomization, the newly entered participants will be considered part of the risk set of the first event.
+
+
+```{r}
+dataSoFar <- data[data$"dateRand" < calDate, ]
+dataSoFar$"dateLastFup" <- calDate
+dataSoFar$"time" <- pmin(dataSoFar$"time", calDate - dateRand.start)
+dataSoFar$"status"[dataSoFar$"dateEvent/LastFup" > calDate] <- 1
+dataSoFar$"survObj" <- Surv(dataSoFar$"time", dataSoFar$"status")
+
+kable(dataSoFar, row.names = F)
+```
+```{r}
+safeLogrankTest(exact = FALSE,           # to get the approximate safe logrank test  
+                designObj = designObjL,  # (based on the logrank Z-statistic)
+                dataSoFar$"survObj" ~ dataSoFar$"group")
+```
+
+
+For the second event, our logrank statistic on `r calDate` contains `r O2` additional event in the `r names(O2)` group, which means that the \(O_{T, 2} = `r OT2`\) in the treatment group. We have `r N2` participants at risk (\(N_2 = `r N2`\)) (all enrolled participants except the first that experienced the event; the tenth participant is not yet in the study), `r NT2` in the treatment group  (\(N_{T, 2} = `r NT2`\)) and `r NP2` in the placebo control group.
+
+
+So the expected number of events in the treatment group at this second event time is \(E_{T, 2} = N_{T, 2} \cdot \frac{O_2}{N_2} = `r NT2` \cdot \frac{`r O2`}{`r N2`} = \frac{`r NT2*O2`}{`r N2`}\).
+
+Our logrank \(Z\)-score of the first and the second event combined is:
+
+\begin{equation}
+Z^{(2)} = \frac{O_{T, 1} - E_{T, 1} + O_{T, 2} - E_{T, 2}}{\sqrt{V_{T, 1} + V_{T, 2}}} = \frac{`r OT1` - \frac{`r NT1*O1`}{`r N1`} + `r OT2` - \frac{`r NT2*O2`}{`r N2`}}{\sqrt{\frac{`r NT1 * O1`}{`r N1`} \cdot (1 - \frac{`r NT1 * O1`}{`r N1`}) + \frac{`r NT2 * O2`}{`r N2`} \cdot (1 - \frac{`r NT2 * O2`}{`r N2`})}} = `r (OT1 - ET1 + OT2 - ET2)/sqrt(ET1 * (1 - ET1) + ET2 * (1 - ET2))`
+\end{equation}
+
+with \(V_{T, 2}\) the variance of the Bernoulli distribution with probability \(E_{T, 2}\):
+
+\begin{equation}
+V_{T, 2} = E_{T, 2} \cdot (1 - E_{T, 2}) = \frac{`r NT2 * O2`}{`r N2`} \cdot (1 - \frac{`r NT2 * O2`}{`r N2`})
+\end{equation}
+
+So we should explicitly state that the data is left-truncated:
+
+```{r}
+dataSoFar <- data[data$"dateRand" < calDate, ]
+dataSoFar$"dateLastFup" <- calDate
+dataSoFar$"time" <- pmin(dataSoFar$"time", calDate - dateRand.start)
+dataSoFar$"status"[dataSoFar$"dateEvent/LastFup" > calDate] <- 1
+dataSoFar$"survObj" <- Surv(time = dataSoFar$"dateRand" - dateRand.start,
+                          time2 = dataSoFar$"time", 
+                          event = dataSoFar$"status",
+                          type = "counting")
+
+kable(dataSoFar, row.names = F)
+```
+
+
+```{r}
+safeLogrankTest(exact = FALSE,           # to get the approximate safe logrank test  
+                designObj = designObjL,  # (based on the logrank Z-statistic)
+                dataSoFar$"survObj" ~ dataSoFar$"group")
+```
+
+
+### The third event
+
+We take the same approach for the third event:
+
+```{r}
+calDate <- sort(data$"dateEvent/LastFup")[3]
+d <- data$"time"[data$"dateEvent/LastFup" == calDate]
+```
+
+
+```{r, echo = F}
+plot(NULL, xlim = as.Date(c(as.Date("2020-05-04"), as.Date("2020-06-15"))),
+           ylim = c(-2, 10), 
+           ylab = "ParticipantID", xlab = "Calendar days", yaxt = "n", xaxt = "n",
+           main = "Calendar time and study entry")
+axis.Date(side = 1, at = seq.Date(from = as.Date("2020-03-23"),
+                                  to = as.Date("2020-06-15"), by = "week"), 
+          format = "%g-%m-%d", tick = TRUE, tck = 1, 
+          col.ticks = "lightgrey", lty = "dotted")
+axis(side = 2, at = 1:nrow(data), labels = nrow(data):1, las = 1, cex.axis = 0.7)
+                  
+legend(x = as.Date("2020-06-01"), y = 0.5, legend = c("T", "P"), fill = c("darkgreen", "darkgrey"), inset = 0.1, box.col = "white")
+legend(x = as.Date("2020-06-07"), y = 0.5, legend = c("event", "censored"), pch = c(4, 1), box.col = "white", inset = 0.5)
+
+for (i in 1:nrow(data)) {
+  inverseID <-  nrow(data) + 1 - data$"participantID"[i]
+  lines(x = data[i, c("dateRand", "dateEvent/LastFup")], 
+        y = c(inverseID, inverseID), 
+        col = c("darkgreen", "darkgrey")[data$"group"[i] == c("T", "P")])
+  lines(x = c(dateRand.start, data[i, "dateRand"]), 
+        y = c(inverseID, inverseID), lty = "dashed",
+        col = c("darkgreen", "darkgrey")[data$"group"[i] == c("T", "P")])
+  points(x = data[i, "dateEvent/LastFup"], y = inverseID,
+         pch = c(1, 4)[data$"status"[i] == c(1, 2)],
+         col = c("darkgreen", "darkgrey")[data$"group"[i] == c("T", "P")])
+}
+abline("v" = calDate, lty = 3)
+text(x = calDate, y = -1, label = calDate)
+```
+
+```{r, include = F}
+N3 <- sum(data$"dateRand" < calDate & data$"dateEvent/LastFup" >= calDate)
+NT3 <- sum(data$"dateRand" < calDate & data$"dateEvent/LastFup" >= calDate & data$"group" == "T")
+NP3 <- sum(data$"dateRand" < calDate & data$"dateEvent/LastFup" >= calDate & data$"group" == "P")
+O3 <- sum(data$"dateEvent/LastFup" == calDate)
+OT3 <- sum(data$"dateEvent/LastFup" == calDate & data$"group" == "T")
+names(O3) <- ifelse(OT3, "treatment", "placebo control")
+ET3 <- NT3*O3/N3
+```
+
+
+```{r}
+dataSoFar <- data[data$"dateRand" < calDate, ]
+dataSoFar$"dateLastFup" <- calDate
+dataSoFar$"time" <- pmin(dataSoFar$"time", calDate - dateRand.start)
+dataSoFar$"status"[dataSoFar$"dateEvent/LastFup" > calDate] <- 1
+dataSoFar$"survObj" <- Surv(time = dataSoFar$"dateRand" - dateRand.start,
+                          time2 = dataSoFar$"time", 
+                          event = dataSoFar$"status",
+                          type = "counting")
+
+kable(dataSoFar, row.names = F)
+```
+
+For the third event, our logrank statistic on `r calDate` contains `r O3` additional event in the `r names(O3)` group, which means that the \(O_{T, 3} = `r OT3`\). We have `r N3` participants at risk (\(N_3 = `r N3`\)) (all enrolled participants except the first two that experienced the event), `r NT3` in the treatment group  (\(N_{T, 3} = `r NT3`\)) and `r NP3` in the placebo control group.
+
+
+So the expected number of events in the treatment group at this third event time is \(E_{T, 3} = N_{T, 3} \cdot \frac{O_3}{N_3} = `r NT3` \cdot \frac{`r O3`}{`r N3`} = \frac{`r NT3*O3`}{`r N3`}\).
+
+Our logrank \(Z\)-score of the first, second and third event combined is:
+
+\begin{equation}
+Z^{(3)} = \frac{O_{T, 1} - E_{T, 1} + O_{T, 2} - E_{T, 2} + O_{T, 3} - E_{T, 3}}{\sqrt{V_{T, 1} + V_{T, 2} + V_{T, 3}}} = \frac{`r OT1` - \frac{`r NT1*O1`}{`r N1`} + `r OT2` - \frac{`r NT2*O2`}{`r N2`} + `r OT3` - \frac{`r NT3*O3`}{`r N3`}}{\sqrt{\frac{`r NT1 * O1`}{`r N1`} \cdot (1 - \frac{`r NT1 * O1`}{`r N1`}) + \frac{`r NT2 * O2`}{`r N2`} \cdot (1 - \frac{`r NT2 * O2`}{`r N2`}) + \frac{`r NT3 * O3`}{`r N3`} \cdot (1 - \frac{`r NT3 * O3`}{`r N3`})}} = `r (OT1 - ET1 + OT2 - ET2 + OT3 - ET3)/sqrt(ET1 * (1 - ET1) + ET2 * (1 - ET2) + ET3 * (1 - ET3))`
+\end{equation}
+
+with \(V_{T, 3}\) the variance of the Bernoulli distribution with probability \(E_{T, 2}\):
+
+\begin{equation}
+V_{T, 3} = E_{T, 3} \cdot (1 - E_{T, 3}) = \frac{`r NT3 * O3`}{`r N3`} \cdot (1 - \frac{`r NT3 * O3`}{`r N3`})
+\end{equation}
+
+
+```{r}
+safeLogrankTest(exact = FALSE,           # to get the approximate safe logrank test  
+                designObj = designObjL,  # (based on the logrank Z-statistic)
+                dataSoFar$"survObj" ~ dataSoFar$"group")
+```
+
+
+### The fourth and fifth event
+
+We take a slightly different approach to the fourth and fifth event because these are tied:
+
+```{r}
+calDate <- sort(data$"dateEvent/LastFup")[4]
+d <- data$"time"[data$"dateEvent/LastFup" == calDate]
+```
+
+
+```{r, echo = F}
+plot(NULL, xlim = as.Date(c(as.Date("2020-05-04"), as.Date("2020-06-15"))),
+           ylim = c(-2, 10), 
+           ylab = "ParticipantID", xlab = "Calendar days", yaxt = "n", xaxt = "n",
+           main = "Calendar time and study entry")
+axis.Date(side = 1, at = seq.Date(from = as.Date("2020-03-23"),
+                                  to = as.Date("2020-06-15"), by = "week"), 
+          format = "%g-%m-%d", tick = TRUE, tck = 1, 
+          col.ticks = "lightgrey", lty = "dotted")
+axis(side = 2, at = 1:nrow(data), labels = nrow(data):1, las = 1, cex.axis = 0.7)
+                  
+legend(x = as.Date("2020-06-01"), y = 0.5, legend = c("T", "P"), fill = c("darkgreen", "darkgrey"), inset = 0.1, box.col = "white")
+legend(x = as.Date("2020-06-07"), y = 0.5, legend = c("event", "censored"), pch = c(4, 1), box.col = "white", inset = 0.5)
+
+for (i in 1:nrow(data)) {
+  inverseID <-  nrow(data) + 1 - data$"participantID"[i]
+  lines(x = data[i, c("dateRand", "dateEvent/LastFup")], 
+        y = c(inverseID, inverseID), 
+        col = c("darkgreen", "darkgrey")[data$"group"[i] == c("T", "P")])
+  lines(x = c(dateRand.start, data[i, "dateRand"]), 
+        y = c(inverseID, inverseID), lty = "dashed",
+        col = c("darkgreen", "darkgrey")[data$"group"[i] == c("T", "P")])
+  points(x = data[i, "dateEvent/LastFup"], y = inverseID,
+         pch = c(1, 4)[data$"status"[i] == c(1, 2)],
+         col = c("darkgreen", "darkgrey")[data$"group"[i] == c("T", "P")])
+}
+abline("v" = calDate, lty = 3)
+text(x = calDate, y = -1, label = calDate)
+```
+
+```{r, include = F}
+N4 <- sum(data$"dateRand" < calDate & data$"dateEvent/LastFup" >= calDate)
+NT4 <- sum(data$"dateRand" < calDate & data$"dateEvent/LastFup" >= calDate & data$"group" == "T")
+NP4 <- sum(data$"dateRand" < calDate & data$"dateEvent/LastFup" >= calDate & data$"group" == "P")
+O4 <- sum(data$"dateEvent/LastFup" == calDate)
+OT4 <- sum(data$"dateEvent/LastFup" == calDate & data$"group" == "T")
+names(O4) <- ifelse(OT4, "treatment", "placebo control")
+ET4 <- NT4*O4/N4
+```
+
+
+```{r}
+dataSoFar <- data[data$"dateRand" < calDate, ]
+dataSoFar$"dateLastFup" <- calDate
+dataSoFar$"time" <- pmin(dataSoFar$"time", calDate - dateRand.start)
+dataSoFar$"status"[dataSoFar$"dateEvent/LastFup" > calDate] <- 1
+dataSoFar$"survObj" <- Surv(time = dataSoFar$"dateRand" - dateRand.start,
+                          time2 = dataSoFar$"time", 
+                          event = dataSoFar$"status",
+                          type = "counting")
+
+kable(dataSoFar, row.names = F)
+```
+
+Now we have two events with the same calendar event times `d = `r d``.
+
+
+Our fourth logrank statistic on `r calDate` contains these `r O4` additional events, with only one of them in the treatment group (\(O_{T, 4} = `r OT4`\)). We have `r N4` participants at risk (\(N_4 = `r N4`\)) (all enrolled participants except the first three that experienced the event), `r NT4` in the treatment group  (\(N_{T, 4} = `r NT4`\)) and `r NP4` in the placebo control group.
+
+
+So the expected number of events in the treatment group at this fourth calendar event time is \(E_{T, 4} = N_{T, 4} \cdot \frac{O_4}{N_4} = `r NT4` \cdot \frac{`r O4`}{`r N4`} = \frac{`r NT4*O4`}{`r N4`}\).
+
+Our logrank \(Z\)-score of the first, second, third and fourth calendar event times combined is:
+
+\begin{equation}
+Z^{(4)} = \frac{O_{T, 1} - E_{T, 1} + O_{T, 2} - E_{T, 2} + O_{T, 3} - E_{T, 3} + O_{T, 4} - E_{T, 4}}{\sqrt{V_{T, 1} + V_{T, 2} + V_{T, 3} + V_{T, 4}}} = \frac{`r OT1` - \frac{`r NT1*O1`}{`r N1`} + `r OT2` - \frac{`r NT2*O2`}{`r N2`} + `r OT3` - \frac{`r NT3*O3`}{`r N3`} + `r OT4` - \frac{`r NT4*O4`}{`r N4`}}{\sqrt{\frac{`r NT1 * O1`}{`r N1`} \cdot (1 - \frac{`r NT1 * O1`}{`r N1`}) + \frac{`r NT2 * O2`}{`r N2`} \cdot (1 - \frac{`r NT2 * O2`}{`r N2`}) + \frac{`r NT3 * O3`}{`r N3`} \cdot (1 - \frac{`r NT3 * O3`}{`r N3`}) + \frac{`r NT4*O4`}{`r N4`} \cdot \frac{`r N4 - O4`}{`r N4`} \cdot \frac{`r N4 - NT4`}{`r N4 - 1`}}} = `r (OT1 - ET1 + OT2 - ET2 + OT3 - ET3 + OT4 - ET4)/sqrt(ET1 * (1 - ET1) + ET2 * (1 - ET2) + ET3 * (1 - ET3) + ET4*(N4 - O4)/N4*(N4-NT4)/(N4 - 1))`
+\end{equation}
+
+
+with \(V_{T, 4}\) the variance of the hypergeometric distribution with probability \(E_{T, 4}\):
+
+\begin{equation}
+V_{T, 4} = E_{T, 4} \cdot \left(\frac{N_4 - O_4}{N_4}\right) \cdot \left(\frac{N_4 - N_{T, 4}}{N_4 - 1}\right) = \frac{`r NT4*O4`}{`r N4`} \cdot \frac{`r N4 - O4`}{`r N4`} \cdot \frac{`r N4 - NT4`}{`r N4 - 1`}
+\end{equation}
+
+
+```{r}
+safeLogrankTest(exact = FALSE,           # to get the approximate safe logrank test  
+                designObj = designObjL,  # (based on the logrank Z-statistic)
+                dataSoFar$"survObj" ~ dataSoFar$"group")
+```
+
+
+## Retrospectively processing a data set into an e-value sequence per calendar time
+
+
+The above shows the rationale of retrospectively obtaining a sequence of e-values for various calendar dates in the past. To process an entire data set at once, the following code obtains two sequences of e-values for two one-sided tests:
+
+
+```{r}
+eValuesL <- 
+  eValuesG <- structure(rep(NA, times = max(data$"dateLastFup") -
+                                        dateRand.start + 1), 
+                        names = as.character(seq.Date(from = dateRand.start,
+                                                      to = max(data$"dateLastFup"), 
+                                                      by = "day")))
+interimCalDates <- as.character(sort(unique(data$"dateEvent/LastFup"[data$"status" == 2])))
+
+# before you observe any event, your e-value is 1
+eValuesL[1:(which(names(eValuesL) == interimCalDates[1]) - 1)] <- 1
+eValuesG[1:(which(names(eValuesG) == interimCalDates[1]) - 1)] <- 1 
+
+for (calDate in as.character(seq.Date(from = as.Date(interimCalDates[1]),
+                             to = max(data$"dateLastFup"),
+                             by = "day"))) {
+  # at days on which you do not observe an event
+  if (!(calDate %in% interimCalDates)) {
+    # evidence stays the same as the day before
+    eValuesL[calDate] <- eValuesL[as.character(as.Date(calDate) - 1)]         
+    eValuesG[calDate] <- eValuesG[as.character(as.Date(calDate) - 1)]
+  } else {
+      dataSoFar <- data[data$"dateRand" < as.Date(calDate), ]
+      dataSoFar$"time" <- pmin(dataSoFar$"time", as.Date(calDate) - dateRand.start)
+      dataSoFar$"status"[dataSoFar$"dateEvent" > as.Date(calDate)] <- 1
+      
+      dataSoFar$"survObj" <- Surv(time = dataSoFar$"dateRand" - dateRand.start,
+                                  time2 = dataSoFar$"time", 
+                                  event = dataSoFar$"status",
+                                  type = "counting")
+      eValuesL[calDate] <- safeLogrankTest(dataSoFar$"survObj" ~ dataSoFar$"group",
+                                           designObj = designObjL, exact = FALSE
+                                           )$"eValue"
+      eValuesG[calDate] <- safeLogrankTest(dataSoFar$"survObj" ~ dataSoFar$"group",
+                                           designObj = designObjG, exact = FALSE
+                                           )$"eValue"
+  }
+}
+```
+
+### These e-values are calculated based on the following design:
+
+```{r}
+designObjL <- designSafeLogrank(hrMin = 0.7,
+                                alpha = 0.025,
+                                alternative = "less",  # one-sided test hr < 1
+                                ratio = 1)
+designObjL
+designObjG <- designSafeLogrank(hrMin = 1/0.7,
+                                alpha = 0.025,
+                                alternative = "greater",  # one-sided test hr > 1
+                                ratio = 1)
+designObjG
+```
+
+### Plot e-value sequence by calendar date
+
+We have obtained the following e-values:
+
+```{r}
+eValuesL
+eValuesG
+```
+
+Plot these e-values by their calendar date:
+
+```{r, echo = FALSE}
+plot(NULL, xlim = as.Date(c(dateRand.start, max(data$"dateLastFup"))),
+     ylim = c(-5, 6), xaxs = "i",
+     ylab = "e-value", xlab = "Calendar days", yaxt = "n", xaxt = "n",
+     main = "Test: hr < 1, benefit")
+axis <- mapply(axis, side = 2, at = c(-5:5, log(1/designObjL$"alpha")/log(2), 2^6), cex.axis = 1,
+               labels = c(paste0("1/", 2^(5:1)), 2^(0:4), "", 1/designObjL$"alpha", 2^6), las = 1,
+               tick = TRUE, tck = 1, col.ticks = "lightgrey", lty = "dotted")
+axis.Date(side = 1, at = seq.Date(from = dateRand.start, to = max(data$"dateLastFup"), by = "week"),
+           format = "%g-%m-%d", tick = TRUE, tck = 1, col.ticks = "lightgrey", lty = "dotted")
+abline(h = log(1/designObjL$"alpha")/log(2), lty = 2)
+
+lines(x = as.Date(names(eValuesL)), 
+      y = log(eValuesL)/log(2),
+      'l', col = "darkgreen", lwd = 2)
+```
+
+
+```{r, echo = FALSE}
+plot(NULL, xlim = as.Date(c(dateRand.start, max(data$"dateLastFup"))),
+     ylim = c(-5, 6), xaxs = "i",
+     ylab = "e-value", xlab = "Calendar days", yaxt = "n", xaxt = "n",
+     main = "Test: hr > 1, harm")
+axis <- mapply(axis, side = 2, at = c(-5:5, log(1/designObjL$"alpha")/log(2), 2^6), cex.axis = 1,
+               labels = c(paste0("1/", 2^(5:1)), 2^(0:4), "", 1/designObjL$"alpha", 2^6), las = 1,
+               tick = TRUE, tck = 1, col.ticks = "lightgrey", lty = "dotted")
+axis.Date(side = 1, at = seq.Date(from = dateRand.start, to = max(data$"dateLastFup"), by = "week"),
+           format = "%g-%m-%d", tick = TRUE, tck = 1, col.ticks = "lightgrey", lty = "dotted")
+abline(h = log(1/designObjL$"alpha")/log(2), lty = 2)
+
+lines(x = as.Date(names(eValuesG)), 
+      y = log(eValuesG)/log(2),
+      'l', col = "darkgreen", lwd = 2)
+```

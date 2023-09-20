@@ -1,0 +1,109 @@
+<h1>Procedure</h1>
+<h2>Descriptive procedure</h2>
+<ol>
+<li>Start out with 98 files</li>
+<li>Select only following file extensions (90 files):
+<ul>
+<li><code>.xls(x)</code> (20 files)</li>
+<li><code>.csv</code> (61 files)</li>
+<li><code>.txt</code> (6 files)</li>
+<li><code>.dat</code> (3 files)</li>
+</ul>
+</li>
+<li>Extract machine readable data</li>
+<li>Save summary information on rows and columns</li>
+<li>For each dataset collect a random sample of the minimum of rows/columns present in the data or the 75th percentile from step 4</li>
+<li>Collate all into one principal data set of nonidentifying information</li>
+</ol>
+<p>Issues with the automated data collation were dealt with on an iterative basis (e.g., adding a missing column name). Issues that could not be resolved and hampered machine readability without manual interference were present for:</p>
+<ul>
+<li><code>8.xls</code> - the dataset includes the first names of the coders. We deemed this non-identifying before because they were experimenters not participants, but it still doesn't seem ideal for the current usage so we decided to drop this dataset</li>
+<li><code>61.csv</code> - reports multiple experiments in one file, which requires manual restructuring to be machine-readable</li>
+</ul>
+<p>These files were manually removed from the set.</p>
+<h3>Flowchart</h3>
+<pre><code class="language-mermaid">graph TD;
+    all[1. 98 files]--&gt;filenames[2. Selection on extensions, 90 files]
+    filenames--&gt;C[3. ];
+</code></pre>
+<h2>Code implementation</h2>
+<p>This is also implemented in <code>script.R</code> directly.</p>
+<pre><code class="language-r">if(!require(readxl)) install.packages('readxl')
+if(!require(dplyr)) install.packages('dplyr')
+
+#####################################################
+# Make sure to unzip nonidentifying_data.zip first! #
+#####################################################
+
+# Get the rows/columns of the information (created on a previous run)
+infoDat &lt;- read.csv('summary-rows-cols.csv')
+# Select out the ones without rows/columns
+infoSel &lt;- infoDat[!infoDat$rows == 0 | !infoDat$columns == 0,]
+rowsP75 &lt;- summary(infoSel$rows)[5]
+columnsP75 &lt;- summary(infoSel$columns)[5]
+
+# Get all file names of relevance
+folder &lt;- 'nonidentifying_data'
+# Ensure there is no previous `principal-dataset.csv` already there!
+# This script will only create a new file if there is none, otherwise it'll append.
+principalFileName &lt;- 'principal-dataset.csv'
+filesLocal &lt;- list.files(folder)
+filesSelect &lt;- filesLocal[grepl(x = filesLocal, pattern = &quot;*.(xls|xlsx|csv|dat|txt)&quot;)]
+
+# Scaffold objects to save to
+principalFile &lt;- data.frame()
+fileName &lt;- c()
+rows &lt;- c()
+columns &lt;- c()
+
+# Get the summary information on each datafile and sheet
+for (file in filesSelect) {
+    if (grepl(file, pattern = &quot;*.(xls|xlsx)&quot;)) {
+        sheetsFile &lt;- excel_sheets(sprintf('%s/%s', folder, file))
+        for (sheet in sheetsFile) {
+            fileData &lt;- read_excel(sprintf('%s/%s', folder, file), sheet, col_names = FALSE)
+
+            # Collect summary-rows-cols
+            fileName &lt;- c(fileName, sprintf('%s_%s', file, sheet))
+            rows &lt;- c(rows, dim(fileData)[1])
+            columns &lt;- c(columns, dim(fileData)[2])
+            
+            # Sample data from file
+            write.table(fileData[sample(1:dim(fileData)[1], size = min(dim(fileData)[1], rowsP75)), sample(1:dim(fileData)[2], size = min(dim(fileData)[2], columnsP75))], principalFileName, append = TRUE, sep = ',', row.names = FALSE, col.names = FALSE)
+        }
+    } else if (grepl(file, pattern = &quot;*.csv&quot;)) {
+        fileData &lt;- read.csv(sprintf('%s/%s', folder, file))
+
+        # Collect summary-rows-cols
+        fileName &lt;- c(fileName, sprintf('%s', file))
+        rows &lt;- c(rows, dim(fileData)[1])
+        columns &lt;- c(columns, dim(fileData)[2])
+        
+        # Sample data from file
+        write.table(fileData[sample(1:dim(fileData)[1], size = min(dim(fileData)[1], rowsP75)), sample(1:dim(fileData)[2], size = min(dim(fileData)[2], columnsP75))], principalFileName, append = TRUE, sep = ',', row.names = FALSE, col.names = FALSE)
+    } else if (grepl(file, pattern = &quot;*.dat&quot;)) {
+        fileData &lt;- read.table(sprintf('%s/%s', folder, file))
+
+        # Collect summary-rows-cols
+        fileName &lt;- c(fileName, sprintf('%s', file))
+        rows &lt;- c(rows, dim(fileData)[1])
+        columns &lt;- c(columns, dim(fileData)[2])
+
+        # Sample data from file
+        write.table(fileData[sample(1:dim(fileData)[1], size = min(dim(fileData)[1], rowsP75)), sample(1:dim(fileData)[2], size = min(dim(fileData)[2], columnsP75))], principalFileName, append = TRUE, sep = ',', row.names = FALSE, col.names = FALSE)
+    } else if (grepl(file, pattern = &quot;*.txt&quot;)) {
+        fileData &lt;- read.table(sprintf('%s/%s', folder, file), sep = ifelse(grepl(x = file, pattern = &quot;^(4|13|63)&quot;), '\t', ','), fileEncoding = ifelse(file == &quot;13.txt&quot;, &quot;utf-16le&quot;, &quot;&quot;))
+       
+        # Collect summary-rows-cols
+        fileName &lt;- c(fileName, sprintf('%s', file))
+        rows &lt;- c(rows, dim(fileData)[1])
+        columns &lt;- c(columns, dim(fileData)[2])
+
+        # Sample data from file
+        write.table(fileData[sample(1:dim(fileData)[1], size = min(dim(fileData)[1], rowsP75)), sample(1:dim(fileData)[2], size = min(dim(fileData)[2], columnsP75))], principalFileName, append = TRUE, sep = ',', row.names = FALSE, col.names = FALSE)
+    }
+}
+
+# You could uncomment this to create the summary-rows-cols in the parent folder
+# write.csv(data.frame(fileName, rows, columns), 'summary-rows-cols.csv', row.names = FALSE)
+</code></pre>

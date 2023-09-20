@@ -1,0 +1,33 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <link rel="stylesheet" href="/_includes/module.css">
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Precision of detecting identifying information</title>
+  </head>
+  <body>
+      <h1>Precision of detecting identifying information</h1>
+<p>doi: <a href="https://doi.org/10.53962/r5gg-jjv0">10.53962/r5gg-jjv0</a></p>
+<p>Originally published on 2022-11-28 under a <a href="https://creativecommons.org/publicdomain/zero/1.0/legalcode">CC0 Public Domain Dedication</a></p>
+<h2>Authors</h2>
+<ul><li>
+<p><a href="https://orcid.org/0000-0003-1050-6809">Chris Hartgerink</a></p>
+ </li><li>
+<p><a href="https://orcid.org/0000-0002-8713-1972">Richard Klein</a></p>
+ </li><li>
+<p><a href="https://orcid.org/0000-0003-2415-2933">Jelte Wicherts</a></p>
+ </li></ul>
+<h2>Summary</h2>
+<p>In this precision report, we provide information on the specificity and sensitivity of using regular expressions to retrieve identifying information. Overall, technical identifiers are highly specific and sensitive (e.g., email, IP addresses), except for IMEI numbers (hardware numbers for phones). Phone numbers can be detected if reported in their international form (e.g., +1 555 55 555). For location information, regular expressions are highly precise in the case of latitude/longitude combinations, but not for street addresses (sensitive but not specific). For direct identifiers, we see that gender is hardest to detect with high specificity, but given the risk of disclosing marginalized gender identities, we consider this important to check for nonetheless (specificity gets worse as the dataset is larger in size). Similar issues exist for credit card information, where the risk is high if disclosed. As a result, we recommend scanning for all identifying information looked into in this report, except for IMEI and street addresses, as they underperform.</p>
+<h2>Main file</h2>
+<p><a href="report.docx">report.docx</a></p>
+<h2>Supporting files</h2>
+<ul><li><a href="supporting/report.Rmd">report.Rmd</a></li></ul>
+<h2>References</h2>
+<ol><li>Privacy Protection in the Era of Open Science. <a href="https://doi.org/10.31234/osf.io/ybzu9">doi: 10.31234/osf.io/ybzu9</a></li></ol>
+
+  </body>
+  <footer>
+  </footer>
+</html>

@@ -1,0 +1,420 @@
+---
+title: "Example processing data into an e-value sequence for ALL-IN-META-BCG-CORONA"
+author: "[Judith ter Schure](https://www.cwi.nl/people/judith-ter-schure)"
+date: "`r Sys.Date()`"
+output:
+  html_document
+---
+
+```{r, warning = F, message = F, results = "hide"}
+library(devtools)
+devtools::install_github("AlexanderLyNL/Safestats", ref = "logrank")
+library(safestats)
+library(survival)
+library(knitr)
+```
+
+
+## An example data set
+
+An example data set in the requested format for the ALL-IN-META-BCG-CORONA is shown below. 
+
+Please find the details to generate this toy data set in the complete R markdown file [here](https://projects.cwi.nl/safestats/ExampleProcessingEValuesALL-IN-META-BCG-CORONA.Rmd).
+
+
+```{r, include = F}
+enrollment <- 10         # 5 treatment, 5 placebo, so:
+ratio <- 1               # ratio = nT/nP = 1
+fup <- 40                # folow up of 40 days
+nEventsC.COV19 <- 8      # 8 events in 40 days among 10
+nEventsC.COV19hosp <- 2  # 2 events in 40 days among 10
+                         # this defines the baseline hazard
+hr1.COV19 <- 0.5         # hazard ratio between treatment en placebo group
+hr1.COV19hosp <- 0.5     # (hr1: alternative hypothesis is T)
+
+# assuming constant hazard, we simulate the following baseline hazard and data:
+lambdaC.COV19 <- 1 - (1 - (nEventsC.COV19/enrollment))^(1/fup) 
+lambdaC.COV19hosp <- 1 - (1 - (nEventsC.COV19hosp/enrollment))^(1/fup) 
+temp <- cbind(structure(generateSurvData(nP = enrollment*(1/(1 + ratio)),
+                                         nT = enrollment*(ratio/(1 + ratio)),
+                                         lambdaP = lambdaC.COV19,
+                                         lambdaT = hr1.COV19*lambdaC.COV19,
+                                         endTime = fup,
+                                         seed = 2006),
+                        names = c("time.COV19", "status.COV19", "intervention")),
+               structure(generateSurvData(nP = enrollment*(1/(1 + ratio)),
+                                          nT = enrollment*(ratio/(1 + ratio)),
+                                          lambdaP = lambdaC.COV19hosp,
+                                          lambdaT = hr1.COV19hosp*lambdaC.COV19hosp,
+                                          endTime = fup,
+                                          seed = 20)[c("time", "status")],
+                         names = c("time.COV19hosp", "status.COV19hosp")))
+
+dateRand.start <- as.Date("2020-05-04")
+dateRand.end <- as.Date("2020-05-15")
+set.seed(2005)
+temp$dateRand <- sample(seq.Date(from = dateRand.start, to = dateRand.end, by = "day"), 
+                          size = enrollment, replace = T)
+temp$"date.COV19/LastFup" <- as.Date(temp$dateRand + temp$time.COV19)
+temp$"date.COV19hosp/LastFup" <- as.Date(temp$dateRand + temp$time.COV19hosp)
+temp$intervention <- ifelse(temp$intervention == "T", "BCG", "control")
+
+data <- temp[ , c("intervention", "dateRand")]
+data$hospital <- rep(c("A", "B"), times = enrollment/2)
+data$COV19 <- ifelse(temp$status.COV19 == 2, "yes", "no")
+data$dateCOV19 <- temp$"date.COV19/LastFup"
+data$dateCOV19[temp$status.COV19 == 1] <- NA
+data$COV19hosp <- ifelse(temp$status.COV19hosp == 2, "yes", "no")
+data$dateCOV19hosp <- temp$"date.COV19hosp/LastFup"
+data$dateCOV19hosp[temp$status.COV19hosp == 1] <- NA
+data$dateLastFup <- as.Date(max(c(as.Date(data$dateCOV19), as.Date(data$dateCOV19hosp)), na.rm = T))
+
+rm(temp)
+```
+
+
+```{r, echo = F}
+kable(data, row.names = F)
+```
+
+
+### Preprocessing
+
+We need to be sure that all date variables are actual dates, such that we can substract them from each other to obtain event and censoring times.
+
+```{r}
+data$dateRand <- as.Date(data$dateRand, format = "%Y-%m-%d")
+data$dateLastFup <- as.Date(data$dateLastFup, format = "%Y-%m-%d")
+data$dateCOV19 <- as.Date(data$dateCOV19, format = "%Y-%m-%d")
+data$dateCOV19hosp <- as.Date(data$dateCOV19hosp, format = "%Y-%m-%d")
+```
+
+If your dates are formatted in a different way (e.g. `"%d-%m-%y"` or `"%y-%m-%d"`), make sure to process them correctly.
+
+Also, make sure that the intervention variable is coded the right way around, with the control group as the first and the treatment group as the second level of the factor. That way, the hazard ratio will be defined as:
+
+\begin{equation}
+hr = \frac{\lambda_{BCG}}{\lambda_{control}}
+\end{equation}
+
+with a hazard ratio less than 1 showing evidence for a benefit of BCG and a hazard ratio greater than 1 showing evidence for harm.
+
+
+```{r}
+data$intervention <- factor(data$intervention, levels = c("control", "BCG"))
+```
+
+Next we assign a `time` and `status` variable as is conventional in survival analysis, coding an event time as `status = 2` and a censoring time as `status = 1`, such that we can use `Surv()` to assign a survival object.
+
+```{r}
+
+startDate <- as.Date("2020-03-25")
+
+data$timeCOV19 <- ifelse(data$COV19 %in% c("Yes", "yes"),
+                         data$dateCOV19 - startDate,
+                         data$dateLastFup - startDate)
+data$statusCOV19 <- ifelse(data$COV19 %in% c("Yes", "yes"),
+                           2, 1)
+data$timeCOV19hosp <- ifelse(data$COV19hosp %in% c("Yes", "yes"),
+                             data$dateCOV19hosp - startDate,
+                             data$dateLastFup - startDate)
+data$statusCOV19hosp <- ifelse(data$COV19hosp %in% c("Yes", "yes"),
+                               2, 1)
+
+data$survObjCOV19 <- Surv(time = data$dateRand - startDate, 
+                          time2 = data$timeCOV19,
+                          event = data$statusCOV19,
+                          type = "counting")
+
+## Warning: please do not proceed by creating a Surv() object based on status = 1,2
+## when your data set does not contain any events. In case of no events, 
+## safeLogRankTest based on a Surv() object will misinterpret all censoring times 
+## coded as 1 to be events. In case of no events, your e-value is a neutral 1, 
+## and you do not need to perform any further analysis.
+
+
+data$survObjCOV19hosp <- Surv(time = data$dateRand - startDate, 
+                              time2 = data$timeCOV19hosp,
+                              event = data$statusCOV19hosp,
+                              type = "counting")
+```
+
+The start date (`time = 0`) of our event and censoring times is the day the first participant of the first study (the Dutch study) was enrolled, which is `startDate = `r startDate``. This is the start date for all studies, see our [Statistical Analysis Plan](https://projects.cwi.nl/safestats/ALL-IN-META-BCG-CORONA_StatisticalAnalysisPlan.pdf): we use time since the first randomized participant instead of time since a participants' own randomization. This makes the event-times left-truncated, which is visible in the creation of the survival object of the type `counting` that includes the time of randomization to define when participants enter the risk set. For more details on this formulation, please refer to our [Tutorial on left-truncation](https://projects.cwi.nl/safestats/TutorialLeftTruncation.html).
+
+```{r, echo = F}
+kable(data[ , !(names(data) %in% c("timeCOV19", "statusCOV19", 
+                                   "timeCOV19hosp", "statusCOV19hosp"))], row.names = F)
+```
+
+
+### Specifying the design of the Safe logrank test
+
+To agree with the design shown on the left hand side of the [ALL-IN-META-BCG-CORONA dashboard](https://cwi-machinelearning.shinyapps.io/ALL-IN-META-BCG-CORONA/), specify your design objects as follows: 
+
+```{r}
+designObjCOV19L <- designSafeLogrank(hrMin = 0.8,
+                                     alpha = 0.1*0.025,
+                                     alternative = "less",  # one-sided test hr < 1
+                                     ratio = 1)
+designObjCOV19L
+designObjCOV19G <- designSafeLogrank(hrMin = 1/0.8,
+                                     alpha = 0.1*0.025,
+                                     alternative = "greater",  # one-sided test hr > 1
+                                     ratio = 1)
+designObjCOV19G
+designObjCOV19hospL <- designSafeLogrank(hrMin = 0.7,
+                                         alpha = 0.9*0.025,
+                                         alternative = "less",  # one-sided test hr < 1
+                                         ratio = 1)
+designObjCOV19hospL
+designObjCOV19hospG <- designSafeLogrank(hrMin = 1/0.7,
+                                         alpha = 0.9*0.025,
+                                         alternative = "greater",  # one-sided test hr > 1
+                                         ratio = 1)
+designObjCOV19hospG
+```
+
+
+### Calculate the e-values for a complete data set
+
+```{r}
+safeLogrankTest(data$survObjCOV19 ~ data$intervention,
+                designObj = designObjCOV19L)
+safeLogrankTest(data$survObjCOV19 ~ data$intervention,
+                designObj = designObjCOV19G)
+
+safeLogrankTest(data$survObjCOV19hosp ~ data$intervention,
+                designObj = designObjCOV19hospL)
+safeLogrankTest(data$survObjCOV19hosp ~ data$intervention,
+                designObj = designObjCOV19hospG)
+```
+
+
+### Retrospectively processing a data set into an e-value sequence per calendar time
+
+We define the function `procEseq()`, based on the rationale of processing an e-value sequence per calendar time detailed in the two tutorials on [left-truncation](https://projects.cwi.nl/safestats/TutorialLeftTruncation.html) and [staggered entry](https://projects.cwi.nl/safestats/TutorialLeftTruncation.html). Our analysis uses the left-truncation approach for our data on a calendar time scale:
+
+```{r}
+procEseq <- function(data, eventName, statusVar, timeVar, randDateVar, eventDateVar, interventionVar,
+                     designObjL, designObjG, timeScale = "calendar",
+                     startDate, endDate) {
+  
+  eValuesL <- 
+    eValuesG <- structure(rep(1,
+                              times = endDate - startDate + 1),
+                          names = as.character(seq.Date(from = startDate,
+                                                        to = endDate, 
+                                                        by = "day")))
+  # before you observe any event, your e-value is 1
+  # return all 1 sequence if there are no events
+  if (sum(data[[statusVar]] == 2) == 0) {
+    eValues <- structure(list(eValuesL, eValuesG), 
+                         names = c(paste0(eventName, "L"), paste0(eventName, "G")))
+    return(eValues)
+  }
+  
+  interimCalDates <- as.character(sort(unique(data[[eventDateVar]])))
+  
+  # loop trough the calendar dates
+  for (calDate in as.character(seq.Date(from = as.Date(interimCalDates[1]),
+                                        to = endDate,
+                                        by = "day"))) {
+    # at dates without an event
+    if (!(calDate %in% interimCalDates)) {
+      # evidence stays the same as the day before
+      eValuesL[calDate] <- eValuesL[as.character(as.Date(calDate) - 1)]         
+      eValuesG[calDate] <- eValuesG[as.character(as.Date(calDate) - 1)]
+    } else {
+      # all participants that enter after today, are not yet in my data set so far
+      dataSoFar <- data[data[[randDateVar]] < as.Date(calDate), ]
+      
+      if (timeScale == "calendar") {
+        # I don't know how long participants are at risk whose events happen in the future
+        # only that they are still at risk today:
+        dataSoFar[[timeVar]] <- pmin(dataSoFar[[timeVar]], as.Date(calDate) - startDate)
+        # the status of participants with events in the future is censored:
+        dataSoFar[[statusVar]][dataSoFar[[eventDateVar]] > as.Date(calDate)] <- 1
+        dataSoFar$survObj <- Surv(time = dataSoFar[[randDateVar]] - startDate, 
+                                  time2 = dataSoFar[[timeVar]],
+                                  event = dataSoFar[[statusVar]],
+                                  type = "counting")
+      }
+      if (timeScale == "participant") {
+        # I don't know how long participants are at risk whose events happen in the future
+        # only that they are still at risk today:
+        dataSoFar[[timeVar]] <- pmin(dataSoFar[[timeVar]], as.Date(calDate) - dataSoFar[[randDateVar]])
+        # the status of participants with events in the future is censored:
+        dataSoFar[[statusVar]][dataSoFar[[eventDateVar]] > as.Date(calDate)] <- 1
+        dataSoFar$survObj <- Surv(dataSoFar[[timeVar]], dataSoFar[[statusVar]])
+      }
+      
+      eValuesL[calDate] <- safeLogrankTest(dataSoFar$survObj ~ dataSoFar[[interventionVar]],
+                                           designObj = designObjL
+                                           )$eValue
+      eValuesG[calDate] <- safeLogrankTest(dataSoFar$survObj ~ dataSoFar[[interventionVar]],
+                                           designObj = designObjG
+                                           )$eValue
+    }
+  }
+  eValues <- structure(list(eValuesL, eValuesG), 
+                       names = c(paste0(eventName, "L"), paste0(eventName, "G")))
+  return(eValues)
+}
+```
+
+
+This function returns a list of two e-value sequences. In the example below: one for each one-sided test based on `designObjCOV19hospL` and `designObjCOV19hospG`.
+
+```{r}
+eValues <- procEseq(data = data, eventName = "COV19hosp", 
+                    statusVar = "statusCOV19hosp", timeVar = "timeCOV19hosp", 
+                    randDateVar = "dateRand", eventDateVar = "dateCOV19hosp", 
+                    interventionVar = "intervention",
+                    designObjL = designObjCOV19hospL, designObjG = designObjCOV19hospG,
+                    timeScale = "calendar",
+                    startDate = startDate,  
+                    endDate = max(data$dateLastFup, na.rm = T))
+str(eValues)
+```
+
+
+
+### Sequence of e-value stratified by hospital
+
+If we have more than one hospital in our data set, we should stratify our Safe logrank e-values by hospital and multiply the sequences:
+
+```{r}
+hospitals <- unique(data$hospital)
+names(hospitals) <- as.character(hospitals)
+
+eValuesCOV19.str <- lapply(hospitals, function(hospital) 
+  procEseq(data = data[data$hospital == hospital, ],
+           eventName = "COV19", 
+           statusVar = "statusCOV19", timeVar = "timeCOV19", 
+           randDateVar = "dateRand", eventDateVar = "dateCOV19", 
+           interventionVar = "intervention",
+           designObjL = designObjCOV19L, designObjG = designObjCOV19G,
+           timeScale = "calendar",
+           startDate = as.Date("2020-03-25"),  # startDate defined above  
+           endDate = max(data$dateLastFup, na.rm = T)))
+
+eValuesCOV19hosp.str <- lapply(hospitals, function(hospital) 
+  procEseq(data = data[data$hospital == hospital, ],
+           eventName = "COV19hosp", 
+           statusVar = "statusCOV19hosp", timeVar = "timeCOV19hosp", 
+           randDateVar = "dateRand", eventDateVar = "dateCOV19hosp", 
+           interventionVar = "intervention",
+           designObjL = designObjCOV19hospL, designObjG = designObjCOV19hospG,
+           timeScale = "calendar",
+           startDate = as.Date("2020-03-25"),  # startDate defined above
+           endDate = max(data$dateLastFup, na.rm = T)))
+```
+
+The above use of the function `lapply()` filters the data set based on hospital and then applies the function `procEseq()` that processes the data of participants belonging to each hospital into a sequence of e-values. The result is a list of lists: for each hospital in the list, a list of two e-value sequences for the two one-sided tests.  Here the hospitals have names `r hospitals`.
+
+```{r}
+str(eValuesCOV19.str)
+```
+
+We collect all one-sided tests for alternative less (`L`) and all one-sided tests for alternative greater (`G`) seperately in a matrix using `sapply`, shown for the event `COV19` and the greater (`G`) test in the example below.
+
+```{r}
+eValuesCOV19L.matrix <- sapply(hospitals, function(hospital) eValuesCOV19.str[[hospital]]$COV19L)
+
+kable(head(eValuesCOV19L.matrix))
+kable(head(eValuesCOV19L.matrix[row.names(eValuesCOV19L.matrix) > as.Date("2020-05-18"), ]))
+```
+
+We do so for each combination of the two one-sided tests and the two events `COV19` and `COV19hosp`, and then multiply each row of e-values for the same date using `apply()` and `prod()`, to the rows (`MARGIN = 1`) to obtain our overall e-value sequence:
+
+```{r}
+eValues <- list("COV19L" = apply(sapply(hospitals, 
+                                        function(hospital) eValuesCOV19.str[[hospital]]$COV19L),
+                                 MARGIN = 1, FUN = prod, na.rm = T),
+                "COV19G" = apply(sapply(hospitals, 
+                                        function(hospital) eValuesCOV19.str[[hospital]]$COV19G),
+                                 MARGIN = 1, FUN = prod, na.rm = T),
+                "COV19hospL" = apply(sapply(hospitals, 
+                                        function(hospital) eValuesCOV19hosp.str[[hospital]]$COV19hospL),
+                                     MARGIN = 1, FUN = prod, na.rm = T),
+                "COV19hospG" = apply(sapply(hospitals, 
+                                        function(hospital) eValuesCOV19hosp.str[[hospital]]$COV19hospG),
+                                     MARGIN = 1, FUN = prod, na.rm = T))
+```
+
+
+
+
+#### Plot the e-value sequences such as in the dashboard tab for COV19
+
+```{r}
+plot(NULL, xlim = as.Date(c(as.Date("2020-03-23"), as.Date(Sys.Date()))),
+     ylim = c(-5, 9), xaxs = "i",
+     ylab = "e-value", xlab = "Calendar days", yaxt = "n", xaxt = "n",
+     main = "Test: COVID19 hr < 1, benefit")
+axis <- mapply(axis, side = 2, at = c(-5:8, log(1/designObjCOV19L$alpha)/log(2), 2^9), cex.axis = 1,
+               labels = c(paste0("1/", 2^(5:1)), 2^(0:7), "", 1/designObjCOV19L$alpha, 2^9), las = 1,
+               tick = T, tck = 1, col.ticks = "lightgrey", lty = "dotted")
+axis.Date(side = 1, at = seq.Date(from = as.Date("2020-03-23"), to = as.Date(Sys.Date()), by = "week"),
+          format = "%g/%m/%d", tick = T, tck = 1, col.ticks = "lightgrey", lty = "dotted")
+abline(h = log(1/designObjCOV19L$alpha)/log(2), lty = 2)
+
+lines(x = as.Date(names(eValues$COV19L)), y = log(eValues$COV19L)/log(2),
+      'l', col = "darkgreen", lwd = 2)
+```
+
+```{r}
+plot(NULL, xlim = as.Date(c(as.Date("2020-03-23"), as.Date(Sys.Date()))),
+     ylim = c(-5, 9), xaxs = "i",
+     ylab = "e-value", xlab = "Calendar days", yaxt = "n", xaxt = "n",
+     main = "Test: COVID19 hr > 1, harm")
+axis <- mapply(axis, side = 2, at = c(-5:8, log(1/designObjCOV19G$alpha)/log(2), 2^9), cex.axis = 1,
+               labels = c(paste0("1/", 2^(5:1)), 2^(0:7), "", 1/designObjCOV19G$alpha, 2^9), las = 1,
+               tick = T, tck = 1, col.ticks = "lightgrey", lty = "dotted")
+axis.Date(side = 1, at = seq.Date(from = as.Date("2020-03-23"), to = as.Date(Sys.Date()), by = "week"),
+          format = "%g/%m/%d", tick = T, tck = 1, col.ticks = "lightgrey", lty = "dotted")
+abline(h = log(1/designObjCOV19G$alpha)/log(2), lty = 2)
+
+lines(x = as.Date(names(eValues$COV19G)), y = log(eValues$COV19G)/log(2),
+      'l', col = "darkgreen", lwd = 2)
+```
+
+
+
+
+
+#### Plot the e-value sequences such as in the dashboard tab for COV19hosp
+
+```{r}
+plot(NULL, xlim = as.Date(c(as.Date("2020-03-23"), as.Date(Sys.Date()))),
+     ylim = c(-5, 6), xaxs = "i",
+     ylab = "e-value", xlab = "Calendar days", yaxt = "n", xaxt = "n",
+     main = "Test: COVID19 hospitalization hr < 1, benefit")
+axis <- mapply(axis, side = 2, at = c(-5:5, log(1/designObjCOV19hospL$alpha)/log(2), 6), 
+               cex.axis = 1, las = 1,
+               labels = c(paste0("1/", 2^(5:1)), 2^(0:4), "", round(1/designObjCOV19hospL$alpha), ""), 
+               tick = T, tck = 1, col.ticks = "lightgrey", lty = "dotted")
+axis.Date(side = 1, at = seq.Date(from = as.Date("2020-03-23"), to = as.Date(Sys.Date()), by = "week"),
+          format = "%g/%m/%d", tick = T, tck = 1, col.ticks = "lightgrey", lty = "dotted")
+abline(h = log(1/designObjCOV19hospL$alpha)/log(2), lty = 2)
+        
+lines(x = as.Date(names(eValues$COV19hospL)), y = log(eValues$COV19hospL)/log(2),
+      'l', col = "darkgreen", lwd = 2)
+```
+
+```{r}
+plot(NULL, xlim = as.Date(c(as.Date("2020-03-23"), as.Date(Sys.Date()))),
+     ylim = c(-5, 6), xaxs = "i",
+     ylab = "e-value", xlab = "Calendar days", yaxt = "n", xaxt = "n",
+     main = "Test: COVID19 hospitalization hr > 1, harm")
+axis <- mapply(axis, side = 2, at = c(-5:5, log(1/designObjCOV19hospG$alpha)/log(2), 6), 
+               cex.axis = 1, las = 1,
+               labels = c(paste0("1/", 2^(5:1)), 2^(0:4), "", round(1/designObjCOV19hospG$alpha), ""), 
+               tick = T, tck = 1, col.ticks = "lightgrey", lty = "dotted")
+axis.Date(side = 1, at = seq.Date(from = as.Date("2020-03-23"), to = as.Date(Sys.Date()), by = "week"),
+          format = "%g/%m/%d", tick = T, tck = 1, col.ticks = "lightgrey", lty = "dotted")
+abline(h = log(1/designObjCOV19hospG$alpha)/log(2), lty = 2)
+
+lines(x = as.Date(names(eValues$COV19hospG)), y = log(eValues$COV19hospG)/log(2),
+      'l', col = "darkgreen", lwd = 2)
+```
