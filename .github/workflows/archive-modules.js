@@ -20,7 +20,7 @@ async function doRun() {
   }
   let moduleMeta = { modules: [] };
   await apiCall.data.modules.map(async (module, index) => {
-    if (index < 50) {
+    if (index > 50 && index < 100) {
       moduleMeta.modules.push({
         id: module.id,
         prefix: module.prefix,
