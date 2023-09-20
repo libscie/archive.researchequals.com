@@ -1,0 +1,35 @@
+<h1>Codebook</h1>
+<p>The dataset is in long format, including one row per observation.</p>
+<h2>Variables</h2>
+<ul>
+<li><code>publisher</code> - string variable naming the publisher</li>
+<li><code>year</code> -</li>
+<li><code>scope</code> - numeric value depicting relevant emission scope for the <code>reported_category</code> (for more details see the <a href="https://ghgprotocol.org/calculationg-tools-faq">GHG protocol</a>). Options:
+<ul>
+<li>Scope 1: All direct GHG emissions.</li>
+<li>Scope 2: Indirect GHG emissions from consumption of purchased electricity, heat or steam.</li>
+<li>Scope 3: Other indirect emissions, such as the extraction and production of purchased materials and fuels, transport-related activities in vehicles not owned or controlled by the reporting entity, electricity-related activities (e.g. T&amp;D losses) not covered in Scope 2, outsourced activities, waste disposal, etc.</li>
+</ul>
+</li>
+<li><code>reported_category</code> - string indicating the reported category in the original report</li>
+<li><code>tCo2e</code> - tonnes carbon dioxide equivalent metric, numeric value</li>
+<li><code>notes</code> - variable to contain any comments from the coding</li>
+<li><code>url</code> - contains the link to the original report, if available</li>
+<li><code>include</code> - binary variable indicating inclusion for cumulative calculations (<code>1</code>) or exclusion for cumulative calculations (<code>0</code>).</li>
+</ul>
+<h2>Coding details</h2>
+<ul>
+<li>Collected data from the five largest publishers based on <a href="https://doi.org/10.1371/journal.pone.0127502">10.1371/journal.pone.0127502</a>, if available, and otherwise from their respective parent companies
+<ul>
+<li>Springer Nature</li>
+<li>Elsevier -&gt; RELX</li>
+<li>Sage</li>
+<li>Wiley</li>
+<li>Taylor &amp; Francis -&gt; Informa</li>
+</ul>
+</li>
+<li>Collected data from the report to the year when available (so 2011 from the 2011 report if possible).</li>
+<li>We focused on things reported in tCO2e, not other units such as cubic metres, tonnes, or otherwise.</li>
+<li>Removed cumulative numbers across scopes.</li>
+<li>Included location-based (grid-mix) over market-based (Renewable Energy Certificates [RECs]).</li>
+</ul>
