@@ -1,0 +1,111 @@
+﻿1st conference of the Afro-Latin-American Research Institute (ALARI)
+Harvard University, Dec. 11th-13th, 2019
+
+updated on July 27, 2023
+
+Mapping Afro-Cuban Digital Communities
+
+0. Intro
+
+Thank you Eduard for your introduction, and for the invitation to participate in this panel. I’m excited to be here to talk about a project I’ve been working on that stemmed from my doctoral research on the Cuban blogosphere, which is where I got familiar with Afro-Cuban digital communities.
+
+Today it seems impossible to talk about Afro-Cuban Digital Communities without mentioning Sandra Abd’Allah-Álvarez Ramírez and her blog Negra Cubana Tenía Que Ser.
+
+Launched in 2006, at a time when blogging was still very new in Cuba and hadn’t become controversial yet, Negra Cubana Tenía Que Ser was the first Cuba-based blog to explicitly identify as Afro and feminist. 
+
+There are many things that make this blog exceptional, but first and foremost I’d like to point out its longevity. It’s been online for almost 15 years, which makes it a perfect case study for tracking the birth and growth of “Afro-digital connections” in Cuba. 
+
+Another aspect that makes this blog so remarkable is the personality behind it. Sandra Abd’Allah-Álvarez Ramírez is an influential blogger, scholar and activist who embodies the alliance between academia, activism and afrodescendant communities in Cuba and abroad. As Judith Sierra Rivera points out in her recent article on Sandra and her blog, Negra Cubana Tenía Que Ser has “an active agenda to connect Cuban black women’s voices with other voices around the world.1” 
+
+A third aspect I’d like to discuss is the intersectional position of Sandra’s blog. Not only is she bridging gaps between communities, and across borders, but she is also one of the first to draw a spotlight on queer Afro-Cuban women in Cuban media. By providing resources, refuge and representation to queer, feminist, and afrodescendant Cuban folks, the blog Negra Cubana Tenía Que Ser plays an integral and interstitial role in digital community building.
+
+In this presentation, I aim to situate this blog within a network of Afro-Cuban digital communities. To illustrate my discussion of Negra Cubana Tenía Que Ser’s place within this network, I will present a visualization of what I’ll be referring to as “the Afro-Cuban Web”. Finally, I will speculate on the interconnectedness of the Afro-Cuban Web to a broader web of Afrodescendant communities in Latin America and abroad.
+
+1. Negra Cubana Tenía Que Ser and its digital networks
+
+The old-fashioned way to situate a blog within a network is by looking at its blogroll. This is a snapshot taken by the Way Back Machine on August 19th, 2006, just 2 months after it’s creation. It’s the first visual record of the blog Negra Cubana available to us today. 
+
+At that time, its blogroll linked to 10 other websites, which were feminist media and women’s personal blogs from Spain, France, and Venezuela. There is also a link to an article published in CubaLiteraria, where Sandra worked at the time, written by Cuban journalist Pedro de la Hoz. He’s the author of África en la Revolución Cubana (2004), who is today the Vice President of la Union de Escritores y Artistas de Cuba. It’s a kind of homage to Spanish poet García Lorca on the 70th anniversary of his assassination. 
+
+If we go back a year later, the blogroll has doubled and now includes categories based on Sandra’s interests as an academic and activist.
+It’s easy to see how Sandra’s charismatic personality, the openness with which she addresses issues of sexuality on her blog, and also the longevity and extensive nature of her online presence, have seized international attention. She clearly has played a key role in digital community building for queer and feminist afrodescendant Cubans, and I would argue, for queer, feminist afrodescendant Spanish-speakers worldwide.
+
+To my knowledge, the first academic piece written about Sandra Abd’Allah-Álvarez Ramírez was published in 2009, just 3 years after Sandra began to blog. It was an article written by Silvina Testa, a French-Argentine historian, and it focuses on the simultaneous resurgence of the memory of slavery and socio-economic inequalities in Cuban society in the 90s and early 2000s. In this article, Testa offers extensive biographical information about Sandra as well as a detailed description of her blog and the function it plays in her personal journey towards becoming a self-accepting afrodescendant Cuban feminist. 
+
+Something I’d like to point out here is Testa’s interpretation of her blog as Sandra’s digital alter ego in so far as the transformations in the blog’s visual interface reflect transformations in Sandra’s identity. I would extend this argument to say that this could apply to the blog’s digital network, which gradually comes to reflect Sandra’s personal, intellectual, and professional networks.
+
+And this despite the initial disinterest Sandra proclaims for networking. In 2009 Testa  reports that “a Sandra no la seduce la idea de ser leída e interactuar con personas fuera de la isla sino más bien la posibilidad de expresarse como desea y piensa.2” By 2018, nearly ten years later, quite a contrast is drawn by Judith Sierra Rivera’s statement that “Negracubana has come to occupy a central place in the Cuban blogosphere because of […] the network the blog has built beyond the island, extending to other contexts in the hemispheric Americas and Europe.”
+
+Not only has Sandra Abd’Allah-Álvarez Ramírez’s personal identity merged with that of her avatar Negracubana, but her influence has been recognized and validated by an international academic community.
+
+Since then, Sandra has become a well-known figure in the afrodescendant Cuban community. She has published extensively in academic journals, online press publications in Spanish, English and German, and regularly presents at conferences in the Americas and Europe.
+
+She has brought the issue of mapping to the table herself. In fact, one of Sandra’s most recent publications is titled “Montarse en el burro de lo digital: Blogs, boletines y otros especímenes a disposición del movimiento antirracista cubano” and aims to present “[una] especie de mapeo de dichas iniciativas, las cuales incluyen bitácoras, sitios web, páginas en Facebook y boletines digitales3”.
+
+Though I haven’t read the article, and therefore can’t compare and contrast our approaches, I have communicated with Sandra about this research, which aims to be complimentary. 
+
+2. Visualizing the Afro Cuban Web
+
+I used an open source web crawling tool called Hyphe (https://hyphe.medialab.sciences-po.fr) developed by French research software engineers, to crawl a number of websites I selected according to my own personal knowledge of the Afro-Cuban web. 
+
+Crawling means a bot clicks on every link of a given web page and indexes all of the linked websites it discovers.
+
+Just to illustrate some basic principles, let’s start with a tiny network.
+
+See figures: SNA-AfroCubanWeb-centrality.pdf + SNA-AfroCubanWeb-clustering.pdf
+ 
+- This network has 57 nodes and 127 edges. The nodes are the websites and the edges are the links between them. The edges are curved clockwise to indicate whether it is out-going link or in-coming link. The layout was manually modified for reading purposes. This means proximity in this network is not particularly significant.
+
+- The biggest nodes are the ones with the highest out-degree. These web entities have the most authority. It means the content to which they link is trusted and they are consulted as references. This is the case for AfroCubaWeb and NegraCubanaTeniaQueSer.com.
+
+- The nodes with the darkest color have the highest in-degree. In social network analysis, these nodes are said to have the most “influence”. If we think of these web entities as people, we could say they are the most well-connected. So it’s not really surprising and it doesn’t say much that the most well-connected web entity is a Facebook page, given that the page itself belongs to a social network. What it does tell us is that in relation to NegraCubanaTeníaQueSer.com, it seems to have more visibility and reach.
+
+- There are 2 indicators that we look at to detect if there’s a ‘small word’ effect, or a community, in a network: these are the Clustering coefficient and the mean shortest path. In an online social network, the clustering coefficient is the number of a user’s friends who are also each other’s friends (mutual friends). In our hyperlink network, there are seven web entities that have a significant clustering coefficient.
+
+→ What is most noticeable is that the web entities that harbor the strongest connections in terms of “community” are not the ones with the most overall authority or influence.
+
+Bear in mind that for any computational social scientists out there, what I just presented would be considered very partial. The network we just looked at is very small, and therefore the phenomena that it illustrates are completely insignificant when put into the context of a larger network. But for a non-initiated audience, it’s much easier to see how network analysis works on a reduced scale. Now let’s look at the bigger picture.
+
+See figure : SNA-AfroCubanWeb-activistconnections.pdf
+
+- This is a visual of what I like to call the Big Afro Cuban Web, or the jellyfish. This network has 1486 nodes and 1703 edges, so it’s roughly 20 times bigger. Here the nodes’ size is proportional to its degree, so the total of entities it cites + the ones that cite it. And of course, the first thing you notice is the size of AfroCubaWeb. It’s massive. I’ll be honest, this was a total surprise to me, but it makes perfect sense when you know how long AfroCubaWeb has been around. 
+
+- Here’s the earliest visual we have of AfroCubaWeb entity, which dates back to 1998 a whole 8 years before Sandra started blogging. There’s also another factor, which may be equally as important: AfroCubaWeb.com has benefitted from remaining accessible through the same URL since day 1. The website’s architecture hasn’t gone through any major changes, and it has just kept growing as new links and pages are added. This wasn’t the case for Sandra’s blog, which changed servers and URLs at least 4 times since its creation, and has gone through several structural mutations in addition to being much more actively curated. 
+
+So back to our “jellyfish”.
+
+See figure: SNA-AfroCubanWeb-activistconnections.png
+
+- Now that we can see who our main web entities are and how they relate to each other, I want to dig a little deeper into this network to see what kinds of content is being linked to within the Afro Cuban Web. After thorough exploration, I found that 30% this network’s links directed users to towards some kind of online media service. I used this category very loosely, and included all entities that presented themselves as sources of news/information, whether they were vetted or not. 
+
+- More specifically, we can see that the little buffer zone between AfroCubaWeb and the network’s other web entities is made up of these media websites. We can see Cuban cultural publications like La Jiribilla, Cuba Literaria, EcuRed.cu, Uneac.org along side alternative news sources like Tremenda Nota, Havana Times, IPS Noticias, El Toque, RedSemLac, and also mainstream foreign media sites like BBC.co.uk, HuffingtonPost.com, NyTimes.com. 
+
+- If we look at the clustering coefficient in this network, we can see that this buffer zone becomes of further interest. The edges that connect the buffer zone to the rest of the network, the ones that are darkest in this picture, have more weight.
+
+→ What this allows us to see is the importance of the relationship between antiracist activism and the media in the digital realm. Though academia and international organizations are key actors with clear involvement in supporting the development of antiracist platforms and policies, interactions with online media give the intense debates surrounding the Cuban antiracist movement more traceability, interactivity and reach.
+
+3. Conclusion
+
+A first glance at Cuba’s digital cultural landscape indicates that self-affirming representations and voices of Afro-Cubans have made a place for themselves within Cuban digital culture thanks to the work of Afrodescendant intellectuals and activists who have made it a point to bring the fight for better recognition and representations of their communities to the digital realm.
+
+More specifically, by mapping these digital networks, we were able to illustrate the nuanced composition of the anti-racist networks insofar as the network’s layout changes depending on what variable you look at, whether it’s authority, influence, or community. This reflects the accounts given by several of the movement’s participants, in different blog posts. It also allowed us to see that ties to the media are important for this network, and act as a buffer zone between scholars, activists and communities. Though it’s not clear how much of this media being produced and disseminated directly by afrodescendant agents.
+
+However, a word of caution. Exploring these online networks is very exciting. At least for me, being able to see the intangible nature of collaborative research and activism at work in the virtual world gives me a giddy feeling like I’m treading through unmarked territory. But, I realize that the historical context of this activism, which all happened off-line, rooted in very tangible afro-descendant and often afro-feminist social and community networks is easily bypassed. In fact, there is still a lot to be done to bring the depth of this heritage to digital life, which makes archival projects like AfroCubaWeb and Directorio de Afrocubanas so essential.
+
+On that note, I’d like to leave you with one last visual.
+
+See figure: “SNA-AfroCubanWeb-bigpicture.png”
+
+This network is the biggest one I was able to come up with so far by including Facebook pages as starting pages for crawls, so just imagine how big this could get if we added Twitter accounts, Youtube channels, Instagram, you name it... And although there’s still a lot of work to be done, I wanted to show that with just 3 queries, there is already good indication that the Afro-Cuban Web we just discussed fits into a larger Afro-Latin-American Web, and even an Transatlantic Web of Afro-Latinx digital connections4.
+1 Judith Sierra-Rivera, « Afro-Cuban Cyberfeminism: Love/Sexual Revolution in Sandra Álvarez Ramírez’s Blogging », Latin American Research Review 53, no 2 (2018): 331.
+2 Silvina Testa, « Memoria de la esclavitud y debate racial: la cuestión de la “identidad negra” en Cuba », Nuevo Mundo Mundos Nuevos, 19 décembre 2009, p.7 http://nuevomundo.revues.org/58153.
+3 Sandra Abd’Allah-Álvarez Ramírez, « Montarse En El Burro de Lo Digital: Blogs, Boletines y Otros Especímenes a Disposición Del Movimiento Antirracista Cubano », Cuban Studies 48, no 1 (13 juin 2019): 387‑93, https://doi.org/10.1353/cub.2019.0054.
+4 Arriaga, E., & Villar, A. (Eds.). (2021). Afro-Latinx Digital Connections (1st ed.). University Press of Florida. https://doi.org/10.2307/j.ctv1mvw8mk
+---------------
+
+----------------------------------------
+
+---------------
+
+----------------------------------------
+
