@@ -1,0 +1,43 @@
+body {
+    margin: 0;
+    text-align: center;
+
+}
+
+footer {
+    display: flex;
+    width: 100%;
+    justify-content: center;
+}
+
+h1 {
+    color: black;
+    text-align: center;
+}
+
+.homepage-grid {
+    display: flex;
+}
+
+.homepage-stats {
+    width: 50vw;
+    background-color: white;
+}
+
+.quote-footer {
+    padding-left: 2rem;
+}
+@media (max-width: 1250px) {
+    .homepage-stats {
+        width: 50vw;
+        background-color: red;
+    }
+    .homepage-grid {
+    display: block;
+    }
+    
+  }
+  
+.homepage-content {
+    padding: 2rem;
+}
