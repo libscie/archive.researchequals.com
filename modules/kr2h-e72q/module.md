@@ -1,0 +1,21 @@
+We are gathering a group of researchers from a diverse set of disciplines to embark on an innovative research project investigating the question “**Does power corrupt?**” We decided to focus on this question because it is highly relevant in today’s research and practice, and although having engaged humanity for almost aeons, across disciplines different answers can be found. Properly addressing this question therefore requires pooling insights from various disciplines.
+
+Many Paths is a collaborative research project where researchers work together to address a research question. By providing the research question “Does power corrupt?”, there is a clear starting point. But how it develops from there is entirely up to you. You may discuss with each other how to proceed, start with providing an overview or review of the relevant literature in your field of research, share insights from your own studies, design and subsequently conduct a study, engage in a debate or discussion, ask provoking questions – you can contribute whatever you think would help in addressing the research question. The platform on which Many Paths will take place, ***[Hypergraph](http://hypergraph.xyz/)***, is distributed, so we will not steer, guide, or interfere in how you collaboratively address the research question. However, in case of any questions, you can of course contact us at [manypaths@libscie.org](mailto:manypaths@libscie.org).
+
+In addition to our interest in a multidisciplinary answer to this question, our endeavor serves as a demo for a new method of communicating and discussing research, ***Hypergraph***. The current way of communicating and discussing research requires researchers to design and conduct a complete research study, analyze the data, write a manuscript, undergo the peer review process, and finally publish the article. As such, after having been carried out, products of research projects typically come to light only after a rather long time - if at all. To overcome this form of publishing "after-the-fact", the idea of Hypergraph ****is that single research steps are communicated "as-you-go" in the shape of research modules. These research modules can come in various forms or shapes, such as theoretical perspectives, data, analyses of data, reviews of/reflections on others' contributions, or any other way that would contribute to addressing the question of interest.
+
+As such, Hypergraph's infrastructure is well-suited to engage in a collaborative, interdisciplinary research process. By focusing on the question "Does power corrupt?", we hope that the collaboration among experts from different disciplines will provide new insights, while also providing a test case for the functionality of Hypergraph for such research projects.
+
+## What's in it for you?
+
+We intend to write two papers that we will openly publish, and will be first submitted to the [Proceedings of the National Academy of Sciences (PNAS)](https://www.pnas.org/):
+
+1. A **content paper** summarizing the insights and conclusions from our collaborative discussion regarding the question "Does power corrupt?" For this paper, we will list everyone who actively participated in the project as a co-author. The order will be based on your contributions in a manner that will be specified prior to the start of the project.
+2. A **method paper** focusing on the Many Paths method as a way of conducting interdisciplinary, collaborative research. For this paper, we will list everyone who actively participated in the project in the acknowledgements.
+
+## What we ask of you
+
+1. **Registration:** Indicate your interest by leaving your name and email address [here](https://docs.google.com/forms/d/e/1FAIpQLSf_ZymrIWVBIgMIAoROfEARGiwLL4ssH6GBPzVS62rxbxSsIg/viewform) before *March 31st 2021*.
+2. **Training:** Follow a 90-minute online training on how to use Hypergraph between *April 1st - 30th 2021*.
+3. **Research:** Contribute to the collaborative research project on "Does power corrupt?" by publishing research modules and reacting to other researchers' research modules between *May 1st 2021 and April 30th 2022*.
+4. **Manuscript:** Contribute to the research paper that we will draft on the insights and outcome of the Many Paths project regarding the question "Does power corrupt?" between *March 1st 2022 and July 31st 2022*.
