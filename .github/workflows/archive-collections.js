@@ -11,22 +11,28 @@ async function doRun() {
   }
   // Query the API
   let apiCall;
-  if (dateRun) {
-    apiCall = await axios.get(
-      `https://www.researchequals.com/api/collections?from=${dateRun}`
-    );
-  } else {
-    apiCall = await axios.get("https://www.researchequals.com/api/collections");
-  }
-
   let collectionMeta = { collection: [] };
-  apiCall.data.collections.map(async (collection, index) => {
-    // if (index < 10) {
+  apiCall = await axios.get("https://www.researchequals.com/api/collections");
+  await apiCall.data.collections.map(async (collection, index) => {
       collectionMeta.collection.push({
         id: collection.id,
         suffix: collection.suffix,
         title: collection.title,
       });
+    })
+  
+  await fs.writeFile(
+    `./collections/collections.json`,
+    await JSON.stringify(collectionMeta)
+  );
+    
+  if (dateRun) {
+    apiCall = await axios.get(
+      `https://www.researchequals.com/api/collections?from=${dateRun}`
+    );
+  }
+
+  apiCall.data.collections.map(async (collection, index) => {
       // create the relevant paths
       await fs.ensureDir(`./collections/`);
       await fs.ensureDir(`./collections/${collection.suffix}`);
@@ -127,11 +133,6 @@ Last updated on  ${collection.updatedAt.substr(
     
     // }
   });
-
-  await fs.writeFile(
-    `./collections/collections.json`,
-    await JSON.stringify(collectionMeta)
-  );
 
   await fs.writeFile(
     `./collections/collections.md`,

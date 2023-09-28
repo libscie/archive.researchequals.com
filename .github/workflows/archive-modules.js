@@ -11,14 +11,8 @@ async function doRun() {
   }
   // Query the API
   let apiCall;
-  if (dateRun) {
-    apiCall = await axios.get(
-      `https://www.researchequals.com/api/modules?from=${dateRun}`
-    );
-  } else {
-    apiCall = await axios.get("https://www.researchequals.com/api/modules");
-  }
   let moduleMeta = { modules: [] };
+  apiCall = await axios.get("https://www.researchequals.com/api/modules");
   await apiCall.data.modules.map(async (module, index) => {
     moduleMeta.modules.push({
       id: module.id,
@@ -26,8 +20,18 @@ async function doRun() {
       suffix: module.suffix,
       title: module.title,
     });
-    
-    // if (index > 150) {
+  })
+  await fs.writeFile(
+    `./modules/modules.json`,
+    await JSON.stringify(moduleMeta)
+  );
+
+  if (dateRun) {
+    apiCall = await axios.get(
+      `https://www.researchequals.com/api/modules?from=${dateRun}`
+    );
+  } 
+  await apiCall.data.modules.map(async (module, index) => {
       // create the relevant paths
       await fs.ensureDir(`./modules/`);
       await fs.ensureDir(`./modules/${module.suffix}`);
@@ -125,11 +129,6 @@ Originally published on ${module.publishedAt.substr(
       }
     // }
   });
-
-  await fs.writeFile(
-    `./modules/modules.json`,
-    await JSON.stringify(moduleMeta)
-  );
 
   await fs.writeFile(
     `./modules/modules.md`,
