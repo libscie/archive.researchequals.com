@@ -1,0 +1,914 @@
+Repo Name,Title,Comments,URL,Date Created,Date Closed,State,Type,Days to Close
+.github,"Issue in bug report issue template",1,https://github.com/epiverse-trace/.github/issues/20,2024-01-04T10:33:57Z,2024-01-05T16:11:32Z,closed,Issue,1
+.github,"Add DEI.md first version",0,https://github.com/epiverse-trace/.github/pull/19,2023-12-21T21:56:56Z,2023-12-21T21:57:08Z,closed,Pull Request,0
+.github,"Exclude R/RcppExports.R from package linting",1,https://github.com/epiverse-trace/.github/pull/18,2023-11-06T14:43:47Z,2023-11-06T15:23:03Z,closed,Pull Request,0
+.github,"Exclude RcppExports from linting",0,https://github.com/epiverse-trace/.github/issues/17,2023-11-06T14:35:05Z,2023-11-06T15:31:43Z,closed,Issue,0
+.github,"template for other issues",3,https://github.com/epiverse-trace/.github/pull/16,2023-10-13T13:39:14Z,2023-10-16T18:10:39Z,closed,Pull Request,3
+.github,"Remove linelist mention in template",0,https://github.com/epiverse-trace/.github/pull/15,2023-10-05T10:56:25Z,2023-12-21T21:57:28Z,closed,Pull Request,77
+.github,"move PR template out of subdirectory",2,https://github.com/epiverse-trace/.github/pull/14,2023-09-25T16:51:20Z,2023-09-25T17:03:12Z,closed,Pull Request,0
+.github,"Pull request template will not work by default",0,https://github.com/epiverse-trace/.github/issues/13,2023-09-25T16:50:12Z,2023-09-25T17:03:13Z,closed,Issue,0
+.github,"Consider adding an activity graph to the org README",0,https://github.com/epiverse-trace/.github/issues/12,2023-09-07T08:36:39Z,null,open,Issue,N/A
+.github,"Don’t use ${{ }} syntax in the run section",0,https://github.com/epiverse-trace/.github/issues/11,2023-08-31T08:42:10Z,null,open,Issue,N/A
+.github,"Issue for documentation issue",3,https://github.com/epiverse-trace/.github/issues/10,2023-06-21T08:19:26Z,2023-11-30T12:19:05Z,closed,Issue,162
+.github,"Remove .lintr location setting",0,https://github.com/epiverse-trace/.github/pull/9,2023-05-22T09:17:18Z,2023-05-22T09:17:54Z,closed,Pull Request,0
+.github,"Add organization workflows",0,https://github.com/epiverse-trace/.github/pull/8,2023-04-27T15:56:13Z,2023-04-27T15:56:33Z,closed,Pull Request,0
+.github,"Replace email link to <address> format",0,https://github.com/epiverse-trace/.github/pull/7,2023-03-31T10:55:25Z,2023-03-31T11:06:31Z,closed,Pull Request,0
+.github,"Add link to developer corner",0,https://github.com/epiverse-trace/.github/pull/6,2023-03-01T14:38:32Z,2023-03-07T07:11:28Z,closed,Pull Request,5
+.github,"Add indications to find and use pitcher",0,https://github.com/epiverse-trace/.github/pull/5,2023-02-06T17:55:44Z,2023-02-06T20:16:12Z,closed,Pull Request,0
+.github,"Create public README for the epiverse-trace org",0,https://github.com/epiverse-trace/.github/pull/4,2022-10-24T15:44:56Z,2022-10-27T07:58:05Z,closed,Pull Request,2
+.github,"Community focused updates to contributing.md",0,https://github.com/epiverse-trace/.github/pull/3,2022-10-20T19:10:30Z,2022-10-31T16:44:50Z,closed,Pull Request,10
+.github,"Add generic contributing guide available across the epiverse-trace organisation",1,https://github.com/epiverse-trace/.github/issues/2,2022-10-04T16:27:11Z,2022-11-02T16:19:30Z,closed,Issue,29
+.github,"Add issue templates available across the epiverse-trace organisation",4,https://github.com/epiverse-trace/.github/issues/1,2022-10-04T16:06:37Z,2023-04-27T15:55:27Z,closed,Issue,204
+blueprints,"Change repo member rights to edit comments by others",2,https://github.com/epiverse-trace/blueprints/issues/69,2024-01-24T14:07:01Z,2024-01-25T13:02:23Z,closed,Issue,0
+blueprints,"Add link to interoperability slides",1,https://github.com/epiverse-trace/blueprints/pull/68,2024-01-24T10:06:54Z,2024-01-24T10:10:35Z,closed,Pull Request,0
+blueprints,"Add types of review section",8,https://github.com/epiverse-trace/blueprints/pull/67,2024-01-18T16:00:02Z,2024-01-24T14:34:18Z,closed,Pull Request,5
+blueprints,"Set up netlify preview",1,https://github.com/epiverse-trace/blueprints/pull/66,2024-01-15T17:03:17Z,2024-01-16T13:56:24Z,closed,Pull Request,0
+blueprints,"Add netlify.toml config file",1,https://github.com/epiverse-trace/blueprints/pull/65,2024-01-15T16:59:55Z,2024-01-15T17:00:02Z,closed,Pull Request,0
+blueprints,"Add GitHub Actions workflow to detect broken links",0,https://github.com/epiverse-trace/blueprints/issues/64,2024-01-15T15:28:37Z,null,open,Issue,N/A
+blueprints,"Make sure dependencies page is rendered",3,https://github.com/epiverse-trace/blueprints/pull/63,2024-01-15T15:06:31Z,2024-01-16T13:58:43Z,closed,Pull Request,0
+blueprints,"Add co-authoring commits section to code-review",3,https://github.com/epiverse-trace/blueprints/pull/62,2024-01-10T13:45:19Z,2024-01-17T09:37:19Z,closed,Pull Request,6
+blueprints,"Add link to GitHub repo and main developer website",0,https://github.com/epiverse-trace/blueprints/pull/61,2023-12-13T14:32:24Z,2023-12-13T14:41:36Z,closed,Pull Request,0
+blueprints,"Provide deeper hierarchy on side bar",0,https://github.com/epiverse-trace/blueprints/issues/60,2023-12-13T11:13:56Z,null,open,Issue,N/A
+blueprints,"Provide Github on website nav bar",0,https://github.com/epiverse-trace/blueprints/issues/59,2023-12-13T10:35:09Z,2023-12-13T14:41:38Z,closed,Issue,0
+blueprints,"Switch to epiverse theme",0,https://github.com/epiverse-trace/blueprints/pull/58,2023-11-20T14:31:25Z,2023-11-20T14:34:27Z,closed,Pull Request,0
+blueprints,"Clarify policy on maturity for dependencies",0,https://github.com/epiverse-trace/blueprints/pull/57,2023-10-18T13:58:28Z,2023-10-23T14:16:50Z,closed,Pull Request,5
+blueprints,"Consider contrasting colors in the mindmap",2,https://github.com/epiverse-trace/blueprints/issues/56,2023-10-17T11:19:26Z,null,open,Issue,N/A
+blueprints,"missing suffix",1,https://github.com/epiverse-trace/blueprints/pull/55,2023-10-06T11:48:10Z,2023-10-06T11:50:57Z,closed,Pull Request,0
+blueprints,"Create chapter on contribution acknowledgements",0,https://github.com/epiverse-trace/blueprints/pull/54,2023-10-02T10:47:54Z,2023-10-17T09:39:42Z,closed,Pull Request,14
+blueprints,"Add link to system requirements post",0,https://github.com/epiverse-trace/blueprints/pull/53,2023-09-26T12:11:58Z,2023-09-26T12:15:59Z,closed,Pull Request,0
+blueprints,"Add webR as an example of why to avoid system library",0,https://github.com/epiverse-trace/blueprints/pull/52,2023-08-31T14:51:23Z,2023-08-31T14:55:23Z,closed,Pull Request,0
+blueprints,"Copy social metadata from developer space",0,https://github.com/epiverse-trace/blueprints/pull/51,2023-07-20T10:24:32Z,2023-07-20T10:29:52Z,closed,Pull Request,0
+blueprints,"Add links to upcoming blog post on communicating OSS",0,https://github.com/epiverse-trace/blueprints/pull/50,2023-07-13T10:50:42Z,2023-07-18T11:11:12Z,closed,Pull Request,5
+blueprints,"Mention of design principles",1,https://github.com/epiverse-trace/blueprints/issues/49,2023-07-12T14:58:42Z,null,open,Issue,N/A
+blueprints,"Add visual created during Epiverse-TRACE summit 2023 in Bogotá",0,https://github.com/epiverse-trace/blueprints/issues/48,2023-07-12T09:06:14Z,null,open,Issue,N/A
+blueprints,"Mention policy on R version dependency",0,https://github.com/epiverse-trace/blueprints/issues/47,2023-06-22T17:12:35Z,null,open,Issue,N/A
+blueprints,"Add page on package dependencies",0,https://github.com/epiverse-trace/blueprints/pull/46,2023-06-15T14:13:38Z,2023-06-22T16:44:19Z,closed,Pull Request,7
+blueprints,"Mention packagetemplate and link to documentation",0,https://github.com/epiverse-trace/blueprints/issues/45,2023-06-13T08:27:00Z,null,open,Issue,N/A
+blueprints,"Add package scope page",1,https://github.com/epiverse-trace/blueprints/pull/44,2023-06-08T13:35:47Z,null,open,Pull Request,N/A
+blueprints,"Default merge on blueprints PR is squash and merge",1,https://github.com/epiverse-trace/blueprints/issues/43,2023-05-11T12:21:04Z,2023-05-11T13:19:12Z,closed,Issue,0
+blueprints,"Expand code reviews section",6,https://github.com/epiverse-trace/blueprints/pull/42,2023-05-02T14:57:41Z,2023-05-11T12:19:32Z,closed,Pull Request,8
+blueprints,"Mention Tidyteam code review doc and clarify details",0,https://github.com/epiverse-trace/blueprints/issues/41,2023-05-02T14:51:45Z,2023-05-11T12:19:34Z,closed,Issue,8
+blueprints,"Correct contributing guide bullet 5",2,https://github.com/epiverse-trace/blueprints/issues/40,2023-05-01T20:59:22Z,null,open,Issue,N/A
+bpmodels,"Transfer {bpmodels} to epiforecasts group after {epichains} release",0,https://github.com/epiverse-trace/bpmodels/issues/144,2024-01-17T14:47:47Z,null,open,Issue,N/A
+bpmodels,"Tests for statistical correctness in random samplers",0,https://github.com/epiverse-trace/bpmodels/issues/143,2023-11-06T12:40:41Z,null,open,Issue,N/A
+bpmodels,"Remove CRAN install instruction",1,https://github.com/epiverse-trace/bpmodels/pull/142,2023-10-06T15:04:36Z,2023-10-09T09:29:33Z,closed,Pull Request,2
+bpmodels,"Add package reviewers",0,https://github.com/epiverse-trace/bpmodels/pull/141,2023-10-06T14:07:46Z,2023-10-06T14:41:21Z,closed,Pull Request,0
+bpmodels,"Add package reviewers",0,https://github.com/epiverse-trace/bpmodels/issues/140,2023-09-08T21:51:27Z,2023-10-06T14:41:22Z,closed,Issue,27
+bpmodels,"Clarify documentation of `offspring_ll()`",0,https://github.com/epiverse-trace/bpmodels/issues/139,2023-09-06T16:02:21Z,null,open,Issue,N/A
+bpmodels,"Combine theory and literature vignettes under one category on website",0,https://github.com/epiverse-trace/bpmodels/pull/138,2023-09-01T11:13:00Z,2023-09-05T21:06:00Z,closed,Pull Request,4
+bpmodels,"Move theory vignette to Literature navbar on website",5,https://github.com/epiverse-trace/bpmodels/issues/137,2023-09-01T10:48:04Z,2023-09-05T21:06:01Z,closed,Issue,4
+bpmodels,"increase sensitivity of tests",0,https://github.com/epiverse-trace/bpmodels/pull/136,2023-08-31T16:47:36Z,2023-09-01T09:32:09Z,closed,Pull Request,0
+bpmodels,"typo and consistency tweaks",0,https://github.com/epiverse-trace/bpmodels/pull/135,2023-07-28T10:23:23Z,2023-07-28T17:47:09Z,closed,Pull Request,0
+bpmodels,"add vignette with theoretical background",0,https://github.com/epiverse-trace/bpmodels/pull/134,2023-07-26T12:48:30Z,2023-09-01T09:58:40Z,closed,Pull Request,36
+bpmodels,"review projection vignette",2,https://github.com/epiverse-trace/bpmodels/pull/133,2023-07-25T11:14:57Z,2023-10-06T13:54:57Z,closed,Pull Request,73
+bpmodels,"Run styler",1,https://github.com/epiverse-trace/bpmodels/issues/132,2023-07-24T08:55:21Z,null,open,Issue,N/A
+bpmodels,"Add input checking and improve test coverage ",6,https://github.com/epiverse-trace/bpmodels/pull/131,2023-07-21T15:09:57Z,2023-11-06T15:34:11Z,closed,Pull Request,108
+bpmodels,"Fix figure in modelling vignette",0,https://github.com/epiverse-trace/bpmodels/pull/130,2023-07-21T14:11:58Z,2023-07-24T15:31:00Z,closed,Pull Request,3
+bpmodels,"Add spellchecking",1,https://github.com/epiverse-trace/bpmodels/pull/129,2023-07-21T10:30:53Z,2023-07-21T13:04:55Z,closed,Pull Request,0
+bpmodels,"Fix the representation of package, function and argument names",0,https://github.com/epiverse-trace/bpmodels/pull/127,2023-07-20T13:57:09Z,2023-07-20T14:08:13Z,closed,Pull Request,0
+bpmodels,"Revise Get Started vignette",0,https://github.com/epiverse-trace/bpmodels/pull/126,2023-07-20T13:38:30Z,2023-07-20T14:36:15Z,closed,Pull Request,0
+bpmodels,"Add a GHA workflow for cff file syncing",2,https://github.com/epiverse-trace/bpmodels/pull/125,2023-07-19T14:37:29Z,2023-07-20T12:44:20Z,closed,Pull Request,0
+bpmodels,"Revise package title and README",0,https://github.com/epiverse-trace/bpmodels/pull/124,2023-07-19T13:48:27Z,2023-07-20T10:40:19Z,closed,Pull Request,0
+bpmodels,"Add GHA for syncing the `CITATION.cff` file with the DESCRIPTION and CITATION file",0,https://github.com/epiverse-trace/bpmodels/issues/123,2023-07-19T13:30:12Z,2023-07-20T12:44:21Z,closed,Issue,0
+bpmodels,"Move the package maintainer to first position on the author list",1,https://github.com/epiverse-trace/bpmodels/pull/122,2023-07-19T13:08:44Z,2023-07-20T11:01:26Z,closed,Pull Request,0
+bpmodels,"Remove the `find_function_name()` function ",1,https://github.com/epiverse-trace/bpmodels/pull/121,2023-07-19T13:01:03Z,2023-07-20T11:24:11Z,closed,Pull Request,0
+bpmodels,"Update the .lintr configuration to match with that in packagetemplate",0,https://github.com/epiverse-trace/bpmodels/pull/120,2023-07-18T16:47:43Z,2023-07-20T11:10:57Z,closed,Pull Request,1
+bpmodels,"Remove gitattributes file",1,https://github.com/epiverse-trace/bpmodels/pull/119,2023-07-18T16:43:30Z,2023-07-19T15:30:27Z,closed,Pull Request,0
+bpmodels,"Align workflows with packagetemplate",1,https://github.com/epiverse-trace/bpmodels/pull/118,2023-07-18T16:41:47Z,2023-07-18T16:49:32Z,closed,Pull Request,0
+bpmodels,"Justify why `chain_threshold` is set to `1000` in covid-19 modelling vignette",1,https://github.com/epiverse-trace/bpmodels/issues/117,2023-07-13T15:40:46Z,2023-07-20T13:47:13Z,closed,Issue,6
+bpmodels,"Improve wording of `pop` argument in `chain_sim_susc()`",0,https://github.com/epiverse-trace/bpmodels/issues/116,2023-07-13T15:37:28Z,null,open,Issue,N/A
+bpmodels,"Remove `find_function_name()` from codebase",0,https://github.com/epiverse-trace/bpmodels/issues/115,2023-07-13T15:36:05Z,2023-07-20T11:24:12Z,closed,Issue,6
+bpmodels,"Use the @noRd tag to prevent generating documentation files of internal functions",0,https://github.com/epiverse-trace/bpmodels/issues/114,2023-07-13T15:33:34Z,null,open,Issue,N/A
+cfr,"Restore linter workflow",0,https://github.com/epiverse-trace/cfr/pull/120,2024-01-19T12:06:00Z,2024-01-19T13:05:05Z,closed,Pull Request,0
+cfr,"End of year cleanup",0,https://github.com/epiverse-trace/cfr/pull/119,2023-12-14T15:26:46Z,2023-12-14T15:58:14Z,closed,Pull Request,0
+cfr,"End of year cleanup",0,https://github.com/epiverse-trace/cfr/issues/118,2023-12-14T09:53:46Z,2024-01-19T13:05:19Z,closed,Issue,36
+cfr,"Explore options for weekly data",3,https://github.com/epiverse-trace/cfr/issues/117,2023-12-13T09:25:11Z,null,open,Issue,N/A
+cfr,"Clarify when time-varying CFR applies",0,https://github.com/epiverse-trace/cfr/issues/116,2023-12-05T12:49:00Z,null,open,Issue,N/A
+cfr,"Motivate use of continuous delay distributions",0,https://github.com/epiverse-trace/cfr/issues/115,2023-11-28T09:42:06Z,null,open,Issue,N/A
+cfr,"Swap plot labels and expand description",2,https://github.com/epiverse-trace/cfr/pull/114,2023-11-22T21:24:57Z,2023-11-23T09:50:51Z,closed,Pull Request,0
+cfr,"Update pkg status and version",0,https://github.com/epiverse-trace/cfr/pull/113,2023-11-22T10:10:17Z,2023-11-22T11:30:38Z,closed,Pull Request,0
+cfr,"Correct news",0,https://github.com/epiverse-trace/cfr/pull/112,2023-11-22T09:49:53Z,2023-11-22T09:54:44Z,closed,Pull Request,0
+cfr,"Fix URIs",0,https://github.com/epiverse-trace/cfr/pull/111,2023-11-21T14:31:44Z,2023-11-21T14:39:41Z,closed,Pull Request,0
+cfr,"Remove time-varying ascertainment",0,https://github.com/epiverse-trace/cfr/pull/110,2023-11-21T11:19:05Z,2023-11-21T11:53:18Z,closed,Pull Request,0
+cfr,"Formatting fixes and package links",0,https://github.com/epiverse-trace/cfr/pull/109,2023-11-21T08:41:41Z,2023-11-21T09:07:52Z,closed,Pull Request,0
+cfr,"Test for bias due to index shifting",0,https://github.com/epiverse-trace/cfr/issues/108,2023-11-20T11:50:59Z,2023-11-21T08:16:18Z,closed,Issue,0
+cfr,"Consider `optim()` in `estimate_severity()`",3,https://github.com/epiverse-trace/cfr/issues/107,2023-11-17T10:14:03Z,null,open,Issue,N/A
+cfr,"Single convolution function for cases and PMFs",1,https://github.com/epiverse-trace/cfr/issues/106,2023-11-17T09:35:06Z,2023-11-21T08:16:17Z,closed,Issue,3
+cfr,"Consider merging `cfr_static()` and `cfr_rolling()`",0,https://github.com/epiverse-trace/cfr/issues/105,2023-11-16T11:38:02Z,null,open,Issue,N/A
+cfr,"Pre-release fixes",3,https://github.com/epiverse-trace/cfr/pull/104,2023-11-10T11:54:13Z,2023-11-21T08:16:16Z,closed,Pull Request,10
+cfr,"Second full review cfr v0.1.0",16,https://github.com/epiverse-trace/cfr/pull/103,2023-11-10T09:33:12Z,2023-11-21T08:18:35Z,closed,Pull Request,10
+cfr,"Second full review cfr v0.1.0",1,https://github.com/epiverse-trace/cfr/pull/102,2023-11-10T08:51:46Z,2023-11-10T09:27:36Z,closed,Pull Request,0
+cfr,"Release cfr 0.1.0",2,https://github.com/epiverse-trace/cfr/issues/101,2023-11-10T08:35:36Z,2023-11-22T11:32:26Z,closed,Issue,12
+cfr,"Change fill_NA behaviour in `prepare_data()`",4,https://github.com/epiverse-trace/cfr/pull/100,2023-11-07T13:47:14Z,2023-11-08T16:49:01Z,closed,Pull Request,1
+cfr,"Rename cfr_*() files, fixes #91",0,https://github.com/epiverse-trace/cfr/pull/99,2023-11-06T12:26:51Z,2023-11-06T14:50:56Z,closed,Pull Request,0
+cfr,"Fixes to rolling and time-varying methods",0,https://github.com/epiverse-trace/cfr/pull/98,2023-10-31T15:57:02Z,2023-11-01T12:23:36Z,closed,Pull Request,0
+cfr,"`cfr_rolling()` fails when cumulative case number is 0",2,https://github.com/epiverse-trace/cfr/issues/97,2023-10-30T15:46:36Z,2023-11-02T10:00:51Z,closed,Issue,2
+cfr,"Remove duplicate entry on website",0,https://github.com/epiverse-trace/cfr/pull/96,2023-10-30T15:42:18Z,2023-10-30T15:51:03Z,closed,Pull Request,0
+cfr,"Different return values across `cfr_*()` functions",1,https://github.com/epiverse-trace/cfr/issues/95,2023-10-30T15:38:42Z,2023-11-01T12:23:37Z,closed,Issue,1
+cfr,"Checks on delay_density",4,https://github.com/epiverse-trace/cfr/pull/94,2023-10-27T13:35:38Z,2023-11-06T11:55:19Z,closed,Pull Request,9
+cfr,"Rename `known_outcomes()` to `estimate_outcomes()`",1,https://github.com/epiverse-trace/cfr/pull/93,2023-10-27T11:37:21Z,2023-11-02T09:53:48Z,closed,Pull Request,5
+cfr,"Rename `known_outcomes()`",0,https://github.com/epiverse-trace/cfr/issues/92,2023-10-26T14:54:49Z,2023-11-02T09:53:49Z,closed,Issue,6
+cfr,"Rename CFR function files",0,https://github.com/epiverse-trace/cfr/issues/91,2023-10-26T14:53:50Z,2023-11-06T14:50:57Z,closed,Issue,11
+cleanepi,"Modularize cleanepi",0,https://github.com/epiverse-trace/cleanepi/pull/42,2024-01-22T16:10:30Z,null,open,Pull Request,N/A
+cleanepi,"Update readme.md",0,https://github.com/epiverse-trace/cleanepi/pull/41,2024-01-20T15:24:50Z,2024-01-20T15:29:35Z,closed,Pull Request,0
+cleanepi,"Use packagetemplate variables",0,https://github.com/epiverse-trace/cleanepi/pull/40,2024-01-17T16:41:55Z,2024-01-20T15:14:02Z,closed,Pull Request,2
+cleanepi,"Design vignette",0,https://github.com/epiverse-trace/cleanepi/pull/39,2023-12-29T11:58:52Z,2024-01-20T13:42:02Z,closed,Pull Request,22
+cleanepi,"PR to merge develop into main",0,https://github.com/epiverse-trace/cleanepi/pull/38,2023-12-13T17:17:41Z,2023-12-14T09:57:18Z,closed,Pull Request,0
+cleanepi,"Integrate develop to main",1,https://github.com/epiverse-trace/cleanepi/pull/37,2023-12-12T10:47:07Z,2023-12-12T16:33:07Z,closed,Pull Request,0
+cleanepi,"Fix conflicts between develop and main",2,https://github.com/epiverse-trace/cleanepi/pull/36,2023-12-05T14:46:30Z,2023-12-14T09:57:51Z,closed,Pull Request,8
+cleanepi,"Release/0.0.2 (#28)",0,https://github.com/epiverse-trace/cleanepi/pull/35,2023-11-29T20:02:46Z,2023-12-14T09:57:18Z,closed,Pull Request,14
+cleanepi,"Release/0.0.2 (#28)",0,https://github.com/epiverse-trace/cleanepi/pull/34,2023-11-29T09:37:32Z,2023-11-29T12:02:02Z,closed,Pull Request,0
+cleanepi,"Add dictionary-based cleaning functions",1,https://github.com/epiverse-trace/cleanepi/pull/33,2023-11-16T16:56:38Z,2023-11-29T00:19:25Z,closed,Pull Request,12
+cleanepi,"Consider removing the `report` argument in function's prototypes and create it within the function. The idea is to have the cleaned data frame and attach the report using something like `attr(x, which = "report") <- report`. Users will access the report using `attr(x, "report")`",0,https://github.com/epiverse-trace/cleanepi/issues/32,2023-11-13T13:13:00Z,null,open,Issue,N/A
+cleanepi,"build dictionary_clean() function to perform dictionary based data cleaning. Look into the {matchmarker} and {epidict} packages.",0,https://github.com/epiverse-trace/cleanepi/issues/31,2023-11-13T09:41:44Z,2023-12-06T09:21:39Z,closed,Issue,22
+cleanepi,"do not modify user-specified column names when cleaning column name",0,https://github.com/epiverse-trace/cleanepi/pull/30,2023-11-09T12:54:43Z,2023-11-14T09:45:30Z,closed,Pull Request,4
+cleanepi,"Simplify some cleanepi functions",0,https://github.com/epiverse-trace/cleanepi/pull/29,2023-10-05T08:54:43Z,2023-11-09T13:01:04Z,closed,Pull Request,35
+cleanepi,"Release/0.0.2",0,https://github.com/epiverse-trace/cleanepi/pull/28,2023-09-28T18:42:12Z,2023-09-28T18:58:18Z,closed,Pull Request,0
+cleanepi,"Use the output from `scan_data()` to choose which columns to target for conversion into date ",0,https://github.com/epiverse-trace/cleanepi/issues/27,2023-09-28T13:17:27Z,2023-12-06T09:21:51Z,closed,Issue,68
+cleanepi,"PR to merge the most recent changes of cleanepi from develop into main",0,https://github.com/epiverse-trace/cleanepi/pull/26,2023-09-27T19:06:42Z,2023-09-28T14:49:55Z,closed,Pull Request,0
+cleanepi,"Test d",0,https://github.com/epiverse-trace/cleanepi/pull/25,2023-09-27T18:31:14Z,2023-09-27T18:58:51Z,closed,Pull Request,0
+cleanepi,"Test p",0,https://github.com/epiverse-trace/cleanepi/pull/24,2023-09-27T18:22:37Z,2023-12-14T09:59:04Z,closed,Pull Request,77
+cleanepi,"Adjust cleanepi pkgdown settings",1,https://github.com/epiverse-trace/cleanepi/pull/23,2023-09-27T13:56:59Z,2023-09-28T16:42:37Z,closed,Pull Request,1
+cleanepi,"Fix partial matching warning",0,https://github.com/epiverse-trace/cleanepi/pull/22,2023-09-27T11:02:49Z,2023-09-27T14:21:32Z,closed,Pull Request,0
+cleanepi,"Fix R CMD check",0,https://github.com/epiverse-trace/cleanepi/pull/21,2023-09-27T10:16:35Z,2023-09-27T12:43:50Z,closed,Pull Request,0
+cleanepi,"Hi, I think it would be great if you could also check the R packages:",0,https://github.com/epiverse-trace/cleanepi/issues/20,2023-08-23T13:17:29Z,null,open,Issue,N/A
+cleanepi,"cleaning aggregated data",0,https://github.com/epiverse-trace/cleanepi/issues/19,2023-08-23T12:25:28Z,null,open,Issue,N/A
+cleanepi,"account for the gender column modified by Degoot",1,https://github.com/epiverse-trace/cleanepi/issues/18,2023-08-02T09:56:30Z,2023-11-28T11:08:25Z,closed,Issue,118
+cleanepi,"convert written numbers into number",1,https://github.com/epiverse-trace/cleanepi/issues/16,2023-07-24T17:49:02Z,2023-10-03T16:39:19Z,closed,Issue,70
+cleanepi,"build scan_data() function to scan through the input data frame. The function will return a data frame where the rows represent the %numeric values, %character values, %date values, %missing values by columns. It will also return the %missing values in each row. The output from this function will help the user in deciding what cleaning operations need to be applied on each column.",1,https://github.com/epiverse-trace/cleanepi/issues/15,2023-07-19T12:18:08Z,2023-07-24T17:48:01Z,closed,Issue,5
+cleanepi,"allow for preserving special characters when cleaning column names",1,https://github.com/epiverse-trace/cleanepi/issues/14,2023-07-04T21:28:24Z,2023-11-14T09:47:16Z,closed,Issue,132
+cleanepi,"set list of columns not to automatically standardise",0,https://github.com/epiverse-trace/cleanepi/issues/13,2023-07-04T21:28:14Z,null,open,Issue,N/A
+cleanepi,"Develop",1,https://github.com/epiverse-trace/cleanepi/pull/12,2023-06-22T10:05:28Z,2023-09-27T19:03:59Z,closed,Pull Request,97
+ColOpenData,"Enhance frequency and aggregation of climate data",0,https://github.com/epiverse-trace/ColOpenData/issues/33,2024-01-18T21:28:26Z,null,open,Issue,N/A
+ColOpenData,"Fix aggregation of climate data",0,https://github.com/epiverse-trace/ColOpenData/issues/32,2024-01-18T21:24:48Z,null,open,Issue,N/A
+ColOpenData,"Add climate data dictionary",0,https://github.com/epiverse-trace/ColOpenData/issues/31,2024-01-18T20:44:13Z,null,open,Issue,N/A
+ColOpenData,"Add dictionaries for geospatial data",0,https://github.com/epiverse-trace/ColOpenData/issues/30,2024-01-18T20:43:03Z,null,open,Issue,N/A
+ColOpenData,"Initial vignettes",0,https://github.com/epiverse-trace/ColOpenData/pull/29,2023-12-04T20:29:26Z,2024-01-15T15:48:47Z,closed,Pull Request,41
+ColOpenData,"Add vignette for demographics module",0,https://github.com/epiverse-trace/ColOpenData/issues/28,2023-12-04T20:24:35Z,null,open,Issue,N/A
+ColOpenData,"Add vignette for climate module",0,https://github.com/epiverse-trace/ColOpenData/issues/27,2023-12-04T20:24:32Z,null,open,Issue,N/A
+ColOpenData,"Add vignette for geospatial module",0,https://github.com/epiverse-trace/ColOpenData/issues/26,2023-12-04T20:24:28Z,null,open,Issue,N/A
+ColOpenData,"Update documentation and pipe usage",0,https://github.com/epiverse-trace/ColOpenData/pull/25,2023-12-04T20:13:40Z,2023-12-04T20:22:36Z,closed,Pull Request,0
+ColOpenData,"Dev weather data",0,https://github.com/epiverse-trace/ColOpenData/pull/24,2023-11-28T16:53:08Z,2023-11-30T19:00:19Z,closed,Pull Request,2
+ColOpenData,"Add weather data",0,https://github.com/epiverse-trace/ColOpenData/issues/23,2023-11-28T16:47:24Z,null,open,Issue,N/A
+ColOpenData,"Dev demographic refactor",0,https://github.com/epiverse-trace/ColOpenData/pull/22,2023-11-27T15:46:49Z,2023-11-28T16:37:55Z,closed,Pull Request,1
+ColOpenData,"Include sheet selection for demographic (Census) data",0,https://github.com/epiverse-trace/ColOpenData/issues/21,2023-11-27T15:44:59Z,null,open,Issue,N/A
+ColOpenData,"Differentiate demographic from geospatial",0,https://github.com/epiverse-trace/ColOpenData/issues/20,2023-11-27T15:43:15Z,null,open,Issue,N/A
+ColOpenData,"Dev update download paths",1,https://github.com/epiverse-trace/ColOpenData/pull/19,2023-10-20T21:54:22Z,2023-10-31T14:28:52Z,closed,Pull Request,10
+ColOpenData,"Add population projections",0,https://github.com/epiverse-trace/ColOpenData/issues/18,2023-10-10T15:17:07Z,null,open,Issue,N/A
+ColOpenData,"Dev population projections",1,https://github.com/epiverse-trace/ColOpenData/pull/17,2023-10-10T01:17:06Z,2023-10-10T15:17:53Z,closed,Pull Request,0
+ColOpenData,"Update README",1,https://github.com/epiverse-trace/ColOpenData/pull/16,2023-10-09T19:44:59Z,2023-10-09T20:30:00Z,closed,Pull Request,0
+ColOpenData,"Add consult module",0,https://github.com/epiverse-trace/ColOpenData/issues/15,2023-10-05T17:07:10Z,null,open,Issue,N/A
+ColOpenData,"Add cleaning function",0,https://github.com/epiverse-trace/ColOpenData/issues/14,2023-10-05T17:05:28Z,null,open,Issue,N/A
+ColOpenData,"Add CHC datasets",0,https://github.com/epiverse-trace/ColOpenData/issues/13,2023-10-05T17:04:37Z,null,open,Issue,N/A
+ColOpenData,"Add CNPV datasets",0,https://github.com/epiverse-trace/ColOpenData/issues/12,2023-10-05T17:03:34Z,null,open,Issue,N/A
+ColOpenData,"Include data dictionary vignettes",0,https://github.com/epiverse-trace/ColOpenData/issues/11,2023-10-04T22:58:41Z,null,open,Issue,N/A
+ColOpenData,"Include initial vignette",0,https://github.com/epiverse-trace/ColOpenData/issues/10,2023-10-04T22:57:36Z,null,open,Issue,N/A
+ColOpenData,"CNPV cleaning",1,https://github.com/epiverse-trace/ColOpenData/issues/9,2023-09-29T16:46:48Z,2023-10-10T07:03:35Z,closed,Issue,10
+ColOpenData,"Cleaning functions",0,https://github.com/epiverse-trace/ColOpenData/issues/8,2023-09-29T16:42:49Z,null,open,Issue,N/A
+ColOpenData,"Update filter functions",0,https://github.com/epiverse-trace/ColOpenData/pull/7,2023-09-29T16:14:14Z,2023-09-29T19:07:18Z,closed,Pull Request,0
+ColOpenData,"Include MGN -CNPV filter function",0,https://github.com/epiverse-trace/ColOpenData/issues/6,2023-09-29T15:48:15Z,2023-10-04T22:56:13Z,closed,Issue,5
+ColOpenData,"Include MGN - CNPV data",0,https://github.com/epiverse-trace/ColOpenData/issues/5,2023-09-29T15:44:53Z,2023-10-04T22:56:29Z,closed,Issue,5
+ColOpenData,"Include MGN - CNPV",1,https://github.com/epiverse-trace/ColOpenData/pull/4,2023-09-27T00:44:41Z,2023-09-27T19:56:32Z,closed,Pull Request,0
+epi-training-kit,"Add CC BY license",0,https://github.com/epiverse-trace/epi-training-kit/pull/4,2023-10-24T07:22:31Z,null,open,Pull Request,N/A
+epi-training-kit,"add a english version of the modules/units figure",1,https://github.com/epiverse-trace/epi-training-kit/issues/3,2023-09-18T22:37:25Z,null,open,Issue,N/A
+epi-training-kit,"Add an explicit license",1,https://github.com/epiverse-trace/epi-training-kit/issues/2,2023-08-31T14:34:41Z,null,open,Issue,N/A
+epi-training-kit,"template- epi-training-kit",0,https://github.com/epiverse-trace/epi-training-kit/issues/1,2023-06-21T14:57:17Z,2023-08-03T01:54:04Z,closed,Issue,42
+epichains,"Use class() and attr() instead of structure()",1,https://github.com/epiverse-trace/epichains/pull/184,2024-01-25T18:04:31Z,2024-01-25T18:14:16Z,closed,Pull Request,0
+epichains,"Fix [undesirable_function_linter] error",0,https://github.com/epiverse-trace/epichains/issues/183,2024-01-25T17:51:00Z,2024-01-25T18:14:18Z,closed,Issue,0
+epichains,"Remove `simulate_tree()` and `simulate_tree_from_pop()` and replace usage with `simulate_chains()`",2,https://github.com/epiverse-trace/epichains/pull/182,2024-01-25T17:33:27Z,null,open,Pull Request,N/A
+epichains,"Remove `simulate_tree()` and `simulate_tree_from_pop()`",0,https://github.com/epiverse-trace/epichains/issues/181,2024-01-25T13:22:01Z,null,open,Issue,N/A
+epichains,"Add .lintr configuration from packagetemplate",0,https://github.com/epiverse-trace/epichains/pull/180,2024-01-25T13:18:28Z,2024-01-25T13:23:56Z,closed,Pull Request,0
+epichains,"Cyclomatic complexity of `simulate_chains()`",2,https://github.com/epiverse-trace/epichains/issues/179,2024-01-23T17:08:11Z,null,open,Issue,N/A
+epichains,"Allow `simulate_summary()` to deal with finite populations",0,https://github.com/epiverse-trace/epichains/issues/178,2024-01-23T17:03:07Z,null,open,Issue,N/A
+epichains,"Update `.lintr` to `packagetemplate` version",0,https://github.com/epiverse-trace/epichains/issues/177,2024-01-23T15:37:14Z,2024-01-25T13:23:57Z,closed,Issue,1
+epichains,"Add lint-changed-files and dependency-change workflows",0,https://github.com/epiverse-trace/epichains/pull/176,2024-01-22T17:03:47Z,2024-01-22T17:18:51Z,closed,Pull Request,0
+epichains,"columns in return values of `simulate_tree`",0,https://github.com/epiverse-trace/epichains/issues/175,2024-01-16T19:36:10Z,null,open,Issue,N/A
+epichains,"Improve input checking: prefer checkmate for custom checks",1,https://github.com/epiverse-trace/epichains/pull/174,2024-01-16T11:45:47Z,2024-01-16T15:10:45Z,closed,Pull Request,0
+epichains,"Add pkgdown reference",0,https://github.com/epiverse-trace/epichains/pull/173,2024-01-15T16:38:15Z,2024-01-16T15:34:49Z,closed,Pull Request,0
+epichains,"Remove defaults from class constructors and validators",1,https://github.com/epiverse-trace/epichains/pull/172,2024-01-15T14:43:29Z,2024-01-16T12:04:37Z,closed,Pull Request,0
+epichains,"Combine `simulate_tree()` and `simulate_tree_from_pop()` into `simulate_chains()`.",6,https://github.com/epiverse-trace/epichains/pull/171,2024-01-15T13:40:53Z,2024-01-25T13:10:56Z,closed,Pull Request,9
+epichains,"Fix getting started vignette",0,https://github.com/epiverse-trace/epichains/pull/170,2023-12-15T23:18:23Z,2023-12-15T23:45:55Z,closed,Pull Request,0
+epichains,"Fix summary method",0,https://github.com/epiverse-trace/epichains/pull/169,2023-12-15T23:17:46Z,2023-12-15T23:32:17Z,closed,Pull Request,0
+epichains,"Add a pkgdown reference index",0,https://github.com/epiverse-trace/epichains/issues/168,2023-12-15T14:41:12Z,2024-01-16T15:34:50Z,closed,Issue,32
+epichains,"Consider alternative implementations for the offspring distribution",2,https://github.com/epiverse-trace/epichains/issues/167,2023-12-15T14:11:04Z,null,open,Issue,N/A
+epichains,"General improvements to COVID-19 data raw ",0,https://github.com/epiverse-trace/epichains/issues/166,2023-12-15T13:47:14Z,null,open,Issue,N/A
+epichains,"README: Revise Quick Start section",0,https://github.com/epiverse-trace/epichains/issues/165,2023-12-15T13:44:38Z,null,open,Issue,N/A
+epichains,"README: Fix badges",0,https://github.com/epiverse-trace/epichains/issues/164,2023-12-15T13:42:40Z,2023-12-15T20:07:16Z,closed,Issue,0
+epichains,"`rborel()`: suggest renaming argument `infinite` to be more informative, e.g. `stop_sims_after`",0,https://github.com/epiverse-trace/epichains/issues/163,2023-12-15T13:24:33Z,null,open,Issue,N/A
+epichains,"Remove redundant internal checking functions in favour of {checkmate} functions",0,https://github.com/epiverse-trace/epichains/issues/162,2023-12-15T12:28:46Z,2024-01-16T15:10:46Z,closed,Issue,32
+epichains,"Remove default empty vectors in constructors",0,https://github.com/epiverse-trace/epichains/issues/161,2023-12-15T12:01:47Z,2024-01-16T12:04:38Z,closed,Issue,32
+epichains,"Add examples to exported class constructors",0,https://github.com/epiverse-trace/epichains/issues/160,2023-12-15T12:00:48Z,null,open,Issue,N/A
+epichains,"Improve input checking of `<epichains_*>` constructors and validators",0,https://github.com/epiverse-trace/epichains/issues/159,2023-12-15T11:59:51Z,null,open,Issue,N/A
+epichains,"Clarify documentation of `ntrees`",0,https://github.com/epiverse-trace/epichains/issues/158,2023-12-15T11:51:05Z,null,open,Issue,N/A
+epichains,"Improve helper functions",0,https://github.com/epiverse-trace/epichains/issues/157,2023-12-15T11:44:17Z,null,open,Issue,N/A
+epichains,"New year (2024) clean up",0,https://github.com/epiverse-trace/epichains/issues/156,2023-12-14T17:17:44Z,null,open,Issue,N/A
+epichains,"Fix wrong index of max `<chain_summary>`",0,https://github.com/epiverse-trace/epichains/issues/155,2023-12-14T17:07:02Z,2023-12-15T23:32:17Z,closed,Issue,1
+epiCo,"97 population projections",0,https://github.com/epiverse-trace/epiCo/pull/106,2024-01-23T16:57:10Z,null,open,Pull Request,N/A
+epiCo,"Fix population_pyramid and incidence_rate functions",0,https://github.com/epiverse-trace/epiCo/issues/105,2024-01-22T15:55:25Z,null,open,Issue,N/A
+epiCo,"100 describe ethnicity",0,https://github.com/epiverse-trace/epiCo/pull/104,2024-01-22T15:50:57Z,null,open,Pull Request,N/A
+epiCo,"101 index moran map",0,https://github.com/epiverse-trace/epiCo/pull/103,2024-01-16T18:49:13Z,null,open,Pull Request,N/A
+epiCo,"96 endemic channels calculation of the standard deviation",0,https://github.com/epiverse-trace/epiCo/pull/102,2024-01-16T18:18:58Z,null,open,Pull Request,N/A
+epiCo,"Update the index_moran map",0,https://github.com/epiverse-trace/epiCo/issues/101,2024-01-12T17:18:59Z,null,open,Issue,N/A
+epiCo,"Fix decribe_ethnicity order",0,https://github.com/epiverse-trace/epiCo/issues/100,2024-01-12T17:14:08Z,null,open,Issue,N/A
+epiCo,"Update the occupation_plot and describe_occupation functions",0,https://github.com/epiverse-trace/epiCo/issues/99,2024-01-12T16:42:40Z,null,open,Issue,N/A
+epiCo,"Implementing "Cursos de vida"",1,https://github.com/epiverse-trace/epiCo/issues/98,2024-01-12T16:29:56Z,null,open,Issue,N/A
+epiCo,"Update the population projections",0,https://github.com/epiverse-trace/epiCo/issues/97,2024-01-12T16:19:02Z,null,open,Issue,N/A
+epiCo,"Endemic channels: Calculation of the standard deviation",1,https://github.com/epiverse-trace/epiCo/issues/96,2024-01-02T18:03:28Z,null,open,Issue,N/A
+epiCo,"echarts4R",0,https://github.com/epiverse-trace/epiCo/issues/95,2023-12-08T13:47:02Z,null,open,Issue,N/A
+epiCo,"Review plots and prints in the demographics funcitons (#93)",0,https://github.com/epiverse-trace/epiCo/pull/94,2023-12-07T15:42:42Z,2023-12-08T12:46:16Z,closed,Pull Request,0
+epiCo,"Review plots and prints in the demographics funcitons",0,https://github.com/epiverse-trace/epiCo/pull/93,2023-12-06T15:24:20Z,2023-12-06T15:34:13Z,closed,Pull Request,0
+epiCo,"Save internal data as sysdata.rda",0,https://github.com/epiverse-trace/epiCo/pull/92,2023-11-22T20:02:36Z,null,open,Pull Request,N/A
+epiCo,"Fix occupational_plot bug",0,https://github.com/epiverse-trace/epiCo/pull/91,2023-11-16T19:59:22Z,2023-11-16T20:20:58Z,closed,Pull Request,0
+epiCo,"#84 review vignettes",0,https://github.com/epiverse-trace/epiCo/pull/90,2023-11-14T21:34:40Z,2023-11-14T21:38:33Z,closed,Pull Request,0
+epiCo,"Fix and update the endemic_channel plot",0,https://github.com/epiverse-trace/epiCo/pull/89,2023-11-14T20:31:51Z,2023-11-14T21:13:30Z,closed,Pull Request,0
+epiCo,"Dev",0,https://github.com/epiverse-trace/epiCo/pull/88,2023-11-14T19:59:57Z,2023-11-14T21:52:05Z,closed,Pull Request,0
+epiCo,"Use vignette title for VignetteIndexEntry",0,https://github.com/epiverse-trace/epiCo/pull/87,2023-11-13T14:54:24Z,2023-11-13T20:58:13Z,closed,Pull Request,0
+epiCo,"Morans index enhancement",0,https://github.com/epiverse-trace/epiCo/pull/86,2023-11-12T22:29:51Z,2023-11-13T20:46:42Z,closed,Pull Request,0
+epiCo,"76 contributors",0,https://github.com/epiverse-trace/epiCo/pull/85,2023-11-12T16:20:57Z,2023-11-12T16:56:01Z,closed,Pull Request,0
+epiCo,"Review and update vignettes",0,https://github.com/epiverse-trace/epiCo/issues/84,2023-11-12T15:50:33Z,null,open,Issue,N/A
+epiCo,"71 data update",0,https://github.com/epiverse-trace/epiCo/pull/83,2023-11-12T15:44:45Z,2023-11-12T16:39:57Z,closed,Pull Request,0
+epiCo,"Creation of occupation_plot function",0,https://github.com/epiverse-trace/epiCo/pull/82,2023-11-11T23:41:49Z,2023-11-11T23:41:58Z,closed,Pull Request,0
+epiCo,"71 data update",0,https://github.com/epiverse-trace/epiCo/pull/81,2023-11-11T13:47:03Z,2023-11-11T16:06:32Z,closed,Pull Request,0
+epiCo,"Edit epi_data built-in dataset",0,https://github.com/epiverse-trace/epiCo/issues/80,2023-11-11T13:27:54Z,2023-11-12T17:00:01Z,closed,Issue,1
+epiCo,"67 bugs on population pyramid function",0,https://github.com/epiverse-trace/epiCo/pull/79,2023-11-11T01:27:50Z,2023-11-11T01:28:32Z,closed,Pull Request,0
+epiCo,"update documentation",0,https://github.com/epiverse-trace/epiCo/pull/78,2023-11-10T20:15:56Z,2023-11-10T20:19:08Z,closed,Pull Request,0
+epiCo,"Update epi_data.rda",0,https://github.com/epiverse-trace/epiCo/pull/77,2023-11-10T20:14:51Z,2023-11-10T20:19:26Z,closed,Pull Request,0
+epidemics,"Camp population changes for diphtheria model",0,https://github.com/epiverse-trace/epidemics/pull/158,2024-01-25T14:30:59Z,null,open,Pull Request,N/A
+epidemics,"Add a vignette for the diphtheria model",0,https://github.com/epiverse-trace/epidemics/issues/157,2024-01-24T09:32:18Z,null,open,Issue,N/A
+epidemics,"Add <epidemic> class",0,https://github.com/epiverse-trace/epidemics/issues/156,2024-01-24T09:19:39Z,null,open,Issue,N/A
+epidemics,"Reduce population validation sensitivity",0,https://github.com/epiverse-trace/epidemics/pull/155,2024-01-22T14:46:00Z,2024-01-22T15:31:24Z,closed,Pull Request,0
+epidemics,"Allow changes in population sizes",0,https://github.com/epiverse-trace/epidemics/issues/154,2024-01-22T11:51:25Z,null,open,Issue,N/A
+epidemics,"Restore linter workflow",0,https://github.com/epiverse-trace/epidemics/pull/153,2024-01-19T11:55:21Z,2024-01-19T12:07:14Z,closed,Pull Request,0
+epidemics,"Fixes #127",4,https://github.com/epiverse-trace/epidemics/pull/152,2024-01-15T20:13:03Z,null,open,Pull Request,N/A
+epidemics,"Update finalsize_comparison.Rmd",0,https://github.com/epiverse-trace/epidemics/pull/151,2024-01-15T15:32:22Z,2024-01-19T11:10:04Z,closed,Pull Request,3
+epidemics,"End of year cleanup",0,https://github.com/epiverse-trace/epidemics/pull/150,2023-12-14T11:17:11Z,2023-12-14T15:42:05Z,closed,Pull Request,0
+epidemics,"End of year cleanup",0,https://github.com/epiverse-trace/epidemics/issues/149,2023-12-14T09:53:15Z,2024-01-19T11:42:44Z,closed,Issue,36
+epidemics,"Update vignette titles",0,https://github.com/epiverse-trace/epidemics/pull/148,2023-12-04T14:17:17Z,2023-12-07T09:42:16Z,closed,Pull Request,2
+epidemics,"Vignette labelling",1,https://github.com/epiverse-trace/epidemics/issues/147,2023-11-24T09:15:13Z,2023-12-07T09:42:17Z,closed,Issue,13
+epidemics,"Initial implementation of the diphtheria model",1,https://github.com/epiverse-trace/epidemics/pull/146,2023-11-23T17:41:36Z,2023-12-05T13:51:18Z,closed,Pull Request,11
+epidemics,"Corrections and code streamlining",0,https://github.com/epiverse-trace/epidemics/pull/145,2023-11-22T16:42:22Z,2023-11-23T17:18:15Z,closed,Pull Request,1
+epidemics,"Corrections to Vacamole model",0,https://github.com/epiverse-trace/epidemics/pull/144,2023-11-21T14:01:00Z,2023-11-21T15:45:45Z,closed,Pull Request,0
+epidemics,"Restructure Vacamole model for rate interventions",0,https://github.com/epiverse-trace/epidemics/issues/143,2023-11-21T13:00:12Z,null,open,Issue,N/A
+epidemics,"Replace infection with model in headers",0,https://github.com/epiverse-trace/epidemics/pull/142,2023-11-21T12:01:32Z,2023-11-21T13:07:39Z,closed,Pull Request,0
+epidemics,"Add initial diphtheria model",0,https://github.com/epiverse-trace/epidemics/issues/141,2023-11-21T10:55:24Z,2023-12-05T13:51:19Z,closed,Issue,14
+epidemics,"Remove infection class",3,https://github.com/epiverse-trace/epidemics/pull/140,2023-11-10T15:02:33Z,2023-11-21T09:08:18Z,closed,Pull Request,10
+epidemics,"PDF documentation rendering fails on r-universe",1,https://github.com/epiverse-trace/epidemics/issues/139,2023-11-09T18:38:29Z,2023-11-21T09:08:19Z,closed,Issue,11
+epidemics,"Fixes #107 using latest main branch",1,https://github.com/epiverse-trace/epidemics/pull/138,2023-11-06T20:54:33Z,2023-11-21T10:25:17Z,closed,Pull Request,14
+epidemics,"Fixes #107",2,https://github.com/epiverse-trace/epidemics/pull/137,2023-11-06T20:10:15Z,2023-11-07T10:41:07Z,closed,Pull Request,0
+epidemics,"Object print methods",0,https://github.com/epiverse-trace/epidemics/issues/136,2023-10-31T09:31:51Z,null,open,Issue,N/A
+epidemics,"Fixes  #102: Rename model functions to `model_x()`",2,https://github.com/epiverse-trace/epidemics/pull/135,2023-10-26T19:33:44Z,2023-11-06T15:27:38Z,closed,Pull Request,10
+epidemics,"Ebola model should be compatible with interventions",0,https://github.com/epiverse-trace/epidemics/issues/134,2023-10-25T15:27:28Z,2023-11-06T10:43:39Z,closed,Issue,11
+epidemics,"Remove <infection> class",0,https://github.com/epiverse-trace/epidemics/issues/133,2023-10-24T13:14:48Z,2023-11-21T09:08:19Z,closed,Issue,27
+epidemics,"Further fixes for the ebola model",4,https://github.com/epiverse-trace/epidemics/pull/132,2023-10-23T09:30:20Z,2023-11-06T10:43:38Z,closed,Pull Request,14
+epidemics,"Vignette on parameter uncertainty",7,https://github.com/epiverse-trace/epidemics/pull/131,2023-10-12T09:42:25Z,2023-10-25T10:33:19Z,closed,Pull Request,13
+epidemics,"Fix for # 100 - Remove model library and access",3,https://github.com/epiverse-trace/epidemics/pull/130,2023-10-09T18:36:01Z,2023-10-27T10:19:41Z,closed,Pull Request,17
+epidemics,"Fixes for Clang >15",3,https://github.com/epiverse-trace/epidemics/pull/129,2023-10-09T12:40:25Z,2023-10-10T11:54:03Z,closed,Pull Request,0
+epimodelac,"Rely on Carpentries' sandpaper translations",1,https://github.com/epiverse-trace/epimodelac/pull/23,2024-01-24T09:01:01Z,2024-01-24T12:00:39Z,closed,Pull Request,0
+epimodelac,"remove installation lines from all episodes",0,https://github.com/epiverse-trace/epimodelac/issues/22,2023-12-19T19:50:19Z,null,open,Issue,N/A
+epimodelac,"Update 56 packages",1,https://github.com/epiverse-trace/epimodelac/pull/21,2023-12-18T08:16:19Z,null,open,Pull Request,N/A
+epimodelac,"update status to `alpha-stage`",0,https://github.com/epiverse-trace/epimodelac/issues/20,2023-12-16T01:28:59Z,null,open,Issue,N/A
+epimodelac,"translate to ES more strings in `sandpaper`",0,https://github.com/epiverse-trace/epimodelac/issues/19,2023-12-12T10:18:38Z,null,open,Issue,N/A
+epimodelac,"add glossary in PDF format to the glossary section",3,https://github.com/epiverse-trace/epimodelac/issues/18,2023-12-11T02:15:56Z,2023-12-16T01:17:48Z,closed,Issue,4
+epimodelac,"agregar figuras para vaccineff en carpeta `fig/`",5,https://github.com/epiverse-trace/epimodelac/issues/17,2023-12-08T16:41:24Z,2023-12-16T01:11:09Z,closed,Issue,7
+epimodelac,"HTML widgets: visNetwork and leaflet outputs are not visible",4,https://github.com/epiverse-trace/epimodelac/issues/16,2023-12-08T13:30:08Z,null,open,Issue,N/A
+epimodelac,"chore: added final detail and updated disease and department of report",1,https://github.com/epiverse-trace/epimodelac/pull/15,2023-12-08T11:41:21Z,2023-12-08T11:41:56Z,closed,Pull Request,0
+epimodelac,"hacer visible función oculta en episodio Enfermedad X",2,https://github.com/epiverse-trace/epimodelac/issues/14,2023-12-08T03:56:27Z,2023-12-16T01:13:49Z,closed,Issue,7
+epimodelac,"Typos menores y corrección de path",3,https://github.com/epiverse-trace/epimodelac/pull/13,2023-12-05T21:59:48Z,2023-12-11T20:23:58Z,closed,Pull Request,5
+epimodelac,"Update community files",1,https://github.com/epiverse-trace/epimodelac/pull/12,2023-12-02T20:42:59Z,2023-12-02T20:46:17Z,closed,Pull Request,0
+epimodelac,"update renv.lock after `sandpaper::build_lesson()` in fresh clone + add `episodes/install.R` to update old versions in `renv.lock`",2,https://github.com/epiverse-trace/epimodelac/pull/11,2023-12-02T16:16:27Z,2023-12-02T17:12:55Z,closed,Pull Request,0
+epimodelac,"wrong suggest to add {sandpaper} and {pegboard} when using sandpaper::update_cache()",4,https://github.com/epiverse-trace/epimodelac/issues/10,2023-11-29T12:33:32Z,2023-12-02T16:51:41Z,closed,Issue,3
+epimodelac,"add readme and licence files",0,https://github.com/epiverse-trace/epimodelac/issues/9,2023-11-29T12:03:55Z,2023-12-02T20:58:30Z,closed,Issue,3
+epimodelac,"failed action due to matrixStats",3,https://github.com/epiverse-trace/epimodelac/issues/8,2023-11-29T11:49:15Z,2023-12-02T17:12:56Z,closed,Issue,3
+epimodelac,"failed action due to sandpaper branch",1,https://github.com/epiverse-trace/epimodelac/issues/7,2023-11-28T11:53:13Z,2023-11-28T19:46:45Z,closed,Issue,0
+epimodelac,"add lang es to config yaml",5,https://github.com/epiverse-trace/epimodelac/pull/6,2023-11-28T10:53:32Z,2023-11-29T11:01:14Z,closed,Pull Request,1
+epimodelac,"translate to spanish with sandpaper and potools",1,https://github.com/epiverse-trace/epimodelac/pull/5,2023-11-27T12:36:14Z,2023-11-27T14:35:53Z,closed,Pull Request,0
+epimodelac,"add varnish tracelactheme to config yaml",1,https://github.com/epiverse-trace/epimodelac/pull/4,2023-11-27T12:20:55Z,2023-11-27T14:35:27Z,closed,Pull Request,0
+epimodelac,"cambiar titulo del material en encabezado",1,https://github.com/epiverse-trace/epimodelac/pull/3,2023-11-27T10:07:27Z,2023-11-27T14:35:04Z,closed,Pull Request,0
+epimodelac,"traducir subtitulo de instalación",1,https://github.com/epiverse-trace/epimodelac/pull/2,2023-11-27T10:03:43Z,2023-11-27T14:33:16Z,closed,Pull Request,0
+epimodelac,"Actualiza tiempos TallerEbola.Rmd",1,https://github.com/epiverse-trace/epimodelac/pull/1,2023-11-24T14:46:50Z,2023-11-24T14:56:34Z,closed,Pull Request,0
+epiparameter,"(Re)add lint-changed-files GHA workflow",0,https://github.com/epiverse-trace/epiparameter/pull/232,2024-01-19T16:26:09Z,2024-01-19T16:33:35Z,closed,Pull Request,0
+epiparameter,"Update `epi_dist` in README example",1,https://github.com/epiverse-trace/epiparameter/issues/231,2024-01-02T14:29:20Z,2024-01-08T22:23:20Z,closed,Issue,6
+epiparameter,"Discretisation method",0,https://github.com/epiverse-trace/epiparameter/issues/230,2023-12-15T10:25:18Z,null,open,Issue,N/A
+epiparameter,"replace the `plot()` x axis with the `epi_distribution` name",0,https://github.com/epiverse-trace/epiparameter/issues/229,2023-12-14T02:40:43Z,null,open,Issue,N/A
+epiparameter,"add the `sample_size` to the `list_distributions()` output",0,https://github.com/epiverse-trace/epiparameter/issues/227,2023-12-12T19:17:35Z,null,open,Issue,N/A
+epiparameter,"Update subsetting in `epidist_db()`",1,https://github.com/epiverse-trace/epiparameter/pull/226,2023-12-12T15:43:34Z,null,open,Pull Request,N/A
+epiparameter,"how to subset `multi_epidist` object from `epidist_db()` by the `prob_distribution`?",2,https://github.com/epiverse-trace/epiparameter/issues/225,2023-12-12T15:20:36Z,null,open,Issue,N/A
+epiparameter,"how to know which variables are available to subset by in a `multi_epidist` object?",2,https://github.com/epiverse-trace/epiparameter/issues/224,2023-12-12T11:51:01Z,null,open,Issue,N/A
+epiparameter,"Add testthat state inspector",0,https://github.com/epiverse-trace/epiparameter/pull/223,2023-12-11T17:43:52Z,2024-01-19T16:08:59Z,closed,Pull Request,38
+epiparameter,"Accept dynamic dots in `convert_params_to_summary_stats()`",0,https://github.com/epiverse-trace/epiparameter/issues/222,2023-12-11T14:03:14Z,null,open,Issue,N/A
+epiparameter,"Update documentation for `accessor` S3 generics and methods",2,https://github.com/epiverse-trace/epiparameter/pull/221,2023-12-11T13:49:50Z,2024-01-19T15:31:07Z,closed,Pull Request,39
+epiparameter,"Add internal function to `<epidist>` attributes to load {epiparameter}",0,https://github.com/epiverse-trace/epiparameter/pull/220,2023-12-06T09:50:27Z,2023-12-06T10:49:09Z,closed,Pull Request,0
+epiparameter,"Add option to create discretised normal distribution",0,https://github.com/epiverse-trace/epiparameter/pull/219,2023-12-05T16:08:30Z,2023-12-05T16:26:20Z,closed,Pull Request,0
+epiparameter,"Add `as.function()` method for `<epidist>`",0,https://github.com/epiverse-trace/epiparameter/pull/215,2023-11-29T14:09:10Z,2023-11-29T14:27:08Z,closed,Pull Request,0
+epiparameter,"Add BibTeX example to `get_citation()`",0,https://github.com/epiverse-trace/epiparameter/pull/214,2023-11-29T09:34:23Z,2023-11-29T12:28:53Z,closed,Pull Request,0
+epiparameter,"Move {jsonlite} to suggested dependency",0,https://github.com/epiverse-trace/epiparameter/pull/213,2023-11-28T16:34:36Z,2023-11-28T17:09:53Z,closed,Pull Request,0
+epiparameter,"Improve storing and handling citation author information",0,https://github.com/epiverse-trace/epiparameter/pull/212,2023-11-28T15:02:00Z,2023-11-28T15:41:52Z,closed,Pull Request,0
+epiparameter,"Remove double assignment in `epidist_db()` test",0,https://github.com/epiverse-trace/epiparameter/pull/211,2023-11-17T14:04:32Z,2023-11-17T14:21:43Z,closed,Pull Request,0
+epiparameter,"Add COVID-19 parameters and add normal distribution `<epidist>`",0,https://github.com/epiverse-trace/epiparameter/pull/210,2023-11-17T12:09:24Z,2023-11-17T13:48:55Z,closed,Pull Request,0
+epiparameter,"Allow creating Poisson `<epidist>` with lambda parameter name",0,https://github.com/epiverse-trace/epiparameter/pull/209,2023-11-16T13:04:53Z,2023-11-17T13:02:26Z,closed,Pull Request,0
+epiparameter,"Automate updating `sysdata` when database is updated or package is released",0,https://github.com/epiverse-trace/epiparameter/issues/208,2023-11-16T10:58:38Z,null,open,Issue,N/A
+epiparameter,"Store and read parameter library as `sysdata`",1,https://github.com/epiverse-trace/epiparameter/pull/207,2023-11-15T17:41:55Z,2023-11-16T11:44:06Z,closed,Pull Request,0
+epiparameter,"Remove data reading in `list_distributions()` ",0,https://github.com/epiverse-trace/epiparameter/pull/206,2023-11-15T14:55:54Z,2023-11-17T12:31:44Z,closed,Pull Request,1
+epiparameter,"Remove {dplyr} from Suggests",2,https://github.com/epiverse-trace/epiparameter/pull/205,2023-11-14T19:08:51Z,2023-11-15T13:58:18Z,closed,Pull Request,0
+epiparameter,"Add design principles vignette",0,https://github.com/epiverse-trace/epiparameter/pull/204,2023-11-14T18:43:21Z,2023-11-15T13:20:13Z,closed,Pull Request,0
+epiparameter,"Reexport `cdf()` and `generate()` generics",0,https://github.com/epiverse-trace/epiparameter/pull/203,2023-11-13T17:20:25Z,2023-11-13T17:41:15Z,closed,Pull Request,0
+epiparameter,"Enhance, delete or leave `<multi_epidist>`",0,https://github.com/epiverse-trace/epiparameter/issues/202,2023-11-13T14:12:36Z,null,open,Issue,N/A
+epiparameter,"Vectorised filtering for list of `<epidist>`",0,https://github.com/epiverse-trace/epiparameter/issues/201,2023-11-13T13:04:14Z,null,open,Issue,N/A
+epiparameter,"Improve method of reading parameters with `epidist_db()`",1,https://github.com/epiverse-trace/epiparameter/issues/200,2023-11-13T11:45:02Z,2023-11-16T11:43:45Z,closed,Issue,2
+epiparameter,"Treat bundled database as any other `multi_epidist` object",1,https://github.com/epiverse-trace/epiparameter/issues/199,2023-10-16T09:56:10Z,2023-11-17T12:31:45Z,closed,Issue,32
+epishiny,"Add tables",1,https://github.com/epiverse-trace/epishiny/issues/9,2023-09-20T13:45:27Z,null,open,Issue,N/A
+epishiny,"Vignette for working with external data",0,https://github.com/epiverse-trace/epishiny/pull/8,2023-09-20T13:34:11Z,2023-09-21T07:26:38Z,closed,Pull Request,0
+epishiny,"Add flexibility in visualisation, including external timeseries",2,https://github.com/epiverse-trace/epishiny/issues/7,2023-09-20T08:35:08Z,null,open,Issue,N/A
+epishiny,"Document how to add new modules",2,https://github.com/epiverse-trace/epishiny/issues/6,2023-09-20T08:33:28Z,null,open,Issue,N/A
+epishiny,"Document structure of app and interaction with analysis",3,https://github.com/epiverse-trace/epishiny/issues/5,2023-09-20T08:31:54Z,null,open,Issue,N/A
+epishiny,"Test app on other datasets",2,https://github.com/epiverse-trace/epishiny/issues/4,2023-09-20T08:28:28Z,null,open,Issue,N/A
+epishiny,"Include options on person tab",3,https://github.com/epiverse-trace/epishiny/issues/3,2023-09-20T08:27:07Z,null,open,Issue,N/A
+epishiny,"Refine CFR estimation",0,https://github.com/epiverse-trace/epishiny/issues/2,2023-09-20T08:26:05Z,null,open,Issue,N/A
+episoap,"what is the difference between `orderly2` and `episoap`?",1,https://github.com/epiverse-trace/episoap/issues/122,2024-01-23T12:56:02Z,2024-01-25T12:56:47Z,closed,Issue,2
+episoap,"`git-lfs` dependency not documented",1,https://github.com/epiverse-trace/episoap/issues/121,2024-01-22T14:54:35Z,null,open,Issue,N/A
+episoap,"Changing content of the output of `episoap` templates",4,https://github.com/epiverse-trace/episoap/issues/120,2024-01-15T14:38:55Z,null,open,Issue,N/A
+episoap,"Add lint-changed-files GHA workflow",0,https://github.com/epiverse-trace/episoap/pull/119,2024-01-11T16:23:21Z,2024-01-24T10:36:06Z,closed,Pull Request,12
+episoap,"Errors with `regional_epinow`",2,https://github.com/epiverse-trace/episoap/issues/118,2024-01-09T15:01:33Z,null,open,Issue,N/A
+episoap,"Preparing data for {EpiNow2} ",1,https://github.com/epiverse-trace/episoap/issues/117,2024-01-08T16:12:55Z,null,open,Issue,N/A
+episoap,"Do not trigger test report CI more than necessary",0,https://github.com/epiverse-trace/episoap/pull/116,2023-12-12T17:23:47Z,2023-12-12T17:25:37Z,closed,Pull Request,0
+episoap,"Extracting parameters on the transmissibility template",7,https://github.com/epiverse-trace/episoap/issues/115,2023-12-11T17:47:32Z,null,open,Issue,N/A
+episoap,"What to do if parameterised distributions are not on {epiparameter}?",4,https://github.com/epiverse-trace/episoap/issues/114,2023-12-11T17:34:36Z,2024-01-08T14:35:34Z,closed,Issue,27
+episoap,"Distributions in Rt estimation using {EpiNow2}",9,https://github.com/epiverse-trace/episoap/issues/113,2023-12-08T16:57:19Z,null,open,Issue,N/A
+episoap,"Creating epidist objects allowing flexibility for distribution parameters",13,https://github.com/epiverse-trace/episoap/issues/112,2023-12-07T17:32:30Z,null,open,Issue,N/A
+episoap,"Try adding report testing to CI",1,https://github.com/epiverse-trace/episoap/pull/111,2023-12-07T15:20:21Z,2023-12-12T16:45:56Z,closed,Pull Request,5
+episoap,"Remove deprecated select_tags() function",0,https://github.com/epiverse-trace/episoap/pull/110,2023-12-07T15:07:20Z,2023-12-07T15:19:54Z,closed,Pull Request,0
+episoap,"Distributions for parameters from {epiparameter} vs manual input in transmissibility report",10,https://github.com/epiverse-trace/episoap/issues/109,2023-12-07T14:30:58Z,null,open,Issue,N/A
+episoap,"Allowing flexibility for probability distributions in transmissibility template",2,https://github.com/epiverse-trace/episoap/issues/108,2023-12-06T15:10:26Z,2023-12-06T16:19:28Z,closed,Issue,0
+episoap,"Plotting SI with negative values in {episoap} templates",5,https://github.com/epiverse-trace/episoap/issues/107,2023-12-05T15:56:21Z,null,open,Issue,N/A
+episoap,"What should the maximum number of parameters on {episoap} templates be?",0,https://github.com/epiverse-trace/episoap/issues/106,2023-12-05T13:24:07Z,null,open,Issue,N/A
+episoap,"Consider `report::cite_packages()` as an alternative to `grateful::cite_packages()`",0,https://github.com/epiverse-trace/episoap/issues/105,2023-12-05T11:47:34Z,null,open,Issue,N/A
+episoap,"Update .lintr",0,https://github.com/epiverse-trace/episoap/pull/104,2023-12-04T15:06:03Z,2023-12-04T15:08:51Z,closed,Pull Request,0
+episoap,"Update .lintr",0,https://github.com/epiverse-trace/episoap/pull/103,2023-12-04T13:26:10Z,2023-12-04T14:18:18Z,closed,Pull Request,0
+episoap,"Update lockfiles",1,https://github.com/epiverse-trace/episoap/pull/102,2023-12-04T13:10:19Z,2023-12-06T14:50:12Z,closed,Pull Request,2
+episoap,"Add short gifs or videos for the GUI interaction",2,https://github.com/epiverse-trace/episoap/issues/101,2023-11-30T08:28:01Z,null,open,Issue,N/A
+episoap,"Update {epiparameter} usage",2,https://github.com/epiverse-trace/episoap/pull/100,2023-11-28T13:25:40Z,null,open,Pull Request,N/A
+episoap,"Error when knitting template- renv?",10,https://github.com/epiverse-trace/episoap/issues/99,2023-11-28T12:15:14Z,2024-01-10T08:20:00Z,closed,Issue,42
+episoap,"Warn on partial matching in tests & run tests in parallel",1,https://github.com/epiverse-trace/episoap/pull/98,2023-08-01T15:03:10Z,2023-08-01T15:32:58Z,closed,Pull Request,0
+episoap,"{renv} integration (user experience on system requiring source packages)",1,https://github.com/epiverse-trace/episoap/issues/97,2023-06-15T09:40:01Z,null,open,Issue,N/A
+episoap,"Provide mechanism to consolidate several pipelines into a single report",2,https://github.com/epiverse-trace/episoap/issues/96,2023-06-14T15:15:38Z,null,open,Issue,N/A
+episoap,"Split pipelines as smallest units for a given task",0,https://github.com/epiverse-trace/episoap/issues/95,2023-06-14T15:11:40Z,null,open,Issue,N/A
+episoap,"Investigate ggautomap for descriptive statistics pipeline",0,https://github.com/epiverse-trace/episoap/issues/94,2023-06-07T12:45:32Z,null,open,Issue,N/A
+episoap,"Add release item reminding to bump episoap versio number",0,https://github.com/epiverse-trace/episoap/pull/93,2023-05-29T08:10:58Z,2023-05-29T08:13:49Z,closed,Pull Request,0
+epiverse,"Add vignette for dependency visualisation",0,https://github.com/epiverse-trace/epiverse/pull/2,2023-12-05T14:44:53Z,2023-12-07T07:48:23Z,closed,Pull Request,1
+epiverse,"Add network visualisation of external & internal package dependencies across Epiverse-TRACE",0,https://github.com/epiverse-trace/epiverse/issues/1,2023-12-04T18:06:41Z,2023-12-07T07:48:25Z,closed,Issue,2
+epiverse-trace.github.io,"Add interoperability slides",1,https://github.com/epiverse-trace/epiverse-trace.github.io/pull/165,2024-01-23T15:18:27Z,2024-01-24T09:19:08Z,closed,Pull Request,0
+epiverse-trace.github.io,"add link to git-rstudio-basics tutorial",3,https://github.com/epiverse-trace/epiverse-trace.github.io/pull/164,2024-01-16T11:46:48Z,null,open,Pull Request,N/A
+epiverse-trace.github.io,"Import lint-changed-quarto workflow from .github",1,https://github.com/epiverse-trace/epiverse-trace.github.io/pull/161,2024-01-09T17:05:07Z,2024-01-09T17:05:17Z,closed,Pull Request,0
+epiverse-trace.github.io,"simulist v0.1.0 automated release blog post",2,https://github.com/epiverse-trace/epiverse-trace.github.io/pull/160,2024-01-08T23:35:09Z,2024-01-09T11:07:45Z,closed,Pull Request,0
+epiverse-trace.github.io,"Clarify steps for contributing blog posts",0,https://github.com/epiverse-trace/epiverse-trace.github.io/issues/159,2024-01-04T19:14:19Z,null,open,Issue,N/A
+epiverse-trace.github.io,"Automated release blog post",1,https://github.com/epiverse-trace/epiverse-trace.github.io/pull/158,2023-12-20T23:35:17Z,2023-12-21T09:09:50Z,closed,Pull Request,0
+epiverse-trace.github.io,"Create landing page for training materials",1,https://github.com/epiverse-trace/epiverse-trace.github.io/pull/157,2023-12-12T12:12:37Z,null,open,Pull Request,N/A
+epiverse-trace.github.io,"Add netlify config files",1,https://github.com/epiverse-trace/epiverse-trace.github.io/pull/156,2023-12-11T10:10:15Z,2023-12-11T10:16:02Z,closed,Pull Request,0
+epiverse-trace.github.io,"Fix typos in nov 2023 showcase",1,https://github.com/epiverse-trace/epiverse-trace.github.io/pull/155,2023-12-11T09:33:19Z,2023-12-11T10:21:40Z,closed,Pull Request,0
+epiverse-trace.github.io,"Blog post on potential issues while using renv",3,https://github.com/epiverse-trace/epiverse-trace.github.io/pull/154,2023-12-07T11:43:20Z,null,open,Pull Request,N/A
+epiverse-trace.github.io,"Autumn showcase",3,https://github.com/epiverse-trace/epiverse-trace.github.io/pull/153,2023-12-07T10:37:10Z,2023-12-08T21:50:55Z,closed,Pull Request,1
+epiverse-trace.github.io,"Add page for November 2023 showcase",1,https://github.com/epiverse-trace/epiverse-trace.github.io/issues/150,2023-12-06T06:42:24Z,2023-12-08T21:51:23Z,closed,Issue,2
+epiverse-trace.github.io,"Add a 'team' and a 'people' page",1,https://github.com/epiverse-trace/epiverse-trace.github.io/issues/149,2023-11-30T20:04:01Z,null,open,Issue,N/A
+epiverse-trace.github.io,"Add bullet point to acknowledge reviewers",0,https://github.com/epiverse-trace/epiverse-trace.github.io/pull/148,2023-11-24T14:05:00Z,2023-11-26T11:26:56Z,closed,Pull Request,1
+epiverse-trace.github.io,"Add acknowledgements to published post",0,https://github.com/epiverse-trace/epiverse-trace.github.io/pull/147,2023-11-24T11:38:57Z,2023-11-24T13:38:41Z,closed,Pull Request,0
+epiverse-trace.github.io,"Add bullet in PR checklist to acknowledge reviewers of blogposts",1,https://github.com/epiverse-trace/epiverse-trace.github.io/issues/146,2023-11-24T11:07:10Z,2023-11-26T11:26:57Z,closed,Issue,2
+epiverse-trace.github.io,"Automated release blog post",0,https://github.com/epiverse-trace/epiverse-trace.github.io/pull/145,2023-11-22T23:35:37Z,2023-11-23T12:28:34Z,closed,Pull Request,0
+epiverse-trace.github.io,"Bnmking2",1,https://github.com/epiverse-trace/epiverse-trace.github.io/pull/144,2023-11-22T14:33:09Z,2023-11-22T14:33:45Z,closed,Pull Request,0
+epiverse-trace.github.io,"Add title to landing page to avoid picking up comments from other pages",0,https://github.com/epiverse-trace/epiverse-trace.github.io/pull/142,2023-11-20T15:40:58Z,2023-11-22T15:30:09Z,closed,Pull Request,1
+epiverse-trace.github.io,"Use epiverse theme",0,https://github.com/epiverse-trace/epiverse-trace.github.io/pull/141,2023-11-20T14:33:05Z,2023-11-20T14:36:20Z,closed,Pull Request,0
+epiverse-trace.github.io,"Add GITHUB_PAT to release post workflow",0,https://github.com/epiverse-trace/epiverse-trace.github.io/pull/138,2023-11-14T08:21:02Z,2023-12-11T10:17:01Z,closed,Pull Request,27
+epiverse-trace.github.io,"Blog post for major (or minor) releases only",4,https://github.com/epiverse-trace/epiverse-trace.github.io/issues/135,2023-11-10T17:27:35Z,null,open,Issue,N/A
+epiverse-trace.github.io,"Considerations for performant and developer-friendly epidemic modelling",2,https://github.com/epiverse-trace/epiverse-trace.github.io/issues/134,2023-11-09T11:45:25Z,null,open,Issue,N/A
+epiverse-trace.github.io,"Randomise wording of release posts",2,https://github.com/epiverse-trace/epiverse-trace.github.io/issues/132,2023-11-07T16:22:51Z,null,open,Issue,N/A
+epiverse-trace.github.io,"Fix grammar in release posts",1,https://github.com/epiverse-trace/epiverse-trace.github.io/pull/131,2023-11-07T15:38:10Z,2023-11-07T16:45:39Z,closed,Pull Request,0
+epiverse-trace.github.io,"Fix typo",0,https://github.com/epiverse-trace/epiverse-trace.github.io/pull/130,2023-11-07T12:29:51Z,2023-11-07T12:38:15Z,closed,Pull Request,0
+epiverse-trace.github.io,"Automated release blog post",1,https://github.com/epiverse-trace/epiverse-trace.github.io/pull/129,2023-11-06T23:35:49Z,2023-11-07T12:13:44Z,closed,Pull Request,0
+epiverse-trace.github.io,"Add package descriptions",0,https://github.com/epiverse-trace/epiverse-trace.github.io/pull/127,2023-11-01T10:43:51Z,2023-11-02T08:38:13Z,closed,Pull Request,0
+epiverse-trace.github.io,"Add step to test render on PRs",0,https://github.com/epiverse-trace/epiverse-trace.github.io/pull/126,2023-10-30T09:18:29Z,2023-10-30T11:18:31Z,closed,Pull Request,0
+epiverse-trace.github.io,"Add blog post on for vs apply",6,https://github.com/epiverse-trace/epiverse-trace.github.io/pull/125,2023-10-23T14:17:41Z,2023-11-02T15:21:16Z,closed,Pull Request,10
+epiverse-trace.r-universe.dev,"Add simulist",0,https://github.com/epiverse-trace/epiverse-trace.r-universe.dev/pull/13,2024-01-08T17:07:26Z,2024-01-08T17:19:53Z,closed,Pull Request,0
+epiverse-trace.r-universe.dev,"Add epidemics",0,https://github.com/epiverse-trace/epiverse-trace.r-universe.dev/pull/12,2023-10-24T15:19:40Z,2023-10-24T15:21:43Z,closed,Pull Request,0
+epiverse-trace.r-universe.dev,"Add superspreading",0,https://github.com/epiverse-trace/epiverse-trace.r-universe.dev/pull/11,2023-09-25T15:26:50Z,2023-09-25T15:31:04Z,closed,Pull Request,0
+epiverse-trace.r-universe.dev,"Mention new lifecycle inclusion policy in README",0,https://github.com/epiverse-trace/epiverse-trace.r-universe.dev/pull/10,2023-07-27T16:02:03Z,2023-07-27T16:05:43Z,closed,Pull Request,0
+epiverse-trace.r-universe.dev,"Include only stable packages in r-universe",0,https://github.com/epiverse-trace/epiverse-trace.r-universe.dev/pull/9,2023-07-27T13:41:12Z,2023-07-27T13:45:47Z,closed,Pull Request,0
+epiverse-trace.r-universe.dev,"Clarify package lifecycle threshold for inclusion in r-universe",1,https://github.com/epiverse-trace/epiverse-trace.r-universe.dev/issues/8,2023-07-20T11:10:38Z,2023-07-27T13:45:48Z,closed,Issue,7
+epiverse-trace.r-universe.dev,"Rename cfr, add epidemics and scenarios",0,https://github.com/epiverse-trace/epiverse-trace.r-universe.dev/pull/7,2023-07-13T09:33:52Z,2023-07-17T11:00:48Z,closed,Pull Request,4
+epiverse-trace.r-universe.dev,"Add serofoi package",1,https://github.com/epiverse-trace/epiverse-trace.r-universe.dev/pull/6,2023-05-23T20:39:34Z,2023-05-23T20:54:03Z,closed,Pull Request,0
+epiverse-trace.r-universe.dev,"Add bpmodels to r-universe",0,https://github.com/epiverse-trace/epiverse-trace.r-universe.dev/pull/5,2023-02-13T11:05:57Z,2023-02-20T08:31:57Z,closed,Pull Request,6
+epiverse-trace.r-universe.dev,"Rename package to episoap",0,https://github.com/epiverse-trace/epiverse-trace.r-universe.dev/pull/4,2022-11-16T14:42:58Z,2022-11-16T14:45:13Z,closed,Pull Request,0
+epiverse-trace.r-universe.dev,"Add soap (episoap?) package",0,https://github.com/epiverse-trace/epiverse-trace.r-universe.dev/pull/3,2022-11-02T15:46:11Z,2022-11-02T15:48:22Z,closed,Pull Request,0
+epiverse-trace.r-universe.dev,"Automated update of packages.json",0,https://github.com/epiverse-trace/epiverse-trace.r-universe.dev/pull/2,2022-09-14T07:46:21Z,2022-09-14T07:56:16Z,closed,Pull Request,0
+epiverse-trace.r-universe.dev,"Add GHA workflow to submit a PR when a new package is created",1,https://github.com/epiverse-trace/epiverse-trace.r-universe.dev/issues/1,2022-09-05T16:02:40Z,2022-09-06T12:59:22Z,closed,Issue,0
+epiversedashboard,"Update colour scheme",0,https://github.com/epiverse-trace/epiversedashboard/issues/2,2022-09-15T20:06:47Z,2022-10-10T16:45:03Z,closed,Issue,24
+epiversedashboard,"Read repos from universe",0,https://github.com/epiverse-trace/epiversedashboard/issues/1,2022-09-15T20:06:29Z,2022-10-10T16:53:25Z,closed,Issue,24
+epiversetheme,"Hamburger menu not working for longer menus on mobile",0,https://github.com/epiverse-trace/epiversetheme/issues/5,2024-01-16T08:47:52Z,null,open,Issue,N/A
+epiversetheme,"increase the color contrast of written letters in the "search for" box",0,https://github.com/epiverse-trace/epiversetheme/issues/4,2023-11-30T00:48:31Z,2023-11-30T08:17:47Z,closed,Issue,0
+epiversetheme,"package installation issues",1,https://github.com/epiverse-trace/epiversetheme/issues/3,2023-11-28T11:39:11Z,2023-11-28T11:48:58Z,closed,Issue,0
+epiversetheme,"increase the color contrast of the options button in the upper right corner",1,https://github.com/epiverse-trace/epiversetheme/issues/2,2023-11-24T18:32:41Z,2023-11-27T11:27:40Z,closed,Issue,2
+epiversetheme,"Switch to harmonized epiverse theme",0,https://github.com/epiverse-trace/epiversetheme/pull/1,2023-11-20T14:39:30Z,2023-11-20T14:39:40Z,closed,Pull Request,0
+etdev,"Mark regex as fixed",1,https://github.com/epiverse-trace/etdev/pull/16,2024-01-16T13:17:35Z,2024-01-16T13:22:49Z,closed,Pull Request,0
+etdev,"Converting Spring Cleaning to a function",0,https://github.com/epiverse-trace/etdev/pull/15,2023-11-29T15:28:45Z,null,open,Pull Request,N/A
+etdev,"Converting Spring Cleaning to a function",0,https://github.com/epiverse-trace/etdev/issues/14,2023-11-29T14:59:13Z,null,open,Issue,N/A
+etdev,"Fix for #12 - Render readme locally to reduce feedback time",1,https://github.com/epiverse-trace/etdev/pull/13,2023-11-09T02:21:18Z,null,open,Pull Request,N/A
+etdev,"Ability to render README.Rmd locally",0,https://github.com/epiverse-trace/etdev/issues/12,2023-11-09T02:19:34Z,null,open,Issue,N/A
+etdev,"Remove lintr Remotes",1,https://github.com/epiverse-trace/etdev/pull/11,2023-11-07T17:42:14Z,2023-11-07T17:45:07Z,closed,Pull Request,0
+etdev,"Add usethis-style function to get Epiverse-TRACE GHA workflows",0,https://github.com/epiverse-trace/etdev/issues/10,2023-09-21T08:35:27Z,null,open,Issue,N/A
+etdev,"Fix linters.csv structure",0,https://github.com/epiverse-trace/etdev/pull/9,2023-09-18T11:17:15Z,2023-09-18T11:20:37Z,closed,Pull Request,0
+etdev,"Improve `na_null_strings_linter()`",0,https://github.com/epiverse-trace/etdev/pull/8,2023-09-18T10:17:50Z,2023-09-18T10:42:16Z,closed,Pull Request,0
+etdev,"Create na_null_strings_linter()",0,https://github.com/epiverse-trace/etdev/pull/7,2023-09-12T08:01:29Z,2023-09-12T08:47:34Z,closed,Pull Request,0
+etdev,"Add min R version (for trimws())",0,https://github.com/epiverse-trace/etdev/pull/6,2023-09-10T08:42:08Z,2023-09-10T08:51:27Z,closed,Pull Request,0
+etdev,"Epiverse-TRACE release checklist",0,https://github.com/epiverse-trace/etdev/issues/5,2023-07-27T13:16:34Z,null,open,Issue,N/A
+etdev,"Rename R file to match function name",0,https://github.com/epiverse-trace/etdev/pull/4,2023-06-08T16:15:23Z,2023-06-08T16:22:13Z,closed,Pull Request,0
+etdev,"minor modifications for easier understanding",1,https://github.com/epiverse-trace/etdev/issues/3,2023-06-07T12:55:10Z,2023-06-08T16:23:16Z,closed,Issue,1
+etdev,"Create insert_badges() functions",0,https://github.com/epiverse-trace/etdev/pull/2,2022-12-06T13:19:18Z,2022-12-06T13:39:54Z,closed,Pull Request,0
+etdev,"List of functions to be provided by this package",1,https://github.com/epiverse-trace/etdev/issues/1,2022-11-28T09:42:16Z,null,open,Issue,N/A
+etstats,"Use contributors workflow",0,https://github.com/epiverse-trace/etstats/issues/2,2023-10-24T08:10:41Z,null,open,Issue,N/A
+etstats,"Create cran-statistics vignette",0,https://github.com/epiverse-trace/etstats/pull/1,2023-10-18T10:55:48Z,2023-10-18T11:08:29Z,closed,Pull Request,0
+finalsize,"Add defaults to final_size()",0,https://github.com/epiverse-trace/finalsize/pull/192,2024-01-19T14:32:02Z,null,open,Pull Request,N/A
+finalsize,"Restore linter workflow",0,https://github.com/epiverse-trace/finalsize/pull/191,2024-01-19T11:59:02Z,2024-01-19T12:06:51Z,closed,Pull Request,0
+finalsize,"Update README and Get started",0,https://github.com/epiverse-trace/finalsize/pull/190,2024-01-15T15:06:58Z,2024-01-19T11:01:01Z,closed,Pull Request,3
+finalsize,"Update release website",0,https://github.com/epiverse-trace/finalsize/pull/189,2023-12-14T14:41:40Z,2023-12-14T14:42:06Z,closed,Pull Request,0
+finalsize,"Update site with epiversetheme",1,https://github.com/epiverse-trace/finalsize/issues/188,2023-12-14T11:24:39Z,2023-12-14T14:42:50Z,closed,Issue,0
+finalsize,"End of year cleanup",2,https://github.com/epiverse-trace/finalsize/pull/187,2023-12-13T13:33:26Z,2023-12-14T10:58:07Z,closed,Pull Request,0
+finalsize,"End of year cleanup",0,https://github.com/epiverse-trace/finalsize/issues/186,2023-12-13T09:31:24Z,2023-12-14T10:58:08Z,closed,Issue,1
+finalsize,"Add CITATION.cff",3,https://github.com/epiverse-trace/finalsize/pull/185,2023-12-07T17:24:55Z,2023-12-13T10:32:52Z,closed,Pull Request,5
+finalsize,"Temporarily disable backport linter",1,https://github.com/epiverse-trace/finalsize/issues/184,2023-11-21T09:46:05Z,null,open,Issue,N/A
+finalsize,"Update .lintr from pkgtemplate",1,https://github.com/epiverse-trace/finalsize/pull/183,2023-11-21T08:58:16Z,2023-11-22T09:41:19Z,closed,Pull Request,1
+finalsize,"Switch to epiversetheme",1,https://github.com/epiverse-trace/finalsize/pull/182,2023-11-20T15:30:32Z,2023-11-20T15:58:52Z,closed,Pull Request,0
+finalsize,"Update package infrastucture files",0,https://github.com/epiverse-trace/finalsize/issues/181,2023-11-16T11:33:03Z,2023-11-22T09:41:21Z,closed,Issue,5
+finalsize,"Easy route to homogenous estimate",4,https://github.com/epiverse-trace/finalsize/issues/180,2023-11-15T15:29:49Z,null,open,Issue,N/A
+finalsize,"Fix Reff LaTeX formatting",3,https://github.com/epiverse-trace/finalsize/pull/179,2023-10-30T09:55:41Z,2023-10-30T11:51:36Z,closed,Pull Request,0
+finalsize,"Fix broken link",0,https://github.com/epiverse-trace/finalsize/pull/178,2023-08-24T13:39:16Z,2023-08-25T11:27:25Z,closed,Pull Request,0
+finalsize,"Correct link to heterogeneous contacts vignette",0,https://github.com/epiverse-trace/finalsize/issues/177,2023-08-21T13:49:28Z,2023-08-25T11:27:26Z,closed,Issue,3
+finalsize,"Describe the underlying maths and numerical implementations in vignette",6,https://github.com/epiverse-trace/finalsize/issues/176,2023-07-20T09:12:34Z,null,open,Issue,N/A
+finalsize,"Use LMIC examples in vignettes",0,https://github.com/epiverse-trace/finalsize/issues/175,2023-07-05T13:08:02Z,null,open,Issue,N/A
+finalsize,"Remove pkgs used only in development",0,https://github.com/epiverse-trace/finalsize/pull/174,2023-06-06T10:00:27Z,2023-06-06T10:25:50Z,closed,Pull Request,0
+finalsize,"Add DPG logo",0,https://github.com/epiverse-trace/finalsize/pull/173,2023-05-22T13:18:12Z,2023-05-22T18:14:01Z,closed,Pull Request,0
+finalsize,"Add DPG badge",0,https://github.com/epiverse-trace/finalsize/issues/172,2023-05-22T12:46:12Z,2023-05-22T18:14:02Z,closed,Issue,0
+finalsize,"Fix NEWS formatting",1,https://github.com/epiverse-trace/finalsize/pull/171,2023-05-16T10:02:55Z,2023-05-16T10:59:53Z,closed,Pull Request,0
+finalsize,"Post-CRAN acceptance v0.2",0,https://github.com/epiverse-trace/finalsize/pull/170,2023-05-10T11:21:10Z,2023-05-10T11:29:08Z,closed,Pull Request,0
+finalsize,"Minor fixes pre v0.2 release",0,https://github.com/epiverse-trace/finalsize/pull/169,2023-05-09T12:57:30Z,2023-05-09T13:34:01Z,closed,Pull Request,0
+finalsize,"rename the r0_to_lambda() function title",1,https://github.com/epiverse-trace/finalsize/issues/168,2023-05-04T18:30:46Z,2023-05-05T08:27:33Z,closed,Issue,0
+finalsize,"rename r_eff() function title",0,https://github.com/epiverse-trace/finalsize/issues/167,2023-05-04T18:27:17Z,2023-05-09T10:10:32Z,closed,Issue,4
+finalsize,"Add Roz as contributor",0,https://github.com/epiverse-trace/finalsize/pull/166,2023-05-03T08:48:58Z,2023-05-03T14:23:57Z,closed,Pull Request,0
+finalsize,"Add Andree details as contributor",2,https://github.com/epiverse-trace/finalsize/pull/165,2023-04-24T10:34:55Z,2023-04-24T11:01:45Z,closed,Pull Request,0
+finalsize,"Reviewer role added to DESCRIPTION",0,https://github.com/epiverse-trace/finalsize/pull/164,2023-04-24T09:14:53Z,2023-04-24T09:54:43Z,closed,Pull Request,0
+finalsize,"Release finalsize 0.2.0",2,https://github.com/epiverse-trace/finalsize/issues/163,2023-04-21T11:29:38Z,2023-05-22T12:45:06Z,closed,Issue,31
+git-rstudio-basics,"replace tracking changes naming issue figure",0,https://github.com/epiverse-trace/git-rstudio-basics/issues/33,2024-01-17T15:55:17Z,null,open,Issue,N/A
+git-rstudio-basics,"add advantages of Rstudio terminal vs GitHub desktop",0,https://github.com/epiverse-trace/git-rstudio-basics/issues/32,2024-01-16T12:21:33Z,null,open,Issue,N/A
+git-rstudio-basics,"Update 15 packages",1,https://github.com/epiverse-trace/git-rstudio-basics/pull/30,2023-12-17T16:06:36Z,2023-12-20T14:02:39Z,closed,Pull Request,2
+git-rstudio-basics,"Update Workflows to Version 0.16.1",1,https://github.com/epiverse-trace/git-rstudio-basics/pull/29,2023-12-17T15:43:11Z,2023-12-20T14:02:12Z,closed,Pull Request,2
+git-rstudio-basics,"Add installation step",1,https://github.com/epiverse-trace/git-rstudio-basics/pull/28,2023-12-02T17:17:13Z,2023-12-02T20:08:22Z,closed,Pull Request,0
+git-rstudio-basics,"add section of references to figures or reused content",0,https://github.com/epiverse-trace/git-rstudio-basics/issues/27,2023-11-27T18:02:58Z,null,open,Issue,N/A
+git-rstudio-basics,"add slide deck to instructor notes",0,https://github.com/epiverse-trace/git-rstudio-basics/issues/26,2023-11-27T17:40:19Z,null,open,Issue,N/A
+git-rstudio-basics,"add new episode on branching and merging",1,https://github.com/epiverse-trace/git-rstudio-basics/issues/25,2023-11-27T17:16:58Z,null,open,Issue,N/A
+git-rstudio-basics,"clear the Summary and Setup Page",0,https://github.com/epiverse-trace/git-rstudio-basics/issues/24,2023-11-23T00:41:18Z,null,open,Issue,N/A
+git-rstudio-basics,"change all instances of Rstudio to RStudio.",0,https://github.com/epiverse-trace/git-rstudio-basics/issues/23,2023-11-23T00:02:43Z,null,open,Issue,N/A
+git-rstudio-basics,"add EN translation to reproducibility gradient figure in ES",0,https://github.com/epiverse-trace/git-rstudio-basics/issues/22,2023-11-22T23:03:12Z,null,open,Issue,N/A
+git-rstudio-basics,"replace "Word's" inside the figure with "Google Docs's"",0,https://github.com/epiverse-trace/git-rstudio-basics/issues/21,2023-11-22T22:50:16Z,null,open,Issue,N/A
+git-rstudio-basics,"change parent repository",3,https://github.com/epiverse-trace/git-rstudio-basics/issues/20,2023-11-20T18:06:32Z,2023-11-21T17:56:24Z,closed,Issue,0
+git-rstudio-basics,"Use epiversetheme version of varnish",1,https://github.com/epiverse-trace/git-rstudio-basics/pull/19,2023-11-20T09:27:46Z,2023-11-20T14:34:05Z,closed,Pull Request,0
+git-rstudio-basics,"recycle assessments from slides to handbook",0,https://github.com/epiverse-trace/git-rstudio-basics/issues/18,2023-11-19T10:10:45Z,null,open,Issue,N/A
+git-rstudio-basics,"add an installation step to the reviewer guidelines",0,https://github.com/epiverse-trace/git-rstudio-basics/issues/17,2023-11-16T12:18:25Z,2023-12-02T20:08:23Z,closed,Issue,16
+git-rstudio-basics,"relocate challenges from the end to within each episode",0,https://github.com/epiverse-trace/git-rstudio-basics/issues/16,2023-11-12T21:48:04Z,null,open,Issue,N/A
+git-rstudio-basics,"add alt-text to figures",0,https://github.com/epiverse-trace/git-rstudio-basics/issues/15,2023-11-12T21:46:07Z,null,open,Issue,N/A
+git-rstudio-basics,"add learner personas",0,https://github.com/epiverse-trace/git-rstudio-basics/issues/14,2023-11-12T21:42:50Z,null,open,Issue,N/A
+git-rstudio-basics,"Adapt content to outbreak context and R packages",12,https://github.com/epiverse-trace/git-rstudio-basics/pull/13,2023-11-07T03:10:45Z,2023-11-27T17:45:29Z,closed,Pull Request,20
+git-rstudio-basics,"create a outbreak related scenario",2,https://github.com/epiverse-trace/git-rstudio-basics/issues/12,2023-11-05T18:10:28Z,2023-11-27T17:45:30Z,closed,Issue,21
+git-rstudio-basics,"update style in a separate PR",0,https://github.com/epiverse-trace/git-rstudio-basics/issues/9,2023-11-03T15:36:29Z,null,open,Issue,N/A
+git-rstudio-basics,"move support to learners folder",0,https://github.com/epiverse-trace/git-rstudio-basics/issues/8,2023-11-01T20:34:23Z,null,open,Issue,N/A
+git-rstudio-basics,"replace autors section on readme with maintainers",0,https://github.com/epiverse-trace/git-rstudio-basics/issues/7,2023-11-01T19:24:47Z,null,open,Issue,N/A
+git-rstudio-basics,"add related trainings",0,https://github.com/epiverse-trace/git-rstudio-basics/issues/6,2023-11-01T11:39:22Z,null,open,Issue,N/A
+git-rstudio-basics,"update contributing roles for maintainer",1,https://github.com/epiverse-trace/git-rstudio-basics/issues/5,2023-10-31T20:38:15Z,2023-12-02T21:07:25Z,closed,Issue,32
+git-rstudio-basics,"update CONTRIBUTING.md if updates on tutorials repo",1,https://github.com/epiverse-trace/git-rstudio-basics/issues/4,2023-10-27T16:16:31Z,2023-10-30T16:39:52Z,closed,Issue,3
+git-rstudio-basics,"update README files and related community files",3,https://github.com/epiverse-trace/git-rstudio-basics/pull/3,2023-10-27T16:09:14Z,2023-10-31T20:38:53Z,closed,Pull Request,4
+git-rstudio-basics,"update README file and linked community files",0,https://github.com/epiverse-trace/git-rstudio-basics/issues/2,2023-10-27T16:00:18Z,2023-10-31T20:38:54Z,closed,Issue,4
+git-rstudio-basics,"is fork_upstream_is_not_origin_parent a sub-optimal configuration?",2,https://github.com/epiverse-trace/git-rstudio-basics/issues/1,2023-10-27T15:38:46Z,null,open,Issue,N/A
+hex-stickers,"Add {simulist} hex logo",1,https://github.com/epiverse-trace/hex-stickers/pull/16,2023-12-15T18:21:52Z,2023-12-15T18:48:54Z,closed,Pull Request,0
+hex-stickers,"Update {superspreading} hex logo",0,https://github.com/epiverse-trace/hex-stickers/pull/15,2023-12-15T15:56:16Z,2023-12-15T16:36:26Z,closed,Pull Request,0
+hex-stickers,"Update finalsize stickers",0,https://github.com/epiverse-trace/hex-stickers/pull/14,2023-12-13T10:02:54Z,2023-12-13T11:04:00Z,closed,Pull Request,0
+hex-stickers,"register logos as trademarks",2,https://github.com/epiverse-trace/hex-stickers/issues/13,2023-10-23T18:36:00Z,null,open,Issue,N/A
+hex-stickers,"Add svg files for UniAndes logos",0,https://github.com/epiverse-trace/hex-stickers/pull/12,2023-10-17T13:29:26Z,2023-10-17T13:35:23Z,closed,Pull Request,0
+hex-stickers,"Add vaccineff",0,https://github.com/epiverse-trace/hex-stickers/pull/11,2023-10-17T12:47:18Z,2023-10-17T12:47:25Z,closed,Pull Request,0
+hex-stickers,"Add temp logos in thumbs/",0,https://github.com/epiverse-trace/hex-stickers/pull/10,2023-10-17T12:38:33Z,2023-10-17T12:38:42Z,closed,Pull Request,0
+hex-stickers,"Add sivirep & serofoi logo",0,https://github.com/epiverse-trace/hex-stickers/pull/9,2023-10-05T11:58:43Z,2023-10-05T12:01:11Z,closed,Pull Request,0
+hex-stickers,"add readepi and cleanepi logos",1,https://github.com/epiverse-trace/hex-stickers/pull/8,2023-09-27T11:33:14Z,2023-09-27T11:35:13Z,closed,Pull Request,0
+hex-stickers,"Add {superspreading} hex logo",0,https://github.com/epiverse-trace/hex-stickers/pull/7,2023-07-28T15:36:46Z,2023-08-29T08:49:57Z,closed,Pull Request,31
+hex-stickers,"Get rid of withRestarts",0,https://github.com/epiverse-trace/hex-stickers/pull/6,2023-07-13T17:52:04Z,2023-07-13T17:54:20Z,closed,Pull Request,0
+hex-stickers,"Simplify svg files & add svg text workflow",0,https://github.com/epiverse-trace/hex-stickers/pull/5,2023-07-13T16:32:04Z,2023-07-13T16:51:44Z,closed,Pull Request,0
+hex-stickers,"Add {epidemics} hex logo",0,https://github.com/epiverse-trace/hex-stickers/pull/4,2023-07-13T09:38:37Z,2023-08-04T17:29:16Z,closed,Pull Request,22
+hex-stickers,"Add hex logos for {cfr}",0,https://github.com/epiverse-trace/hex-stickers/pull/3,2023-07-13T09:22:56Z,2023-08-04T17:29:02Z,closed,Pull Request,22
+hex-stickers,"Create check-logo-sizes workflow",0,https://github.com/epiverse-trace/hex-stickers/pull/2,2023-06-14T15:55:58Z,2023-06-14T16:15:53Z,closed,Pull Request,0
+hex-stickers,"Add epichains logo",7,https://github.com/epiverse-trace/hex-stickers/pull/1,2023-05-30T14:08:19Z,2023-06-14T18:58:56Z,closed,Pull Request,15
+howto,"add: how to reuse distribution delays to quantify the time-varying reproduction number (Rt)?",2,https://github.com/epiverse-trace/howto/issues/34,2024-01-09T11:13:55Z,null,open,Issue,N/A
+howto,"add: how to estimate the proportion of cases that generate 50% of transmission?",1,https://github.com/epiverse-trace/howto/issues/33,2024-01-09T10:55:45Z,null,open,Issue,N/A
+howto,"add: how to estimate the probability of a large outbreak?",0,https://github.com/epiverse-trace/howto/issues/32,2024-01-09T10:54:43Z,null,open,Issue,N/A
+howto,"add: how to create an epidist object to feed epinow2?",0,https://github.com/epiverse-trace/howto/issues/31,2024-01-09T10:41:26Z,null,open,Issue,N/A
+howto,"change repo name to `recipes`",0,https://github.com/epiverse-trace/howto/issues/30,2023-12-14T01:31:36Z,null,open,Issue,N/A
+howto,"use discussions tab to request for answers to complex questions after tutorials",0,https://github.com/epiverse-trace/howto/issues/29,2023-11-30T03:20:37Z,null,open,Issue,N/A
+howto,"replace how to use distcrete class objects from epiparameter",0,https://github.com/epiverse-trace/howto/issues/28,2023-11-30T01:04:23Z,null,open,Issue,N/A
+howto,"how to keep the howto repository reproducible?",0,https://github.com/epiverse-trace/howto/issues/27,2023-10-30T12:49:19Z,null,open,Issue,N/A
+howto,"add render and publishing command steps in contributing file",0,https://github.com/epiverse-trace/howto/issues/26,2023-10-30T12:32:17Z,null,open,Issue,N/A
+howto,"replace ingredients and steps after replace epidist_db with epiparam + as_epidist",0,https://github.com/epiverse-trace/howto/issues/25,2023-09-17T20:15:43Z,null,open,Issue,N/A
+howto,"embrace the ecosystem",0,https://github.com/epiverse-trace/howto/issues/24,2023-08-18T15:06:49Z,null,open,Issue,N/A
+howto,"add sivirep + incidence + epico script pipeline",0,https://github.com/epiverse-trace/howto/issues/23,2023-08-02T11:55:35Z,null,open,Issue,N/A
+howto,"update the structure of all {howto} entries",1,https://github.com/epiverse-trace/howto/issues/22,2023-08-01T19:27:48Z,null,open,Issue,N/A
+howto,"add a qmd howto template file",0,https://github.com/epiverse-trace/howto/issues/21,2023-08-01T14:16:17Z,null,open,Issue,N/A
+howto,"remove the region stratification to avoid distraction",1,https://github.com/epiverse-trace/howto/issues/20,2023-07-28T13:04:57Z,2023-07-28T16:48:58Z,closed,Issue,0
+howto,"use consitent terms",0,https://github.com/epiverse-trace/howto/issues/19,2023-07-28T12:21:28Z,null,open,Issue,N/A
+howto,"add condition to add only scripts connecting multiple packages",1,https://github.com/epiverse-trace/howto/issues/18,2023-07-28T10:47:39Z,null,open,Issue,N/A
+howto,"add pending steps in details",0,https://github.com/epiverse-trace/howto/issues/17,2023-07-28T10:42:07Z,null,open,Issue,N/A
+howto,"update finalsize howto",0,https://github.com/epiverse-trace/howto/issues/15,2023-07-24T15:53:39Z,null,open,Issue,N/A
+howto,"add reference links to all entries",0,https://github.com/epiverse-trace/howto/issues/14,2023-07-24T14:44:35Z,null,open,Issue,N/A
+howto,"add R0 howto",0,https://github.com/epiverse-trace/howto/issues/13,2023-07-24T12:37:38Z,null,open,Issue,N/A
+howto,"add data input, methods, data outputs in "ingredients" section",0,https://github.com/epiverse-trace/howto/issues/12,2023-07-24T11:47:27Z,null,open,Issue,N/A
+howto,"add branching process howto",0,https://github.com/epiverse-trace/howto/issues/11,2023-07-24T11:45:44Z,null,open,Issue,N/A
+howto,"make the copy button active always",2,https://github.com/epiverse-trace/howto/issues/10,2023-07-24T11:25:31Z,null,open,Issue,N/A
+howto,"add package-method assumptions in "steps in detail" section",0,https://github.com/epiverse-trace/howto/issues/9,2023-07-24T11:20:34Z,null,open,Issue,N/A
+howto,"share on projects about transversal multiple package examples",1,https://github.com/epiverse-trace/howto/issues/8,2023-07-20T20:35:54Z,null,open,Issue,N/A
+howto,"add about the effect of code linking with downlit when using {packagename}",0,https://github.com/epiverse-trace/howto/issues/7,2023-07-20T20:24:23Z,null,open,Issue,N/A
+howto,"add the structure of a howto page to about page",1,https://github.com/epiverse-trace/howto/issues/6,2023-07-20T20:22:23Z,null,open,Issue,N/A
+howto,"add entry on how to calculate sub-national cfr?",0,https://github.com/epiverse-trace/howto/issues/5,2023-07-20T20:20:17Z,null,open,Issue,N/A
+howto,"update projection howto to use Rt from the last two weeks",1,https://github.com/epiverse-trace/howto/issues/4,2023-07-20T20:16:14Z,null,open,Issue,N/A
+iraca,"Update .lintr",0,https://github.com/epiverse-trace/iraca/pull/22,2023-08-17T19:58:01Z,2023-08-18T00:11:58Z,closed,Pull Request,0
+iraca,"Dev/feature simulation module",0,https://github.com/epiverse-trace/iraca/pull/21,2023-08-17T19:27:35Z,2023-08-18T00:27:15Z,closed,Pull Request,0
+iraca,"Add simulation sample data",0,https://github.com/epiverse-trace/iraca/issues/20,2023-08-15T19:02:22Z,null,open,Issue,N/A
+iraca,"Parallelization",0,https://github.com/epiverse-trace/iraca/issues/19,2023-08-10T21:58:52Z,null,open,Issue,N/A
+iraca,"Add simulation function",0,https://github.com/epiverse-trace/iraca/issues/18,2023-08-10T21:56:26Z,null,open,Issue,N/A
+iraca,"Add setup function",0,https://github.com/epiverse-trace/iraca/issues/17,2023-08-10T21:55:30Z,null,open,Issue,N/A
+iraca,"Update R-CMD-check.yaml",0,https://github.com/epiverse-trace/iraca/pull/16,2023-08-09T22:23:42Z,2023-08-09T22:44:25Z,closed,Pull Request,0
+iraca,"Feature add module",1,https://github.com/epiverse-trace/iraca/pull/15,2023-08-08T20:24:06Z,2023-08-10T16:23:29Z,closed,Pull Request,1
+iraca,"Replace std::cout with Rcpp output",0,https://github.com/epiverse-trace/iraca/issues/14,2023-07-06T21:18:03Z,2023-08-10T16:32:42Z,closed,Issue,34
+iraca,"Replace C++ number generators with Rcpp generators",0,https://github.com/epiverse-trace/iraca/issues/13,2023-07-06T21:16:09Z,2023-08-10T16:32:50Z,closed,Issue,34
+iraca,"Update WORDLIST",0,https://github.com/epiverse-trace/iraca/pull/12,2023-07-06T19:18:01Z,2023-07-06T19:32:23Z,closed,Pull Request,0
+iraca,"Update authors and contributors",0,https://github.com/epiverse-trace/iraca/pull/11,2023-07-06T19:07:27Z,2023-07-06T20:06:33Z,closed,Pull Request,0
+iraca,"Add C++ linting and package header",0,https://github.com/epiverse-trace/iraca/pull/10,2023-07-06T18:57:07Z,2023-07-06T20:26:11Z,closed,Pull Request,0
+iraca,"Add package header",0,https://github.com/epiverse-trace/iraca/issues/9,2023-07-06T18:52:17Z,2023-07-06T20:26:13Z,closed,Issue,0
+iraca,"Update WORDLIST",0,https://github.com/epiverse-trace/iraca/issues/8,2023-07-06T18:39:37Z,2023-07-06T19:32:24Z,closed,Issue,0
+iraca,"Update DESCRIPTION with package and author details",0,https://github.com/epiverse-trace/iraca/issues/7,2023-07-06T17:07:55Z,2023-07-06T20:06:34Z,closed,Issue,0
+iraca,"Update Readme with basic information",0,https://github.com/epiverse-trace/iraca/issues/6,2023-07-06T16:54:30Z,2023-07-06T17:02:44Z,closed,Issue,0
+iraca,"Add C++ linting workflows",0,https://github.com/epiverse-trace/iraca/issues/5,2023-07-06T16:46:08Z,2023-07-06T20:26:12Z,closed,Issue,0
+iraca,"Initial package setup",0,https://github.com/epiverse-trace/iraca/pull/4,2023-07-06T16:45:16Z,2023-07-06T17:02:41Z,closed,Pull Request,0
+iraca,"Describe the mosquito attributes",0,https://github.com/epiverse-trace/iraca/issues/3,2023-07-06T16:09:36Z,null,open,Issue,N/A
+iraca,"Describe human attributes",0,https://github.com/epiverse-trace/iraca/issues/2,2023-07-06T16:09:08Z,null,open,Issue,N/A
+iraca,"Define model structure",0,https://github.com/epiverse-trace/iraca/issues/1,2023-07-06T16:08:39Z,null,open,Issue,N/A
+lessons,"update repo status to abandoned",0,https://github.com/epiverse-trace/lessons/issues/3,2023-11-15T10:36:40Z,null,open,Issue,N/A
+lessons,"facilitate this to be an interactive self-learning tool",0,https://github.com/epiverse-trace/lessons/issues/2,2023-08-07T18:40:26Z,null,open,Issue,N/A
+lessons,"add complementary structure to episode content",0,https://github.com/epiverse-trace/lessons/issues/1,2023-08-03T13:24:35Z,null,open,Issue,N/A
+linelist,"Add lint GHA workflow",0,https://github.com/epiverse-trace/linelist/pull/102,2024-01-11T14:31:15Z,2024-01-11T14:48:55Z,closed,Pull Request,0
+linelist,"Add David's GH handle",0,https://github.com/epiverse-trace/linelist/pull/101,2023-12-20T13:31:04Z,2023-12-20T13:33:09Z,closed,Pull Request,0
+linelist,"Remove deprecated examples",0,https://github.com/epiverse-trace/linelist/pull/100,2023-12-14T13:25:27Z,2023-12-14T13:32:21Z,closed,Pull Request,0
+linelist,"Follow blueprints guidelines on authorship",0,https://github.com/epiverse-trace/linelist/pull/99,2023-12-14T13:19:11Z,2023-12-14T13:54:47Z,closed,Pull Request,0
+linelist,"Polish vignette part 2",0,https://github.com/epiverse-trace/linelist/pull/98,2023-12-14T13:12:40Z,2023-12-14T13:14:27Z,closed,Pull Request,0
+linelist,"Polish vignette",0,https://github.com/epiverse-trace/linelist/pull/97,2023-12-14T11:12:52Z,2023-12-14T11:32:00Z,closed,Pull Request,0
+linelist,"Use rlang dyn dots rather than custom implementation",0,https://github.com/epiverse-trace/linelist/pull/96,2023-11-22T16:26:53Z,2023-12-11T14:31:29Z,closed,Pull Request,18
+linelist,"Use standard for pkg level docs",1,https://github.com/epiverse-trace/linelist/pull/95,2023-11-16T15:55:49Z,2023-11-16T16:02:00Z,closed,Pull Request,0
+linelist,"Fall cleaning",3,https://github.com/epiverse-trace/linelist/pull/94,2023-11-08T15:48:38Z,2023-11-08T17:49:58Z,closed,Pull Request,0
+linelist,"Deprecated templates in .github directory",0,https://github.com/epiverse-trace/linelist/issues/93,2023-11-08T10:52:42Z,2023-11-08T17:49:59Z,closed,Issue,0
+linelist,"Typo in NEWS",0,https://github.com/epiverse-trace/linelist/issues/92,2023-11-08T10:46:23Z,2023-11-08T17:50:43Z,closed,Issue,0
+linelist,"Use epiversetheme",0,https://github.com/epiverse-trace/linelist/pull/91,2023-11-07T13:05:14Z,2023-11-07T13:17:02Z,closed,Pull Request,0
+linelist,"Add class to linelist tag loss conditions",0,https://github.com/epiverse-trace/linelist/issues/90,2023-10-31T09:03:55Z,null,open,Issue,N/A
+linelist,"Add workflow monitor to all workflows",0,https://github.com/epiverse-trace/linelist/pull/89,2023-10-30T16:03:41Z,2023-12-12T10:25:45Z,closed,Pull Request,42
+linelist,"Vectorize `tag_variable()`",0,https://github.com/epiverse-trace/linelist/issues/88,2023-10-30T13:46:26Z,null,open,Issue,N/A
+linelist,"Use rlang dynamic dots instead of custom solution",0,https://github.com/epiverse-trace/linelist/issues/87,2023-10-29T16:51:30Z,2023-12-11T14:31:31Z,closed,Issue,42
+linelist,"Add new $<- method",0,https://github.com/epiverse-trace/linelist/pull/86,2023-10-26T07:54:57Z,2023-10-26T08:13:15Z,closed,Pull Request,0
+linelist,"Post-CRAN release maintainance",0,https://github.com/epiverse-trace/linelist/pull/85,2023-10-19T08:06:34Z,2023-10-19T08:17:29Z,closed,Pull Request,0
+linelist,"Use withr rather than callr",0,https://github.com/epiverse-trace/linelist/pull/84,2023-10-12T10:20:15Z,2023-10-12T10:27:01Z,closed,Pull Request,0
+linelist,"Polish README",0,https://github.com/epiverse-trace/linelist/pull/83,2023-10-11T08:22:31Z,2023-10-11T08:31:52Z,closed,Pull Request,0
+linelist,"Release linelist 1.0.0",0,https://github.com/epiverse-trace/linelist/issues/82,2023-10-11T08:06:34Z,2023-10-25T11:27:37Z,closed,Issue,14
+linelist,"Set Hugo as maintainer",0,https://github.com/epiverse-trace/linelist/pull/81,2023-10-11T07:58:27Z,2023-10-11T08:15:06Z,closed,Pull Request,0
+linelist,"Move dplyr to Suggests",0,https://github.com/epiverse-trace/linelist/issues/80,2023-10-11T07:48:21Z,null,open,Issue,N/A
+linelist,"Remove option to use lost_tags_actions() in pipeline",0,https://github.com/epiverse-trace/linelist/pull/79,2023-10-10T12:38:49Z,2023-10-10T13:14:03Z,closed,Pull Request,0
+linelist,"Tagging and validating aggregated epi data",2,https://github.com/epiverse-trace/linelist/issues/78,2023-08-23T11:58:06Z,null,open,Issue,N/A
+linelist,"Run tests in parallel & warn on partial matching",0,https://github.com/epiverse-trace/linelist/pull/77,2023-08-01T15:03:29Z,2023-08-01T15:39:40Z,closed,Pull Request,0
+linelist,"Clarify policy on tag inclusion",0,https://github.com/epiverse-trace/linelist/issues/76,2023-07-05T16:24:31Z,null,open,Issue,N/A
+linelist,"Anonymisation and anonymity testing",3,https://github.com/epiverse-trace/linelist/issues/75,2023-06-27T15:26:26Z,2023-10-31T10:40:08Z,closed,Issue,125
+linelist,"Document the meaning of each tag",0,https://github.com/epiverse-trace/linelist/issues/74,2023-06-20T13:17:58Z,null,open,Issue,N/A
+linelist,"Fix md formatting in dplyr compatibility vignette",0,https://github.com/epiverse-trace/linelist/pull/73,2023-06-19T14:24:47Z,2023-06-19T15:55:08Z,closed,Pull Request,0
+llm-guidance,"Merge PR into main",0,https://github.com/epiverse-trace/llm-guidance/pull/1,2023-10-31T10:12:26Z,2023-10-31T10:12:45Z,closed,Pull Request,0
+numberize,"Fixes en/fr edge cases highlighted by @Bisaloo",1,https://github.com/epiverse-trace/numberize/pull/3,2023-11-09T04:52:32Z,null,open,Pull Request,N/A
+numberize,"Misc fixes from review",0,https://github.com/epiverse-trace/numberize/pull/2,2023-11-06T09:05:46Z,2023-11-07T13:30:55Z,closed,Pull Request,1
+numberize,"Add test for mil/mille edge case",1,https://github.com/epiverse-trace/numberize/pull/1,2023-11-06T08:47:31Z,null,open,Pull Request,N/A
+packagetemplate,"Add Chris as contributor",0,https://github.com/epiverse-trace/packagetemplate/pull/122,2024-01-15T09:12:41Z,2024-01-15T09:34:44Z,closed,Pull Request,0
+packagetemplate,"Add lint-changed-files GHA workflow",0,https://github.com/epiverse-trace/packagetemplate/pull/121,2024-01-12T09:26:01Z,2024-01-12T09:52:00Z,closed,Pull Request,0
+packagetemplate,"Consider adding a devcontainer",2,https://github.com/epiverse-trace/packagetemplate/issues/120,2024-01-09T11:06:21Z,null,open,Issue,N/A
+packagetemplate,"Change `_R_CHECK_CRAN_INCOMING_NOTE_GNU_MAKE_=false` to `=true` in `tools/check.env`",0,https://github.com/epiverse-trace/packagetemplate/issues/119,2023-12-15T15:23:34Z,null,open,Issue,N/A
+packagetemplate,"Move `_R_CHECK_LENGTH_COLON_` to `tools/check.env`",0,https://github.com/epiverse-trace/packagetemplate/issues/118,2023-12-15T14:30:33Z,null,open,Issue,N/A
+packagetemplate,"Check local links before deploying",1,https://github.com/epiverse-trace/packagetemplate/pull/117,2023-12-14T13:49:50Z,2023-12-14T19:32:26Z,closed,Pull Request,0
+packagetemplate,"Convert .lintr to .lintr.R",0,https://github.com/epiverse-trace/packagetemplate/pull/116,2023-12-14T10:02:12Z,null,open,Pull Request,N/A
+packagetemplate,"Add release note to ensure contributors are acknowledged",0,https://github.com/epiverse-trace/packagetemplate/pull/115,2023-12-07T09:38:50Z,2023-12-20T09:17:41Z,closed,Pull Request,12
+packagetemplate,"Add necessary workflow permissions for writing",0,https://github.com/epiverse-trace/packagetemplate/pull/114,2023-12-07T09:11:51Z,2023-12-07T09:21:51Z,closed,Pull Request,0
+packagetemplate,"Use correct package name in license files",3,https://github.com/epiverse-trace/packagetemplate/pull/113,2023-12-05T10:17:18Z,2023-12-05T12:26:21Z,closed,Pull Request,0
+packagetemplate,"Normalize DESCRIPTION",0,https://github.com/epiverse-trace/packagetemplate/pull/112,2023-12-04T08:23:56Z,2023-12-04T08:25:40Z,closed,Pull Request,0
+packagetemplate,"Add test on R version to state inspector",0,https://github.com/epiverse-trace/packagetemplate/pull/111,2023-11-29T15:01:19Z,2023-11-30T11:00:09Z,closed,Pull Request,0
+packagetemplate,"Test alternative approach to not trigger on releases",3,https://github.com/epiverse-trace/packagetemplate/pull/109,2023-11-28T13:33:53Z,2023-11-28T15:52:36Z,closed,Pull Request,0
+packagetemplate,"Too restrictive tag ignore",1,https://github.com/epiverse-trace/packagetemplate/issues/108,2023-11-28T13:00:54Z,2023-11-28T15:52:37Z,closed,Issue,0
+packagetemplate,"Add workflow for dependency changes analysis",0,https://github.com/epiverse-trace/packagetemplate/pull/107,2023-11-28T11:27:22Z,2023-11-28T11:32:45Z,closed,Pull Request,0
+packagetemplate,"Add linting exclusion for R/stanmodels.R",0,https://github.com/epiverse-trace/packagetemplate/pull/106,2023-11-23T16:38:16Z,2023-11-28T11:33:26Z,closed,Pull Request,4
+packagetemplate,"Add Language: en-GB to DESCRIPTION",1,https://github.com/epiverse-trace/packagetemplate/pull/105,2023-11-22T20:38:35Z,2023-12-07T08:48:28Z,closed,Pull Request,14
+packagetemplate,"Consider adding ORCID and RECON to WORDLIST",1,https://github.com/epiverse-trace/packagetemplate/issues/104,2023-11-21T16:25:34Z,2023-11-22T08:04:34Z,closed,Issue,0
+packagetemplate,"Consider adding `Language: en-GB` to DESCRIPTION",1,https://github.com/epiverse-trace/packagetemplate/issues/103,2023-11-21T16:22:38Z,2023-12-07T08:48:29Z,closed,Issue,15
+packagetemplate,"Checking cross-referencing in vignettes",0,https://github.com/epiverse-trace/packagetemplate/issues/102,2023-11-21T16:02:02Z,2023-12-14T19:32:27Z,closed,Issue,23
+packagetemplate,"November 2023 spring cleaning",1,https://github.com/epiverse-trace/packagetemplate/issues/101,2023-11-21T14:05:03Z,null,open,Issue,N/A
+packagetemplate,"Get R CMD check to pass on packagetemplate",0,https://github.com/epiverse-trace/packagetemplate/pull/100,2023-11-15T13:59:25Z,2023-11-22T08:05:35Z,closed,Pull Request,6
+packagetemplate,"Remove contribute section of design vignette",1,https://github.com/epiverse-trace/packagetemplate/pull/99,2023-11-15T13:53:43Z,2023-11-15T13:58:42Z,closed,Pull Request,0
+packagetemplate,"Allow R CMD check to run on packagetemplate",0,https://github.com/epiverse-trace/packagetemplate/issues/98,2023-11-14T14:01:01Z,2023-11-22T08:05:36Z,closed,Issue,7
+packagetemplate,"Add template for Design Principles vignette",2,https://github.com/epiverse-trace/packagetemplate/pull/97,2023-11-14T11:58:36Z,2023-11-15T13:18:13Z,closed,Pull Request,1
+packagetemplate,"Make R CMD check warnings and notes visible on CI",0,https://github.com/epiverse-trace/packagetemplate/pull/96,2023-11-13T15:43:02Z,2023-11-13T16:08:42Z,closed,Pull Request,0
+packagetemplate,"Add RcppExports.R to lintr exclusion list",1,https://github.com/epiverse-trace/packagetemplate/pull/95,2023-11-06T15:02:11Z,2023-11-06T15:31:42Z,closed,Pull Request,0
+packagetemplate,"Add merge_group as workflow trigger",0,https://github.com/epiverse-trace/packagetemplate/pull/94,2023-10-31T10:22:12Z,2023-10-31T10:34:45Z,closed,Pull Request,0
+packagetemplate,"Run testthat in parallel",0,https://github.com/epiverse-trace/packagetemplate/pull/93,2023-10-31T09:47:48Z,2023-10-31T09:50:46Z,closed,Pull Request,0
+packagetemplate,"Pull before pushing in workflows",0,https://github.com/epiverse-trace/packagetemplate/pull/92,2023-10-26T06:51:23Z,2023-10-26T06:54:35Z,closed,Pull Request,0
+personas,"homologize knowledge domains with ETK modules",1,https://github.com/epiverse-trace/personas/issues/9,2023-11-15T10:45:02Z,null,open,Issue,N/A
+personas,"use of Personas for Package design and Documentation",0,https://github.com/epiverse-trace/personas/issues/6,2023-07-26T18:22:33Z,2023-07-26T18:23:44Z,closed,Issue,0
+personas,"publish page with github actions",0,https://github.com/epiverse-trace/personas/issues/5,2023-05-31T09:31:39Z,null,open,Issue,N/A
+personas,"re-structure the about page following the learn-tab structure",1,https://github.com/epiverse-trace/personas/issues/4,2023-05-29T17:52:10Z,2023-05-31T09:28:54Z,closed,Issue,1
+personas,"add cc-by info and citation details",0,https://github.com/epiverse-trace/personas/issues/3,2023-05-29T12:41:55Z,null,open,Issue,N/A
+personas,"add faces or icons to each persona website",1,https://github.com/epiverse-trace/personas/issues/2,2023-05-29T12:30:13Z,null,open,Issue,N/A
+personas,"use scroll and color boxes",1,https://github.com/epiverse-trace/personas/issues/1,2023-05-27T18:52:50Z,null,open,Issue,N/A
+quickfit,"Helper function to estimate uncertainty",2,https://github.com/epiverse-trace/quickfit/issues/15,2023-06-14T15:48:19Z,null,open,Issue,N/A
+quickfit,"Remove covr from Suggests",0,https://github.com/epiverse-trace/quickfit/pull/14,2023-06-06T10:08:42Z,2023-06-16T14:51:45Z,closed,Pull Request,10
+quickfit,"Update readme",0,https://github.com/epiverse-trace/quickfit/pull/13,2023-05-25T15:18:37Z,2023-05-25T15:27:47Z,closed,Pull Request,0
+quickfit,"Test for when the models are named and unnamed",0,https://github.com/epiverse-trace/quickfit/issues/12,2023-05-25T10:56:18Z,null,open,Issue,N/A
+quickfit,"Formula based and survival model fitting",0,https://github.com/epiverse-trace/quickfit/issues/11,2023-05-25T10:40:26Z,null,open,Issue,N/A
+quickfit,"Passing uncertainty between functions/packages",1,https://github.com/epiverse-trace/quickfit/issues/10,2023-05-18T13:19:18Z,null,open,Issue,N/A
+quickfit,"Remove output printed to console from installation in README",0,https://github.com/epiverse-trace/quickfit/issues/9,2023-03-29T17:07:31Z,2023-05-25T15:27:48Z,closed,Issue,56
+quickfit,"Add Epiverse integration vignette",1,https://github.com/epiverse-trace/quickfit/issues/8,2023-03-29T17:05:18Z,null,open,Issue,N/A
+quickfit,"Add Getting Started vignette",0,https://github.com/epiverse-trace/quickfit/issues/7,2023-03-29T17:00:33Z,null,open,Issue,N/A
+quickfit,"Removes dependencies on fitting pckages",1,https://github.com/epiverse-trace/quickfit/pull/6,2023-03-29T16:58:04Z,2023-05-25T11:40:10Z,closed,Pull Request,56
+quickfit,"Remove dependencies",1,https://github.com/epiverse-trace/quickfit/issues/5,2023-03-28T16:46:07Z,2023-05-25T11:41:49Z,closed,Issue,57
+quickfit,"Initial setup of package",1,https://github.com/epiverse-trace/quickfit/pull/4,2023-03-28T13:21:01Z,2023-03-28T14:02:53Z,closed,Pull Request,0
+quickfit,"Delete lint-changed-files.yaml",1,https://github.com/epiverse-trace/quickfit/pull/3,2023-02-16T10:58:33Z,2023-03-28T15:00:56Z,closed,Pull Request,40
+quickfit,"Functionality vs. existing implementations",2,https://github.com/epiverse-trace/quickfit/issues/2,2023-01-30T12:23:57Z,null,open,Issue,N/A
+quickfit,"Possible MCMC parameter estimation",2,https://github.com/epiverse-trace/quickfit/issues/1,2023-01-16T20:39:01Z,null,open,Issue,N/A
+readepi,"# Should {readepi} be {readapi} ??",1,https://github.com/epiverse-trace/readepi/issues/70,2024-01-19T17:20:12Z,null,open,Issue,N/A
+readepi,"Design vignette",0,https://github.com/epiverse-trace/readepi/pull/69,2023-12-19T11:18:19Z,null,open,Pull Request,N/A
+readepi,"Improved readme",0,https://github.com/epiverse-trace/readepi/pull/68,2023-12-14T09:16:23Z,2024-01-22T16:34:46Z,closed,Pull Request,39
+readepi,"Arguments validation",0,https://github.com/epiverse-trace/readepi/pull/67,2023-12-12T12:25:51Z,2024-01-25T09:35:21Z,closed,Pull Request,43
+readepi,"pull commits in main into arguments_validation",1,https://github.com/epiverse-trace/readepi/pull/66,2023-12-12T08:54:57Z,2023-12-12T11:39:26Z,closed,Pull Request,0
+readepi,"Create pkgdown reference index",2,https://github.com/epiverse-trace/readepi/pull/65,2023-11-23T13:41:32Z,2023-11-28T21:39:36Z,closed,Pull Request,5
+readepi,"Misc fixes to vignette",0,https://github.com/epiverse-trace/readepi/pull/64,2023-11-23T13:21:49Z,2023-11-25T14:15:19Z,closed,Pull Request,2
+readepi,"Consider how to uniformise value for `base_url` across low-level parsers",0,https://github.com/epiverse-trace/readepi/issues/63,2023-11-23T13:08:39Z,null,open,Issue,N/A
+readepi,"Check args default values and consistency",0,https://github.com/epiverse-trace/readepi/pull/62,2023-11-15T09:29:14Z,2023-11-23T12:53:59Z,closed,Pull Request,8
+readepi,"Remove \dontrun{} when not strictly required",0,https://github.com/epiverse-trace/readepi/pull/61,2023-11-09T21:13:26Z,null,open,Pull Request,N/A
+readepi,"Replace httr with httr2",0,https://github.com/epiverse-trace/readepi/issues/60,2023-11-02T08:42:51Z,null,open,Issue,N/A
+readepi,"Check args default values and consistency",3,https://github.com/epiverse-trace/readepi/pull/59,2023-10-30T10:39:54Z,2023-11-15T09:30:09Z,closed,Pull Request,15
+readepi,"Reduce input checking in internal functions",0,https://github.com/epiverse-trace/readepi/issues/58,2023-10-24T11:24:06Z,null,open,Issue,N/A
+readepi,"PR to add modifications generated during the CRAN submission process into main",6,https://github.com/epiverse-trace/readepi/pull/57,2023-10-24T11:18:48Z,2023-11-06T10:55:57Z,closed,Pull Request,13
+readepi,"Remove \dontrun{} when not strictly required",0,https://github.com/epiverse-trace/readepi/issues/56,2023-10-24T11:00:55Z,null,open,Issue,N/A
+readepi,"PR to merge updates made by Hugo on main branch into develop",0,https://github.com/epiverse-trace/readepi/pull/55,2023-10-24T10:29:40Z,2023-10-24T10:30:20Z,closed,Pull Request,0
+readepi,"Remove unnecessary dependencies",0,https://github.com/epiverse-trace/readepi/pull/54,2023-10-24T10:06:50Z,2023-10-24T10:45:59Z,closed,Pull Request,0
+readepi,"Harmonize low-level parsers",3,https://github.com/epiverse-trace/readepi/issues/53,2023-10-24T10:00:48Z,null,open,Issue,N/A
+readepi,"Clean unused files",0,https://github.com/epiverse-trace/readepi/pull/52,2023-10-18T08:19:26Z,2023-10-18T09:47:47Z,closed,Pull Request,0
+readepi,"Release readepi 0.1.0",0,https://github.com/epiverse-trace/readepi/issues/51,2023-10-17T11:51:23Z,null,open,Issue,N/A
+readepi,"Release/1.0.0",0,https://github.com/epiverse-trace/readepi/pull/50,2023-09-29T09:03:06Z,2023-10-17T10:29:35Z,closed,Pull Request,18
+readepi,"Adjust pkgdown site settings",0,https://github.com/epiverse-trace/readepi/pull/49,2023-09-27T13:54:50Z,2023-09-27T15:40:12Z,closed,Pull Request,0
+readepi,"Release/1.0.0",0,https://github.com/epiverse-trace/readepi/pull/48,2023-09-12T09:41:44Z,2023-09-29T08:57:23Z,closed,Pull Request,16
+readepi,"When processed separately, the overall coverage for functions in `read_from_fingertips_helpers.R` is 80.37%. But, this coverage drop down to 65.64% after running the `covr::package_coverage(".")`. I cannot understand the reason why this is happening.",1,https://github.com/epiverse-trace/readepi/issues/47,2023-08-22T10:46:22Z,2023-08-30T12:51:08Z,closed,Issue,8
+readepi,"Improve coverage for read_from_fingertips_helpers.R",1,https://github.com/epiverse-trace/readepi/issues/46,2023-08-16T18:21:06Z,2023-08-30T12:49:35Z,closed,Issue,13
+readepi,"`readepi()` signature and package scope",4,https://github.com/epiverse-trace/readepi/issues/45,2023-07-31T16:36:43Z,2023-10-18T13:09:10Z,closed,Issue,78
+readepi,"update the test files to account for the new modifications",1,https://github.com/epiverse-trace/readepi/issues/44,2023-07-24T09:53:47Z,2023-08-30T12:51:29Z,closed,Issue,37
+readepi,"Consider replacing {DBI} by the combination of {dplyr} and {dbplyr}",0,https://github.com/epiverse-trace/readepi/issues/43,2023-07-21T16:21:21Z,null,open,Issue,N/A
+readepi,"combine `get_data_sets()`, `get_data_elements()`, `get_organisation_units()` into a single function",1,https://github.com/epiverse-trace/readepi/issues/42,2023-07-17T13:26:54Z,2023-07-18T09:42:43Z,closed,Issue,0
+readepi,"use `warning()` or `message()` when appropriate instead of `cat()`",1,https://github.com/epiverse-trace/readepi/issues/41,2023-07-17T10:45:00Z,2023-07-17T11:00:15Z,closed,Issue,0
+research-compendium,"Update 15 packages",1,https://github.com/epiverse-trace/research-compendium/pull/29,2023-12-18T07:53:00Z,2023-12-20T14:01:42Z,closed,Pull Request,2
+research-compendium,"Update Workflows to Version 0.16.1",6,https://github.com/epiverse-trace/research-compendium/pull/28,2023-12-18T07:45:53Z,2023-12-20T14:01:17Z,closed,Pull Request,2
+research-compendium,"rearrange content and callouts",1,https://github.com/epiverse-trace/research-compendium/pull/27,2023-12-14T18:04:25Z,2023-12-14T18:09:36Z,closed,Pull Request,0
+research-compendium,"add process questions and deming cycle",1,https://github.com/epiverse-trace/research-compendium/pull/26,2023-12-14T16:49:51Z,2023-12-14T17:53:22Z,closed,Pull Request,0
+research-compendium,"add URL to DESCRIPTION file",0,https://github.com/epiverse-trace/research-compendium/issues/24,2023-11-29T10:40:02Z,null,open,Issue,N/A
+research-compendium,"add cff workflow to generate CITATION files from DESCRIPTION",0,https://github.com/epiverse-trace/research-compendium/issues/23,2023-11-29T10:35:53Z,null,open,Issue,N/A
+research-compendium,"remove closing parenthesis",1,https://github.com/epiverse-trace/research-compendium/pull/22,2023-11-23T15:10:17Z,2023-11-23T15:19:52Z,closed,Pull Request,0
+research-compendium,"fix readability in sentence",1,https://github.com/epiverse-trace/research-compendium/pull/21,2023-11-23T14:29:22Z,2023-11-23T14:53:08Z,closed,Pull Request,0
+research-compendium,"add new Markdown assessment for READMEs",0,https://github.com/epiverse-trace/research-compendium/issues/20,2023-11-18T22:49:34Z,null,open,Issue,N/A
+research-compendium,"Add citation file for Cite link in template",6,https://github.com/epiverse-trace/research-compendium/pull/19,2023-11-15T18:04:24Z,null,open,Pull Request,N/A
+research-compendium,"fix the Cite link in URL footer",2,https://github.com/epiverse-trace/research-compendium/issues/18,2023-11-15T17:14:58Z,null,open,Issue,N/A
+research-compendium,"Update epiversetheme version of varnish",2,https://github.com/epiverse-trace/research-compendium/pull/17,2023-11-15T10:48:39Z,2023-11-20T09:17:38Z,closed,Pull Request,4
+research-compendium,"update lesson stage to alpha",0,https://github.com/epiverse-trace/research-compendium/issues/16,2023-11-14T18:47:14Z,null,open,Issue,N/A
+research-compendium,"add references for CONTRIBUTING.md files",0,https://github.com/epiverse-trace/research-compendium/issues/15,2023-11-01T13:05:34Z,null,open,Issue,N/A
+research-compendium,"homogenize community files across training materials",0,https://github.com/epiverse-trace/research-compendium/issues/14,2023-10-30T16:41:44Z,null,open,Issue,N/A
+research-compendium,"add links to definitions in the Intro episode",0,https://github.com/epiverse-trace/research-compendium/issues/13,2023-10-30T11:55:17Z,null,open,Issue,N/A
+research-compendium,"add reusable slide deck to instructor notes",0,https://github.com/epiverse-trace/research-compendium/issues/12,2023-10-30T11:44:08Z,null,open,Issue,N/A
+research-compendium,"refer to citation, license, open science outside episodes",1,https://github.com/epiverse-trace/research-compendium/issues/11,2023-10-25T13:32:10Z,null,open,Issue,N/A
+research-compendium,"add screenshot on how to paste the readcitationfile ",0,https://github.com/epiverse-trace/research-compendium/issues/10,2023-09-15T18:10:49Z,null,open,Issue,N/A
+research-compendium,"incorporate edit suggestions from review",1,https://github.com/epiverse-trace/research-compendium/pull/4,2023-09-04T23:09:54Z,2023-09-04T23:16:51Z,closed,Pull Request,0
+research-compendium,"add episodes 2 to 7",1,https://github.com/epiverse-trace/research-compendium/pull/3,2023-09-03T21:22:18Z,2023-09-03T21:25:12Z,closed,Pull Request,0
+research-compendium,"add updated main to dev branch",1,https://github.com/epiverse-trace/research-compendium/pull/2,2023-09-01T21:33:17Z,2023-09-01T21:35:51Z,closed,Pull Request,0
+rmdscaffold,"Roadmap",0,https://github.com/epiverse-trace/rmdscaffold/issues/1,2023-03-16T09:46:03Z,null,open,Issue,N/A
+sandpaper,"add spanish translations",0,https://github.com/epiverse-trace/sandpaper/pull/1,2023-11-27T13:35:20Z,null,open,Pull Request,N/A
+scenarios,"Pass functions as symbols rather than strings",1,https://github.com/epiverse-trace/scenarios/issues/27,2023-10-09T15:59:10Z,null,open,Issue,N/A
+scenarios,"Option for time-stamp in scenario object (i.e. versioning as metadata)",0,https://github.com/epiverse-trace/scenarios/issues/26,2023-08-18T15:39:36Z,null,open,Issue,N/A
+scenarios,"Remove covr from Suggests",1,https://github.com/epiverse-trace/scenarios/pull/25,2023-06-06T10:03:42Z,2023-12-14T10:58:44Z,closed,Pull Request,191
+scenarios,"Scenario objects inherit from data.table",1,https://github.com/epiverse-trace/scenarios/pull/24,2023-03-06T13:35:03Z,2023-12-14T09:51:17Z,closed,Pull Request,282
+scenarios,"Scenario should inherit from data.table or data.frame",0,https://github.com/epiverse-trace/scenarios/issues/23,2023-02-24T12:46:09Z,null,open,Issue,N/A
+scenarios,"Delete lint-changed-files.yaml",0,https://github.com/epiverse-trace/scenarios/pull/22,2023-02-16T10:58:29Z,2023-02-16T14:54:05Z,closed,Pull Request,0
+scenarios,"Filtering comparisons on scenario attributes",0,https://github.com/epiverse-trace/scenarios/pull/21,2023-02-02T17:06:40Z,2023-02-07T10:35:54Z,closed,Pull Request,4
+scenarios,"Store scenario seed",0,https://github.com/epiverse-trace/scenarios/issues/20,2023-02-02T12:00:59Z,null,open,Issue,N/A
+scenarios,"Add name slot to scenario class",0,https://github.com/epiverse-trace/scenarios/issues/19,2023-02-02T11:59:15Z,2023-02-07T10:35:56Z,closed,Issue,4
+scenarios,"Function to drop scenario data",0,https://github.com/epiverse-trace/scenarios/issues/18,2023-02-02T11:56:18Z,2023-02-07T10:35:56Z,closed,Issue,4
+scenarios,"Compact documentation",0,https://github.com/epiverse-trace/scenarios/issues/17,2023-01-24T13:39:43Z,null,open,Issue,N/A
+scenarios,"Add a 'Get started' vignette",1,https://github.com/epiverse-trace/scenarios/issues/16,2023-01-20T14:25:40Z,2023-02-24T12:38:47Z,closed,Issue,34
+scenarios,"Function to filter comparable scenarios in a comparison",0,https://github.com/epiverse-trace/scenarios/issues/15,2023-01-20T14:22:47Z,2023-02-07T10:35:55Z,closed,Issue,17
+scenarios,"Function to add information to scenarios",0,https://github.com/epiverse-trace/scenarios/issues/14,2023-01-20T14:18:17Z,2023-02-03T10:27:46Z,closed,Issue,13
+scenarios,"Function to change baseline scenario in a comparison",0,https://github.com/epiverse-trace/scenarios/issues/13,2023-01-20T14:16:03Z,2023-02-03T10:27:46Z,closed,Issue,13
+scenarios,"Initial implementation of the `comparison` class",4,https://github.com/epiverse-trace/scenarios/pull/12,2023-01-18T10:22:15Z,2023-02-03T10:27:44Z,closed,Pull Request,16
+scenarios,"Logo and fixes to Readme",0,https://github.com/epiverse-trace/scenarios/pull/11,2023-01-17T09:36:03Z,2023-01-18T10:16:15Z,closed,Pull Request,1
+scenarios,"Fix readme",0,https://github.com/epiverse-trace/scenarios/pull/10,2023-01-16T16:08:20Z,2023-01-16T16:18:58Z,closed,Pull Request,0
+scenarios,"Structure Excel import-export for scenario objects",0,https://github.com/epiverse-trace/scenarios/issues/9,2023-01-12T17:09:34Z,null,open,Issue,N/A
+scenarios,"YAML import-export for scenario objects",0,https://github.com/epiverse-trace/scenarios/issues/8,2023-01-12T17:07:17Z,null,open,Issue,N/A
+scenarios,"JSON import-export for scenario objects",0,https://github.com/epiverse-trace/scenarios/issues/7,2023-01-12T17:00:11Z,2023-01-16T11:26:03Z,closed,Issue,3
+scenarios,"Initial implementation of the `scenario` class",0,https://github.com/epiverse-trace/scenarios/pull/6,2023-01-12T09:34:16Z,2023-01-16T11:26:02Z,closed,Pull Request,4
+scenarios,"Design of helper functions",0,https://github.com/epiverse-trace/scenarios/issues/5,2023-01-09T14:11:36Z,null,open,Issue,N/A
+scenarios,"Design of the `comparisons` class",0,https://github.com/epiverse-trace/scenarios/issues/4,2023-01-09T14:08:08Z,null,open,Issue,N/A
+scenarios,"Design of the `scenario` class",0,https://github.com/epiverse-trace/scenarios/issues/3,2023-01-09T14:00:10Z,null,open,Issue,N/A
+scenarios,"Corrections to Readme",0,https://github.com/epiverse-trace/scenarios/pull/2,2023-01-04T10:14:33Z,2023-01-04T10:28:06Z,closed,Pull Request,0
+scenarios,"Initial configuration and early scenarios class",0,https://github.com/epiverse-trace/scenarios/pull/1,2023-01-03T17:13:48Z,2023-01-04T09:04:22Z,closed,Pull Request,0
+serofoi,"fix(bug): correct exposure_expanded matrix calculation avoiding loops",1,https://github.com/epiverse-trace/serofoi/pull/146,2024-01-23T21:33:53Z,null,open,Pull Request,N/A
+serofoi,"Bug in matrix calculation `get_prev_expanded`",0,https://github.com/epiverse-trace/serofoi/issues/145,2024-01-23T19:46:51Z,null,open,Issue,N/A
+serofoi,"143 fix prepare serodata",1,https://github.com/epiverse-trace/serofoi/pull/144,2024-01-19T01:07:55Z,null,open,Pull Request,N/A
+serofoi,"Input validation in `prepare_serodata` can be simplified",0,https://github.com/epiverse-trace/serofoi/issues/143,2024-01-18T21:34:11Z,null,open,Issue,N/A
+serofoi,"Fix prepare_serodata input validation and updates documentation ",0,https://github.com/epiverse-trace/serofoi/pull/142,2024-01-18T17:14:24Z,2024-01-19T01:00:26Z,closed,Pull Request,0
+serofoi,"Replace `pracma::dot()` loop by matrix multiplication",2,https://github.com/epiverse-trace/serofoi/pull/141,2024-01-09T14:47:03Z,null,open,Pull Request,N/A
+serofoi,"Fix data simulation functions sample size specification",1,https://github.com/epiverse-trace/serofoi/pull/140,2023-12-21T17:44:44Z,null,open,Pull Request,N/A
+serofoi,"Add flag to Makevars.win and minor Lintr corrections",0,https://github.com/epiverse-trace/serofoi/pull/139,2023-12-19T20:25:21Z,2023-12-19T21:31:12Z,closed,Pull Request,0
+serofoi,"doc: suggested installation method updated to pak",1,https://github.com/epiverse-trace/serofoi/pull/138,2023-12-19T17:00:05Z,2023-12-21T16:35:12Z,closed,Pull Request,1
+serofoi,"Apply Epiverse-TRACE standard for linting",2,https://github.com/epiverse-trace/serofoi/pull/137,2023-11-23T16:35:38Z,2023-12-15T00:03:19Z,closed,Pull Request,21
+serofoi,"Should `plot_()` functions fail when receiving an invalid object?",1,https://github.com/epiverse-trace/serofoi/issues/136,2023-11-22T09:18:57Z,null,open,Issue,N/A
+serofoi,"Simplify `get_prev_expanded()`",1,https://github.com/epiverse-trace/serofoi/pull/135,2023-11-22T09:07:45Z,2023-12-19T16:18:13Z,closed,Pull Request,27
+serofoi,"Developer tools",6,https://github.com/epiverse-trace/serofoi/pull/134,2023-11-21T15:13:29Z,2023-12-16T09:02:20Z,closed,Pull Request,24
+serofoi,"Use development version of StanHeaders",0,https://github.com/epiverse-trace/serofoi/pull/133,2023-11-21T15:04:02Z,2023-11-23T13:13:21Z,closed,Pull Request,1
+serofoi,"62 namespace",0,https://github.com/epiverse-trace/serofoi/pull/132,2023-11-10T16:34:42Z,2023-11-14T17:08:17Z,closed,Pull Request,4
+serofoi,"Github actions builds fails on MacOS and webassembly",2,https://github.com/epiverse-trace/serofoi/issues/131,2023-11-10T15:20:59Z,2023-12-19T17:08:08Z,closed,Issue,39
+serofoi,"Fix MIT license",0,https://github.com/epiverse-trace/serofoi/pull/130,2023-10-25T08:06:13Z,2023-10-26T00:37:59Z,closed,Pull Request,0
+serofoi,"generalize data binning for `prepare_bin_data` and `plot_seroprev`",0,https://github.com/epiverse-trace/serofoi/issues/129,2023-10-24T17:38:12Z,null,open,Issue,N/A
+serofoi,"remove dependencies devtools and usethis",4,https://github.com/epiverse-trace/serofoi/pull/128,2023-10-13T04:15:52Z,2023-11-28T18:55:49Z,closed,Pull Request,46
+serofoi,"Merge dev into main",0,https://github.com/epiverse-trace/serofoi/pull/127,2023-10-11T13:04:47Z,2023-10-11T18:59:04Z,closed,Pull Request,0
+serofoi,"Add data simulation functions",3,https://github.com/epiverse-trace/serofoi/pull/126,2023-10-10T17:27:14Z,2023-11-08T17:00:34Z,closed,Pull Request,29
+serofoi,"Remove test_visualisation and related files",0,https://github.com/epiverse-trace/serofoi/pull/125,2023-10-10T15:54:28Z,2023-10-10T15:55:07Z,closed,Pull Request,0
+serofoi,"Dev test models",0,https://github.com/epiverse-trace/serofoi/pull/124,2023-10-10T11:43:12Z,2023-10-10T12:36:18Z,closed,Pull Request,0
+serofoi,"fix: add input check for `age_mean_f` column",0,https://github.com/epiverse-trace/serofoi/pull/123,2023-09-29T14:45:18Z,2023-10-02T15:29:13Z,closed,Pull Request,3
+serofoi,"Logo update",1,https://github.com/epiverse-trace/serofoi/pull/122,2023-09-28T19:19:19Z,2023-09-28T21:02:37Z,closed,Pull Request,0
+serofoi,"prepare_serodata add_age_mean_f = FALSE",1,https://github.com/epiverse-trace/serofoi/issues/121,2023-09-18T09:17:45Z,2023-10-11T19:01:54Z,closed,Issue,23
+serofoi,"82 tidyverse dependency",0,https://github.com/epiverse-trace/serofoi/pull/120,2023-09-14T19:16:14Z,2023-09-15T08:52:02Z,closed,Pull Request,0
+serofoi,"82 tidyverse dependency",1,https://github.com/epiverse-trace/serofoi/pull/119,2023-09-14T18:32:24Z,2023-09-14T19:14:58Z,closed,Pull Request,0
+serofoi,"Pass argument from `fit_seromodel()` to `rstan::sampling()` via `...`",0,https://github.com/epiverse-trace/serofoi/issues/118,2023-09-08T11:31:58Z,null,open,Issue,N/A
+serofoi,"refac: `fit_seromodel` returns stanfit object",2,https://github.com/epiverse-trace/serofoi/pull/117,2023-09-07T19:28:09Z,2023-09-27T23:41:57Z,closed,Pull Request,20
+simulist,"Add network model simulation",1,https://github.com/epiverse-trace/simulist/pull/60,2024-01-19T12:32:36Z,null,open,Pull Request,N/A
+simulist,"add detailed argument description to acronym in `add_ct`",0,https://github.com/epiverse-trace/simulist/issues/59,2024-01-16T11:19:05Z,null,open,Issue,N/A
+simulist,"Refactor infection and contact simulation into joint process",2,https://github.com/epiverse-trace/simulist/issues/58,2024-01-12T13:54:09Z,null,open,Issue,N/A
+simulist,"Set seed in README",0,https://github.com/epiverse-trace/simulist/issues/57,2024-01-11T10:48:55Z,null,open,Issue,N/A
+simulist,"Add DOI to README & CITATION",2,https://github.com/epiverse-trace/simulist/pull/56,2024-01-09T11:18:31Z,2024-01-11T11:04:43Z,closed,Pull Request,1
+simulist,"Increment to development version",0,https://github.com/epiverse-trace/simulist/pull/55,2024-01-08T16:25:53Z,2024-01-09T17:06:08Z,closed,Pull Request,1
+simulist,"Miscellaneous updates for v0.1.0 release",1,https://github.com/epiverse-trace/simulist/pull/54,2024-01-08T15:01:00Z,2024-01-08T15:52:54Z,closed,Pull Request,0
+simulist,"Clarify documentation of `contact_distribution`",0,https://github.com/epiverse-trace/simulist/pull/53,2024-01-08T14:39:32Z,2024-01-08T14:45:06Z,closed,Pull Request,0
+simulist,"Update "rate" to "risk"",0,https://github.com/epiverse-trace/simulist/pull/52,2024-01-08T14:16:49Z,2024-01-08T14:32:40Z,closed,Pull Request,0
+simulist,"Remove running tests in parallel",0,https://github.com/epiverse-trace/simulist/pull/51,2024-01-08T10:13:24Z,2024-01-08T10:26:57Z,closed,Pull Request,0
+simulist,"Use saved test data instead of `.create_linelist()`",0,https://github.com/epiverse-trace/simulist/pull/50,2024-01-05T16:28:00Z,2024-01-08T10:04:32Z,closed,Pull Request,2
+simulist,"Move number of line list cases inline in Visualising simulated data vignette",0,https://github.com/epiverse-trace/simulist/pull/49,2024-01-05T15:19:06Z,2024-01-05T15:25:40Z,closed,Pull Request,0
+simulist,"Update Age-stratified hospitalisation and death rates vignette",0,https://github.com/epiverse-trace/simulist/pull/48,2024-01-05T15:02:59Z,2024-01-05T15:09:30Z,closed,Pull Request,0
+simulist,"Update Age structured population vignette",0,https://github.com/epiverse-trace/simulist/pull/47,2024-01-05T14:36:05Z,2024-01-05T14:40:35Z,closed,Pull Request,0
+simulist,"Update Get started vignette",0,https://github.com/epiverse-trace/simulist/pull/46,2024-01-05T14:09:42Z,2024-01-05T14:16:18Z,closed,Pull Request,0
+simulist,"Update README",1,https://github.com/epiverse-trace/simulist/pull/45,2024-01-04T16:25:55Z,2024-01-04T16:34:38Z,closed,Pull Request,0
+simulist,"Update simulation functions",0,https://github.com/epiverse-trace/simulist/pull/44,2024-01-04T14:14:28Z,2024-01-04T14:36:54Z,closed,Pull Request,0
+simulist,"Possibility to reintroduce `...` to pass arguments to branching process model",0,https://github.com/epiverse-trace/simulist/issues/43,2024-01-04T12:17:54Z,null,open,Issue,N/A
+simulist,"Refactor simulation functions",0,https://github.com/epiverse-trace/simulist/issues/42,2024-01-04T10:46:31Z,null,open,Issue,N/A
+simulist,"Keep `add_names` & `add_ct`?",0,https://github.com/epiverse-trace/simulist/issues/41,2024-01-04T10:38:43Z,null,open,Issue,N/A
+simulist,"Refactor `add_cols` functions",0,https://github.com/epiverse-trace/simulist/pull/40,2024-01-03T17:34:53Z,2024-01-04T09:56:48Z,closed,Pull Request,0
+simulist,"Update `create_config()` to use dynamic dots",1,https://github.com/epiverse-trace/simulist/pull/39,2024-01-03T15:29:26Z,2024-01-03T15:40:04Z,closed,Pull Request,0
+simulist,"Update logical checks in `checkers.R`",0,https://github.com/epiverse-trace/simulist/pull/38,2024-01-03T10:58:28Z,2024-01-03T11:48:47Z,closed,Pull Request,0
+simulist,"Add PR link to setup-options",0,https://github.com/epiverse-trace/simulist/pull/37,2024-01-03T10:25:02Z,2024-01-03T10:42:02Z,closed,Pull Request,0
+simulist,"Functionality for time varying CFR and different delays depending on outcome",0,https://github.com/epiverse-trace/simulist/issues/36,2023-12-14T10:58:48Z,null,open,Issue,N/A
+simulist,"Contact distribution vs. offspring distribution",4,https://github.com/epiverse-trace/simulist/issues/35,2023-12-06T12:50:31Z,2024-01-12T13:49:36Z,closed,Issue,37
+simulist,"More epidemic models to generate cases?",0,https://github.com/epiverse-trace/simulist/issues/34,2023-12-05T16:37:51Z,null,open,Issue,N/A
+simulist,"{simulist} full package review",2,https://github.com/epiverse-trace/simulist/pull/33,2023-12-05T12:39:44Z,2024-01-05T16:31:36Z,closed,Pull Request,31
+simulist,"Release simulist 0.1.0",1,https://github.com/epiverse-trace/simulist/issues/32,2023-12-01T12:32:44Z,2024-01-08T16:24:20Z,closed,Issue,38
+simulist,"Update {simulist} package infrastructure for release",0,https://github.com/epiverse-trace/simulist/pull/31,2023-12-01T12:31:37Z,2023-12-05T12:17:14Z,closed,Pull Request,3
+sivirep,"Add pkgdown reference index sections",0,https://github.com/epiverse-trace/sivirep/issues/88,2024-01-22T17:39:25Z,null,open,Issue,N/A
+sivirep,"Add preview of rendered report on documentation website",0,https://github.com/epiverse-trace/sivirep/issues/87,2024-01-22T17:36:00Z,null,open,Issue,N/A
+sivirep,"Add GitHub links to DESCRIPTION",0,https://github.com/epiverse-trace/sivirep/pull/86,2024-01-15T12:06:37Z,null,open,Pull Request,N/A
+sivirep,"Add activate and deactivate option in the "Reporte Basico" template",0,https://github.com/epiverse-trace/sivirep/issues/85,2024-01-15T00:30:25Z,null,open,Issue,N/A
+sivirep,"Dev feat(skeleton): added suggestion section in report (#83)",0,https://github.com/epiverse-trace/sivirep/pull/84,2024-01-15T00:19:04Z,null,open,Pull Request,N/A
+sivirep,"feat(skeleton): added suggestion section in report",0,https://github.com/epiverse-trace/sivirep/pull/83,2024-01-15T00:16:31Z,2024-01-15T00:16:46Z,closed,Pull Request,0
+sivirep,"Add suggestions section in "Reporte Basico" template ",0,https://github.com/epiverse-trace/sivirep/issues/82,2024-01-14T21:42:28Z,null,open,Issue,N/A
+sivirep,"Dev feat: updated validation response from SIVIGILA API",0,https://github.com/epiverse-trace/sivirep/pull/81,2023-12-13T14:17:58Z,2023-12-13T14:54:40Z,closed,Pull Request,0
+sivirep,"feat: updated validation response from SIVIGILA API",0,https://github.com/epiverse-trace/sivirep/pull/80,2023-12-13T14:07:45Z,2023-12-13T14:17:22Z,closed,Pull Request,0
+sivirep,"Creación de función para obtención de tiempo entre las fechas ",0,https://github.com/epiverse-trace/sivirep/issues/79,2023-12-08T16:10:27Z,null,open,Issue,N/A
+sivirep,"Arrange the municipalities by number of cases",0,https://github.com/epiverse-trace/sivirep/issues/78,2023-12-08T15:55:46Z,null,open,Issue,N/A
+sivirep,"Código de departamento Error (Grupo 4) Sivirep",0,https://github.com/epiverse-trace/sivirep/issues/77,2023-12-08T15:36:24Z,null,open,Issue,N/A
+sivirep,"Feat: added and removed logic for dpto and mpio param",0,https://github.com/epiverse-trace/sivirep/pull/76,2023-12-08T08:40:41Z,2023-12-08T10:57:10Z,closed,Pull Request,0
+sivirep,"Feat: removed and logic relate to dpto and mpio params",0,https://github.com/epiverse-trace/sivirep/pull/75,2023-12-08T06:53:54Z,2023-12-08T08:40:15Z,closed,Pull Request,0
+sivirep,"Fix map file size",0,https://github.com/epiverse-trace/sivirep/pull/74,2023-11-23T16:17:10Z,2023-11-24T11:19:24Z,closed,Pull Request,0
+sivirep,"Feat, fix and chore: validations, variable names and linted and cleaned up the code",0,https://github.com/epiverse-trace/sivirep/pull/73,2023-11-23T04:08:41Z,2023-11-23T05:00:44Z,closed,Pull Request,0
+sivirep,"feat, fix and chore: validations, variable names and linted and cleaned up the code",0,https://github.com/epiverse-trace/sivirep/pull/72,2023-11-23T04:00:04Z,2023-11-23T04:06:33Z,closed,Pull Request,0
+sivirep,"Fix and Chore: updated import function, added input validaitions and documentation",0,https://github.com/epiverse-trace/sivirep/pull/71,2023-11-16T21:19:57Z,2023-11-16T23:27:38Z,closed,Pull Request,0
+sivirep,"Fix map",0,https://github.com/epiverse-trace/sivirep/pull/70,2023-11-09T17:42:04Z,2023-11-24T11:54:33Z,closed,Pull Request,14
+sivirep,"fix, chore and feat: plot functions, map visualisation, documentation and theme of report template ",0,https://github.com/epiverse-trace/sivirep/pull/69,2023-10-19T09:28:42Z,2023-10-19T10:42:27Z,closed,Pull Request,0
+sivirep,"fix, chore and feat: plot functions, map visualisation, documentation and theme of report template",0,https://github.com/epiverse-trace/sivirep/pull/68,2023-10-19T07:18:32Z,2023-10-19T09:27:01Z,closed,Pull Request,0
+sivirep,"Use Epiverse-TRACE lintr settings",0,https://github.com/epiverse-trace/sivirep/pull/67,2023-10-09T10:19:48Z,2023-11-23T05:48:10Z,closed,Pull Request,44
+sivirep,"fix: report template, title, plots and logic for multiple diseases",0,https://github.com/epiverse-trace/sivirep/pull/66,2023-10-03T21:51:33Z,2023-11-23T04:35:16Z,closed,Pull Request,50
+sivirep,"fix: data example, import data function and documentation",0,https://github.com/epiverse-trace/sivirep/pull/65,2023-10-03T18:58:04Z,2023-10-03T19:22:46Z,closed,Pull Request,0
+sivirep,"fix: data, examples and nombre_evento parameter of report template",0,https://github.com/epiverse-trace/sivirep/pull/64,2023-10-03T11:09:02Z,2023-10-03T14:51:29Z,closed,Pull Request,0
+sivirep,"test and chore: adding example test data and updating the documentation of functions",0,https://github.com/epiverse-trace/sivirep/pull/63,2023-10-02T22:32:34Z,2023-10-03T00:26:56Z,closed,Pull Request,0
+sivirep,"Avoid simulatenous dependency on dplyr and data.table",1,https://github.com/epiverse-trace/sivirep/issues/62,2023-10-02T08:54:32Z,2023-11-08T09:18:14Z,closed,Issue,37
+sivirep,"fix and docs: updating, clean and name chunks of vignettes and README, adding contributors to DESCRIPTION file",0,https://github.com/epiverse-trace/sivirep/pull/61,2023-09-29T22:48:56Z,2023-10-02T22:12:09Z,closed,Pull Request,2
+sivirep,"fix (import_data): remove whitespace",0,https://github.com/epiverse-trace/sivirep/pull/60,2023-09-29T19:30:11Z,2023-09-29T19:30:21Z,closed,Pull Request,0
+sivirep,"fix (import_data): remove sca problems",0,https://github.com/epiverse-trace/sivirep/pull/59,2023-09-29T19:22:48Z,2023-09-29T19:23:58Z,closed,Pull Request,0
+superspreading,"Package updates for v0.2.0 release",1,https://github.com/epiverse-trace/superspreading/pull/86,2024-01-25T17:15:48Z,null,open,Pull Request,N/A
+superspreading,"Minor wording updates in vignettes",0,https://github.com/epiverse-trace/superspreading/pull/85,2024-01-25T14:26:58Z,2024-01-25T14:35:17Z,closed,Pull Request,0
+superspreading,"Update package testing",0,https://github.com/epiverse-trace/superspreading/pull/84,2024-01-25T13:48:22Z,2024-01-25T14:09:10Z,closed,Pull Request,0
+superspreading,"Update `calc_network_R()`",0,https://github.com/epiverse-trace/superspreading/pull/83,2024-01-23T18:23:18Z,2024-01-25T10:23:27Z,closed,Pull Request,1
+superspreading,"Update `probability_*()` functions",0,https://github.com/epiverse-trace/superspreading/pull/82,2024-01-23T17:28:45Z,2024-01-23T17:35:59Z,closed,Pull Request,0
+superspreading,"Update `proportion_*()` functions",0,https://github.com/epiverse-trace/superspreading/pull/81,2024-01-22T14:49:03Z,2024-01-22T14:57:35Z,closed,Pull Request,0
+superspreading,"Run testing suite sequentially",0,https://github.com/epiverse-trace/superspreading/pull/80,2024-01-22T13:05:30Z,2024-01-22T13:24:24Z,closed,Pull Request,0
+superspreading,"Allow output of `ic_tbl()` to be unordered",0,https://github.com/epiverse-trace/superspreading/pull/79,2024-01-22T12:56:07Z,2024-01-22T13:01:17Z,closed,Pull Request,0
+superspreading,"Add early exit to probability_epidemic()",1,https://github.com/epiverse-trace/superspreading/pull/78,2024-01-15T15:50:48Z,2024-01-22T11:57:41Z,closed,Pull Request,6
+superspreading,"{superspreading} v0.2.0 pkg review",4,https://github.com/epiverse-trace/superspreading/pull/77,2024-01-09T14:49:11Z,2024-01-25T15:13:29Z,closed,Pull Request,16
+superspreading,"Update `probability_contain` in Epidemic Risk vignette",0,https://github.com/epiverse-trace/superspreading/pull/76,2023-12-15T18:11:44Z,2024-01-09T12:22:08Z,closed,Pull Request,24
+superspreading,"Update NEWS for v0.2.0",0,https://github.com/epiverse-trace/superspreading/pull/75,2023-12-15T17:35:41Z,2024-01-09T13:59:59Z,closed,Pull Request,24
+superspreading,"Release superspreading 0.2.0",0,https://github.com/epiverse-trace/superspreading/issues/74,2023-12-15T16:41:32Z,null,open,Issue,N/A
+superspreading,"Update package hex logo",1,https://github.com/epiverse-trace/superspreading/pull/73,2023-12-15T16:13:13Z,2023-12-15T16:38:54Z,closed,Pull Request,0
+superspreading,"Add option for `numeric` proportions",0,https://github.com/epiverse-trace/superspreading/pull/72,2023-12-15T15:19:49Z,2023-12-15T15:33:52Z,closed,Pull Request,0
+superspreading,"Add heterogeneous contacts R function and vignette",3,https://github.com/epiverse-trace/superspreading/pull/71,2023-12-15T13:32:49Z,2024-01-09T12:06:52Z,closed,Pull Request,24
+superspreading,"Include population-level and individual-level controls in joint framework",0,https://github.com/epiverse-trace/superspreading/pull/70,2023-12-14T11:40:12Z,2023-12-14T13:02:54Z,closed,Pull Request,0
+superspreading,"Option to make `proportion_*()` functions return `numeric`",1,https://github.com/epiverse-trace/superspreading/issues/69,2023-12-14T10:37:55Z,2023-12-15T15:33:54Z,closed,Issue,1
+superspreading,"Add design principles vignette",5,https://github.com/epiverse-trace/superspreading/pull/68,2023-12-12T17:05:55Z,2023-12-14T12:36:18Z,closed,Pull Request,1
+superspreading,"Update package infrastructure",3,https://github.com/epiverse-trace/superspreading/pull/67,2023-12-12T16:30:34Z,2023-12-14T11:53:09Z,closed,Pull Request,1
+superspreading,"Remove mention of {quickfit}",0,https://github.com/epiverse-trace/superspreading/pull/66,2023-12-07T11:38:13Z,2023-12-07T11:47:04Z,closed,Pull Request,0
+superspreading,"Add helper function to create model comparison table",0,https://github.com/epiverse-trace/superspreading/pull/65,2023-12-07T11:16:33Z,2023-12-07T11:28:27Z,closed,Pull Request,0
+superspreading,"Update function arguments accepting `<epidist>`",0,https://github.com/epiverse-trace/superspreading/pull/64,2023-12-06T16:23:50Z,2023-12-06T16:35:57Z,closed,Pull Request,0
+superspreading,"Improve function documentation",0,https://github.com/epiverse-trace/superspreading/pull/63,2023-12-06T14:57:24Z,2023-12-06T15:12:37Z,closed,Pull Request,0
+superspreading,"Fix {epiparameter} use in {superspreading}",0,https://github.com/epiverse-trace/superspreading/pull/62,2023-12-06T14:09:47Z,2023-12-06T14:26:35Z,closed,Pull Request,0
+superspreading,"`epidist_db()` can return a list: breaks vignettes",2,https://github.com/epiverse-trace/superspreading/issues/61,2023-09-26T13:21:27Z,2023-12-06T14:26:37Z,closed,Issue,71
+superspreading,"Presentation of AIC/BIC tables",0,https://github.com/epiverse-trace/superspreading/issues/60,2023-08-18T15:21:01Z,2023-12-07T11:28:29Z,closed,Issue,110
+superspreading,"Update to dev version (0.1.0.9000)",0,https://github.com/epiverse-trace/superspreading/pull/59,2023-08-18T09:02:15Z,2023-08-18T09:17:00Z,closed,Pull Request,0
+superspreading,"Format NEWS.md",0,https://github.com/epiverse-trace/superspreading/pull/58,2023-08-18T08:22:35Z,2023-08-18T08:36:50Z,closed,Pull Request,0
+superspreading,"Package infrastructure updates for release v0.1.0",0,https://github.com/epiverse-trace/superspreading/pull/57,2023-08-17T16:44:47Z,2023-08-18T08:12:00Z,closed,Pull Request,0
+testpkg,"Change pkg name in license",0,https://github.com/epiverse-trace/testpkg/pull/4,2023-11-29T14:51:43Z,null,open,Pull Request,N/A
+testpkg,"Bump version to 0.1.0",0,https://github.com/epiverse-trace/testpkg/pull/3,2023-11-29T14:50:13Z,null,open,Pull Request,N/A
+testpkg,"remove obsolete newline",1,https://github.com/epiverse-trace/testpkg/pull/2,2023-11-28T13:55:11Z,2023-11-28T13:58:20Z,closed,Pull Request,0
+testpkg,"Test change on README.Rmd",0,https://github.com/epiverse-trace/testpkg/pull/1,2023-11-28T13:06:19Z,2023-11-28T13:14:17Z,closed,Pull Request,0
+tutorials,"Try installing RcppParallel from RSPM",1,https://github.com/epiverse-trace/tutorials/pull/112,2024-01-25T12:34:25Z,2024-01-25T16:04:36Z,closed,Pull Request,0
+tutorials,"! Error installing package `RcppParallel`",2,https://github.com/epiverse-trace/tutorials/issues/111,2024-01-24T19:54:45Z,2024-01-25T15:25:58Z,closed,Issue,0
+tutorials,"Add lesson dependency instruction",7,https://github.com/epiverse-trace/tutorials/pull/110,2024-01-24T11:35:58Z,2024-01-25T15:16:54Z,closed,Pull Request,1
+tutorials,"Fix typo",1,https://github.com/epiverse-trace/tutorials/pull/109,2024-01-24T10:42:44Z,2024-01-24T12:02:50Z,closed,Pull Request,0
+tutorials,"replace "install" by "call to" package inside an episode",0,https://github.com/epiverse-trace/tutorials/issues/108,2024-01-23T17:13:04Z,null,open,Issue,N/A
+tutorials,"automate version prereq for learners setup",0,https://github.com/epiverse-trace/tutorials/issues/107,2024-01-22T18:48:46Z,null,open,Issue,N/A
+tutorials,"Configuration with {rprojroot} package. ",3,https://github.com/epiverse-trace/tutorials/issues/106,2024-01-18T12:37:34Z,null,open,Issue,N/A
+tutorials,"Update 5 packages",1,https://github.com/epiverse-trace/tutorials/pull/105,2024-01-02T00:37:54Z,2024-01-24T10:34:12Z,closed,Pull Request,22
+tutorials,"add episodes on introduction and read delays",19,https://github.com/epiverse-trace/tutorials/pull/104,2023-12-23T07:57:53Z,null,open,Pull Request,N/A
+tutorials,"add `{epiparameter}` funcitons diagram concept map to episodes",0,https://github.com/epiverse-trace/tutorials/issues/103,2023-12-22T20:02:06Z,null,open,Issue,N/A
+tutorials,"add software setup template",2,https://github.com/epiverse-trace/tutorials/pull/102,2023-12-22T19:00:10Z,2024-01-25T16:23:42Z,closed,Pull Request,33
+tutorials,"Install sandpaper from our fork",6,https://github.com/epiverse-trace/tutorials/pull/101,2023-12-21T11:49:16Z,2024-01-24T08:20:47Z,closed,Pull Request,33
+tutorials,"update `{epidemics}` code and package version in `renv.lock`",10,https://github.com/epiverse-trace/tutorials/issues/100,2023-12-20T18:31:31Z,2023-12-21T14:16:43Z,closed,Issue,0
+tutorials,"move installation code chunks to setup page",0,https://github.com/epiverse-trace/tutorials/issues/99,2023-12-20T16:49:12Z,null,open,Issue,N/A
+tutorials,"remove install package code lines from episodes",4,https://github.com/epiverse-trace/tutorials/issues/98,2023-12-20T11:33:55Z,2023-12-21T16:49:34Z,closed,Issue,1
+tutorials,"add rebase how-to steps and one per branch suggestion",4,https://github.com/epiverse-trace/tutorials/pull/97,2023-12-19T17:15:04Z,2023-12-20T12:40:24Z,closed,Pull Request,0
+tutorials,"Add lintr continuous integration",3,https://github.com/epiverse-trace/tutorials/pull/96,2023-12-18T11:59:44Z,null,open,Pull Request,N/A
+tutorials,"update website title of tutorials",1,https://github.com/epiverse-trace/tutorials/pull/95,2023-12-18T10:31:53Z,2023-12-19T18:05:58Z,closed,Pull Request,1
+tutorials,"add introduction episode for the Late Task",1,https://github.com/epiverse-trace/tutorials/issues/94,2023-12-18T10:24:38Z,null,open,Issue,N/A
+tutorials,"Update 49 packages",10,https://github.com/epiverse-trace/tutorials/pull/93,2023-12-18T08:02:31Z,2023-12-20T18:00:37Z,closed,Pull Request,2
+tutorials,"Update Workflows to Version 0.16.1",1,https://github.com/epiverse-trace/tutorials/pull/92,2023-12-18T07:42:48Z,2023-12-20T14:02:04Z,closed,Pull Request,2
+tutorials,"add dataset to reuse in assessmens",4,https://github.com/epiverse-trace/tutorials/pull/91,2023-12-17T19:02:33Z,2023-12-17T19:09:07Z,closed,Pull Request,0
+tutorials,"add `{rcompendium}` as part of the setup actions",0,https://github.com/epiverse-trace/tutorials/issues/90,2023-12-17T16:53:02Z,null,open,Issue,N/A
+tutorials,"add assessment dataset `ebola_cases.csv` to `episodes/data/` location for reuse",0,https://github.com/epiverse-trace/tutorials/issues/89,2023-12-17T16:46:26Z,2023-12-17T19:09:08Z,closed,Issue,0
+tutorials,"add episodes on Introduction and Read Delays",0,https://github.com/epiverse-trace/tutorials/issues/88,2023-12-17T16:33:00Z,null,open,Issue,N/A
+tutorials,"add episodes on Read, Clean, and Validate data",0,https://github.com/epiverse-trace/tutorials/issues/87,2023-12-17T16:19:08Z,null,open,Issue,N/A
+tutorials,"use the first person plural in writing",0,https://github.com/epiverse-trace/tutorials/issues/86,2023-12-17T15:25:48Z,null,open,Issue,N/A
+tutorials,"update late tasks from feedback",3,https://github.com/epiverse-trace/tutorials/pull/85,2023-12-12T13:04:21Z,2023-12-21T14:05:04Z,closed,Pull Request,9
+tutorials,"Update simulating-transmission.Rmd",1,https://github.com/epiverse-trace/tutorials/pull/84,2023-12-11T10:58:57Z,2023-12-13T08:51:28Z,closed,Pull Request,1
+tutorials,"Update reference.md",3,https://github.com/epiverse-trace/tutorials/pull/83,2023-12-11T10:21:50Z,2023-12-14T16:52:30Z,closed,Pull Request,3
+vaccineff,"Definition of age interval in get_age_group",0,https://github.com/epiverse-trace/vaccineff/issues/38,2024-01-10T20:53:05Z,null,open,Issue,N/A
+vaccineff,"Dynamic matching",1,https://github.com/epiverse-trace/vaccineff/issues/37,2024-01-04T00:02:39Z,null,open,Issue,N/A
+vaccineff,"Fixed get_immunization_date()",0,https://github.com/epiverse-trace/vaccineff/pull/36,2023-11-22T14:05:19Z,2023-11-24T17:49:19Z,closed,Pull Request,2
+vaccineff,"Immunization dates after cohort end date",1,https://github.com/epiverse-trace/vaccineff/issues/35,2023-11-18T16:37:59Z,2023-11-24T17:55:24Z,closed,Issue,6
+vaccineff,"Wrong sign on limit date for get_immunization_date()",1,https://github.com/epiverse-trace/vaccineff/issues/34,2023-11-12T17:31:26Z,2023-11-24T17:55:51Z,closed,Issue,12
+vaccineff,"chore: adding dev branch to pkgdown",0,https://github.com/epiverse-trace/vaccineff/pull/33,2023-10-10T01:47:07Z,2023-10-10T01:52:03Z,closed,Pull Request,0
+vaccineff,"Add plot theme",2,https://github.com/epiverse-trace/vaccineff/issues/32,2023-10-05T09:48:03Z,null,open,Issue,N/A
+vaccineff,"plotting functions for coverage and survival",8,https://github.com/epiverse-trace/vaccineff/pull/31,2023-09-29T15:05:20Z,2023-10-30T13:51:24Z,closed,Pull Request,30
+vaccineff,"Delete redundant linting workflow",0,https://github.com/epiverse-trace/vaccineff/pull/30,2023-09-22T12:55:39Z,2023-10-06T09:52:30Z,closed,Pull Request,13
+vaccineff,"Dev cohorts",0,https://github.com/epiverse-trace/vaccineff/pull/29,2023-09-22T12:51:55Z,2023-09-22T12:52:23Z,closed,Pull Request,0
+vaccineff,"Merge pull request #25 from epiverse-trace/dev",0,https://github.com/epiverse-trace/vaccineff/pull/28,2023-09-12T16:48:23Z,2023-09-12T16:48:29Z,closed,Pull Request,0
+vaccineff,"Dev cohorts",0,https://github.com/epiverse-trace/vaccineff/pull/27,2023-09-12T16:11:21Z,2023-09-12T16:11:37Z,closed,Pull Request,0
+vaccineff,"Dev-cohort",0,https://github.com/epiverse-trace/vaccineff/pull/26,2023-09-08T08:18:27Z,2023-09-08T08:18:56Z,closed,Pull Request,0
+vaccineff,"Dev",3,https://github.com/epiverse-trace/vaccineff/pull/25,2023-08-30T10:43:30Z,2023-09-11T08:54:06Z,closed,Pull Request,11
+vaccineff,"knit readme",0,https://github.com/epiverse-trace/vaccineff/pull/24,2023-08-30T10:40:16Z,2023-08-30T10:40:31Z,closed,Pull Request,0
+vaccineff,"Dev cohort",0,https://github.com/epiverse-trace/vaccineff/pull/23,2023-08-30T10:21:57Z,2023-08-30T10:22:06Z,closed,Pull Request,0
+vaccineff,"Merge contributions from summit's challenge ",0,https://github.com/epiverse-trace/vaccineff/pull/22,2023-08-13T13:58:06Z,2023-08-13T13:58:18Z,closed,Pull Request,0
+vaccineff,"Dev",0,https://github.com/epiverse-trace/vaccineff/pull/21,2023-08-08T17:10:38Z,2023-08-08T18:27:39Z,closed,Pull Request,0
+vaccineff,"Dev minor fixes",0,https://github.com/epiverse-trace/vaccineff/pull/20,2023-08-08T17:09:10Z,2023-08-08T17:09:19Z,closed,Pull Request,0
+vaccineff,"Bring clean up and fixes to dev",0,https://github.com/epiverse-trace/vaccineff/pull/19,2023-08-08T16:17:05Z,2023-08-08T16:17:37Z,closed,Pull Request,0
+vaccineff,"Merge dev testneg 2 into parallel designs",0,https://github.com/epiverse-trace/vaccineff/pull/18,2023-08-01T15:36:48Z,2023-08-01T15:46:41Z,closed,Pull Request,0
+vaccineff,"Merge dev testneg",0,https://github.com/epiverse-trace/vaccineff/pull/17,2023-08-01T14:53:14Z,2023-08-01T15:39:10Z,closed,Pull Request,0
+vaccineff,"Compute vaccine effectiveness by groups?",0,https://github.com/epiverse-trace/vaccineff/issues/16,2023-07-11T09:59:45Z,null,open,Issue,N/A
+vaccineff,"Vaccination after death in `cohortdata`",1,https://github.com/epiverse-trace/vaccineff/issues/15,2023-07-10T18:28:43Z,2023-08-30T10:31:05Z,closed,Issue,50
+vaccineff,"Use epiverse pkgdown theme",0,https://github.com/epiverse-trace/vaccineff/pull/14,2023-07-10T14:44:41Z,2023-08-01T15:54:22Z,closed,Pull Request,22
+vaccineff,"Package cleanup",0,https://github.com/epiverse-trace/vaccineff/pull/13,2023-07-05T15:47:39Z,2023-08-05T17:25:07Z,closed,Pull Request,31
+vaccineff,"fix: etdev package to description file",0,https://github.com/epiverse-trace/vaccineff/pull/12,2023-07-05T11:08:29Z,2023-07-05T11:08:35Z,closed,Pull Request,0
+vaccineff,"adding etdev package to description file",0,https://github.com/epiverse-trace/vaccineff/pull/11,2023-07-05T10:47:03Z,2023-07-05T13:19:04Z,closed,Pull Request,0
+vaccineff,"adding etdev package to description file",0,https://github.com/epiverse-trace/vaccineff/pull/10,2023-07-05T10:46:27Z,2023-07-05T10:46:33Z,closed,Pull Request,0
+vaccineff,"Dev",0,https://github.com/epiverse-trace/vaccineff/pull/9,2023-07-05T01:25:55Z,2023-07-05T01:34:36Z,closed,Pull Request,0
+varnish,"homogenize logos or make them time-independent",0,https://github.com/epiverse-trace/varnish/issues/6,2024-01-15T15:41:58Z,null,open,Issue,N/A
+varnish,"Update favicon",0,https://github.com/epiverse-trace/varnish/issues/5,2023-12-20T17:02:03Z,null,open,Issue,N/A
+varnish,"include content in epiversetheme to tracelactheme",1,https://github.com/epiverse-trace/varnish/pull/4,2023-11-27T12:00:59Z,2023-11-27T12:01:46Z,closed,Pull Request,0
+varnish,"add epiversetheme content to tracelactheme branch",0,https://github.com/epiverse-trace/varnish/pull/3,2023-11-27T11:51:12Z,2023-11-27T11:51:48Z,closed,Pull Request,0
+varnish,"translate some header words to spanish",0,https://github.com/epiverse-trace/varnish/pull/2,2023-11-27T10:51:33Z,2023-11-27T10:52:33Z,closed,Pull Request,0
+varnish,"translate episodes to spanish in navbar",0,https://github.com/epiverse-trace/varnish/pull/1,2023-11-27T10:50:45Z,2023-11-27T10:52:14Z,closed,Pull Request,0
