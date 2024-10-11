@@ -1,11 +1,11 @@
 ---
-layout: collection.njk
+layout: mylayout.njk
 ---
 # {{ title }}
 {% if subtitle %}
 <div role="doc-subtitle">{{ subtitle }}</div>
 {% endif %}
-        
+    
 {% if type.type == "COMMUNITY" %}
 <img class="header-image" src="header.png" />
 {% endif %}
@@ -23,13 +23,13 @@ Last updated on  2023-03-02.
 
 <ul>
 {%- for editor in editors -%}
- <li>
- {% if editor.workspace.orcid %}
- <a href="https://orcid.org/{{ editor.workspace.orcid }}">{{ editor.workspace.firstName }} {{ editor.workspace.lastName }}</a>
- {% else %}
- {{ editor.workspace.firstName }} {{ editor.workspace.lastName }}
- {% endif %}
- </li>
+<li>
+{% if editor.workspace.orcid %}
+<a href="https://orcid.org/{{ editor.workspace.orcid }}">{{ editor.workspace.firstName }} {{ editor.workspace.lastName }}</a>
+{% else %}
+{{ editor.workspace.firstName }} {{ editor.workspace.lastName }}
+{% endif %}
+</li>
 {%- endfor -%}
 </ul>
 
@@ -41,16 +41,16 @@ Last updated on  2023-03-02.
 ## Collected works
 <ul>
 {%- for submission in submissions -%}
- {% if submission.accepted %} 
- <li>
- <p>{{ submission.module.title }}</p>
- <p><a href="https://doi.org/{{ submission.module.prefix }}/{{ submission.module.suffix }}">doi: {{ submission.module.prefix }}/{{ submission.module.suffix }}</a></p>
- {% if submission.comment and submission.comment != "" %}
- <blockquote>{{ submission.comment }}
- <div class="quote-footer">—{{ submission.editor.workspace.firstName }} {{ submission.editor.workspace.lastName }}</cite></div class="quote-footer"></blockquote>
- {% endif %}
- </li>
- {% endif %}
+{% if submission.accepted %} 
+<li>
+<p>{{ submission.module.title }}</p>
+<p><a href="https://doi.org/{{ submission.module.prefix }}/{{ submission.module.suffix }}">doi: {{ submission.module.prefix }}/{{ submission.module.suffix }}</a></p>
+{% if submission.comment and submission.comment != "" %}
+<blockquote>{{ submission.comment }}
+<div class="quote-footer">—{{ submission.editor.workspace.firstName }} {{ submission.editor.workspace.lastName }}</cite></div class="quote-footer"></blockquote>
+{% endif %}
+</li>
+{% endif %}
 {%- endfor -%}
 </ul>
 {% endif %}
