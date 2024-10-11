@@ -1,5 +1,5 @@
 ---
-layout: module.njk
+layout: mylayout.njk
 ---
 # {{ title }}
 
@@ -11,13 +11,13 @@ Originally published on 2023-02-06 under a <a href="{{ license.url }}">{{ licens
 
 <ul>
 {%- for author in authors -%}
- <li>
- {% if author.workspace.orcid %}
- <a href="https://orcid.org/{{ author.workspace.orcid }}">{{ author.workspace.firstName }} {{ author.workspace.lastName }}</a>
- {% else %}
- {{ author.workspace.firstName }} {{ author.workspace.lastName }}
- {% endif %}
- </li>
+<li>
+{% if author.workspace.orcid %}
+<a href="https://orcid.org/{{ author.workspace.orcid }}">{{ author.workspace.firstName }} {{ author.workspace.lastName }}</a>
+{% else %}
+{{ author.workspace.firstName }} {{ author.workspace.lastName }}
+{% endif %}
+</li>
 {%- endfor -%}
 </ul>
 
@@ -34,7 +34,7 @@ Originally published on 2023-02-06 under a <a href="{{ license.url }}">{{ licens
 
 <ul>
 {%- for file in supporting.files -%}
-  <li><a href="supporting/{{ file.original_filename }}">{{ file.original_filename }}</a></li>
+<li><a href="supporting/{{ file.original_filename }}">{{ file.original_filename }}</a></li>
 {%- endfor -%}
 </ul>
 {% endif %}
@@ -42,10 +42,10 @@ Originally published on 2023-02-06 under a <a href="{{ license.url }}">{{ licens
 {% if references[0] %}
 ## References
 
-<ol>
+<ul>
 {%- for reference in references -%}
-<li>{{ reference.title }}. <a href="https://doi.org/{{reference.prefix}}/{{reference.suffix}}">doi: {{reference.prefix}}/{{reference.suffix}}</a></li>
+<li><a href="https://doi.org/{{reference.prefix}}/{{reference.suffix}}">{{ reference.title }}</a></li>
 {%- endfor -%}
-</ol>
+</ul>
 {% endif %}
 
