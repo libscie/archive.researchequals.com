@@ -1,0 +1,1577 @@
+(HathwayGoodman) daniel@laptop-nuest ~/git/codecheck/Hathway-Goodman-2018/code [master]$ python main.py --new True
+15:12 Preparing Figure 1: Potentials
+WARNING    /home/daniel/miniconda3/envs/HathwayGoodman/lib/python3.6/site-packages/sympy/matrices/matrices.py:1391: SymPyDeprecationWarning: 
+
+Dot product of non row/column vectors has been deprecated since SymPy
+1.2. Use * to take matrix products instead. See
+https://github.com/sympy/sympy/issues/13815 for more info.
+
+  useinstead="* to take matrix products").warn()
+ [py.warnings]
+15:13 Preparing Figure 2: STDP rules
+WARNING    /home/daniel/miniconda3/envs/HathwayGoodman/lib/python3.6/site-packages/sympy/matrices/matrices.py:1391: SymPyDeprecationWarning: 
+
+Dot product of non row/column vectors has been deprecated since SymPy
+1.2. Use * to take matrix products instead. See
+https://github.com/sympy/sympy/issues/13815 for more info.
+
+  useinstead="* to take matrix products").warn()
+ [py.warnings]
+15:14 Preparing Figures 3, 4, 7AB
+15:14 Preparing Figure 3 and 4 and 7AB: latency and convergence and weights
+    #### Simulation parameters:
+    random seed =             1
+    dt =                      100. us
+    initial weight =          0.475
+    jitter (SD) =             1
+    % of neurons in pattern = 50.0
+    pattern freq =            0.25
+    % spikes deleted =        0
+    #### Creating input
+    #### Simulation (ca. 150s)
+WARNING    /home/daniel/miniconda3/envs/HathwayGoodman/lib/python3.6/site-packages/sympy/matrices/matrices.py:1391: SymPyDeprecationWarning: 
+
+Dot product of non row/column vectors has been deprecated since SymPy
+1.2. Use * to take matrix products instead. See
+https://github.com/sympy/sympy/issues/13815 for more info.
+
+  useinstead="* to take matrix products").warn()
+ [py.warnings]
+Number of spikes: 57643428
+Number of spikes: 3318
+Number of spikes: 21
+Number of spikes: 10
+Number of synapses: 2000
+Number of synapses: 2000
+Number of synapses: 2000
+Number of synapses: 2000
+Number of synapses: 2000
+Number of synapses: 2000
+Number of synapses: 2000
+    #### Results
+    Avg latency               =  3.757
+    Hit rate (>98)            =  1.0
+    Number false alarms (!=0) =  0
+    Success                   =  1
+    find_t                    =  23.26
+    find_spike                =  1176
+    #### Make figures
+15:18 Preparing Figure 5
+    Parameter combination 0, repetition 0 
+WARNING    /home/daniel/miniconda3/envs/HathwayGoodman/lib/python3.6/site-packages/sympy/matrices/matrices.py:1391: SymPyDeprecationWarning: 
+
+Dot product of non row/column vectors has been deprecated since SymPy
+1.2. Use * to take matrix products instead. See
+https://github.com/sympy/sympy/issues/13815 for more info.
+
+  useinstead="* to take matrix products").warn()
+ [py.warnings]
+Number of spikes: 57702300
+Number of spikes: 52256
+Number of synapses: 2000
+Number of synapses: 2000
+Number of synapses: 2000
+    Parameter combination 0, repetition 1 
+Number of spikes: 57643428
+Number of spikes: 3318
+Number of synapses: 2000
+Number of synapses: 2000
+Number of synapses: 2000
+    Parameter combination 0, repetition 2 
+Number of spikes: 57366837
+Number of spikes: 3237
+Number of synapses: 2000
+Number of synapses: 2000
+Number of synapses: 2000
+    Parameter combination 0, repetition 3 
+Number of spikes: 57391113
+Number of spikes: 3227
+Number of synapses: 2000
+Number of synapses: 2000
+Number of synapses: 2000
+    Parameter combination 0, repetition 4 
+Number of spikes: 57474981
+Number of spikes: 3297
+Number of synapses: 2000
+Number of synapses: 2000
+Number of synapses: 2000
+    Parameter combination 0, repetition 5 
+Number of spikes: 57668717
+Number of spikes: 3323
+Number of synapses: 2000
+Number of synapses: 2000
+Number of synapses: 2000
+    Parameter combination 0, repetition 6 
+Number of spikes: 57573549
+Number of spikes: 3319
+Number of synapses: 2000
+Number of synapses: 2000
+Number of synapses: 2000
+    Parameter combination 0, repetition 7 
+Number of spikes: 57774729
+Number of spikes: 3632
+Number of synapses: 2000
+Number of synapses: 2000
+Number of synapses: 2000
+    Parameter combination 0, repetition 8 
+Number of spikes: 57398202
+Number of spikes: 3157
+Number of synapses: 2000
+Number of synapses: 2000
+Number of synapses: 2000
+    Parameter combination 0, repetition 9 
+Number of spikes: 57406274
+Number of spikes: 3093
+Number of synapses: 2000
+Number of synapses: 2000
+Number of synapses: 2000
+    Parameter combination 1, repetition 0 
+Number of spikes: 57365821
+Number of spikes: 2243
+Number of synapses: 2000
+Number of synapses: 2000
+Number of synapses: 2000
+    Parameter combination 1, repetition 1 
+Number of spikes: 57438519
+Number of spikes: 2192
+Number of synapses: 2000
+Number of synapses: 2000
+Number of synapses: 2000
+    Parameter combination 1, repetition 2 
+Number of spikes: 57371499
+Number of spikes: 2043
+Number of synapses: 2000
+Number of synapses: 2000
+Number of synapses: 2000
+    Parameter combination 1, repetition 3 
+Number of spikes: 57347346
+Number of spikes: 1817
+Number of synapses: 2000
+Number of synapses: 2000
+Number of synapses: 2000
+    Parameter combination 1, repetition 4 
+Number of spikes: 57417419
+Number of spikes: 2235
+Number of synapses: 2000
+Number of synapses: 2000
+Number of synapses: 2000
+    Parameter combination 1, repetition 5 
+Number of spikes: 57673872
+Number of spikes: 2257
+Number of synapses: 2000
+Number of synapses: 2000
+Number of synapses: 2000
+    Parameter combination 1, repetition 6 
+Number of spikes: 57670815
+Number of spikes: 2165
+Number of synapses: 2000
+Number of synapses: 2000
+Number of synapses: 2000
+    Parameter combination 1, repetition 7 
+Number of spikes: 57332378
+Number of spikes: 1750
+Number of synapses: 2000
+Number of synapses: 2000
+Number of synapses: 2000
+    Parameter combination 1, repetition 8 
+Number of spikes: 57163416
+Number of spikes: 37
+Number of synapses: 2000
+Number of synapses: 2000
+Number of synapses: 2000
+    Parameter combination 1, repetition 9 
+Number of spikes: 57204348
+Number of spikes: 38
+Number of synapses: 2000
+Number of synapses: 2000
+Number of synapses: 2000
+    Parameter combination 2, repetition 0 
+Number of spikes: 57450537
+Number of spikes: 2312
+Number of synapses: 2000
+Number of synapses: 2000
+Number of synapses: 2000
+    Parameter combination 2, repetition 1 
+Number of spikes: 57331166
+Number of spikes: 2298
+Number of synapses: 2000
+Number of synapses: 2000
+Number of synapses: 2000
+    Parameter combination 2, repetition 2 
+Number of spikes: 57404343
+Number of spikes: 84
+Number of synapses: 2000
+Number of synapses: 2000
+Number of synapses: 2000
+    Parameter combination 2, repetition 3 
+Number of spikes: 57549631
+Number of spikes: 2282
+Number of synapses: 2000
+Number of synapses: 2000
+Number of synapses: 2000
+    Parameter combination 2, repetition 4 
+Number of spikes: 57697119
+Number of spikes: 2281
+Number of synapses: 2000
+Number of synapses: 2000
+Number of synapses: 2000
+    Parameter combination 2, repetition 5 
+Number of spikes: 57137941
+Number of spikes: 2281
+Number of synapses: 2000
+Number of synapses: 2000
+Number of synapses: 2000
+    Parameter combination 2, repetition 6 
+Number of spikes: 57142299
+Number of spikes: 2248
+Number of synapses: 2000
+Number of synapses: 2000
+Number of synapses: 2000
+    Parameter combination 2, repetition 7 
+Number of spikes: 57433500
+Number of spikes: 2303
+Number of synapses: 2000
+Number of synapses: 2000
+Number of synapses: 2000
+    Parameter combination 2, repetition 8 
+Number of spikes: 57555429
+Number of spikes: 2299
+Number of synapses: 2000
+Number of synapses: 2000
+Number of synapses: 2000
+    Parameter combination 2, repetition 9 
+Number of spikes: 57328370
+Number of spikes: 2303
+Number of synapses: 2000
+Number of synapses: 2000
+Number of synapses: 2000
+    Parameter combination 3, repetition 0 
+Number of spikes: 57494823
+Number of spikes: 2372
+Number of synapses: 2000
+Number of synapses: 2000
+Number of synapses: 2000
+    Parameter combination 3, repetition 1 
+Number of spikes: 57552677
+Number of spikes: 2340
+Number of synapses: 2000
+Number of synapses: 2000
+Number of synapses: 2000
+    Parameter combination 3, repetition 2 
+Number of spikes: 57553785
+Number of spikes: 2359
+Number of synapses: 2000
+Number of synapses: 2000
+Number of synapses: 2000
+    Parameter combination 3, repetition 3 
+Number of spikes: 57357639
+Number of spikes: 2327
+Number of synapses: 2000
+Number of synapses: 2000
+Number of synapses: 2000
+    Parameter combination 3, repetition 4 
+Number of spikes: 57361732
+Number of spikes: 2373
+Number of synapses: 2000
+Number of synapses: 2000
+Number of synapses: 2000
+    Parameter combination 3, repetition 5 
+Number of spikes: 57611813
+Number of spikes: 2381
+Number of synapses: 2000
+Number of synapses: 2000
+Number of synapses: 2000
+    Parameter combination 3, repetition 6 
+Number of spikes: 57383664
+Number of spikes: 2364
+Number of synapses: 2000
+Number of synapses: 2000
+Number of synapses: 2000
+    Parameter combination 3, repetition 7 
+Number of spikes: 57410031
+Number of spikes: 2373
+Number of synapses: 2000
+Number of synapses: 2000
+Number of synapses: 2000
+    Parameter combination 3, repetition 8 
+Number of spikes: 57687687
+Number of spikes: 2376
+Number of synapses: 2000
+Number of synapses: 2000
+Number of synapses: 2000
+    Parameter combination 3, repetition 9 
+Number of spikes: 57505829
+Number of spikes: 2380
+Number of synapses: 2000
+Number of synapses: 2000
+Number of synapses: 2000
+    Parameter combination 4, repetition 0 
+Number of spikes: 57174465
+Number of spikes: 2512
+Number of synapses: 2000
+Number of synapses: 2000
+Number of synapses: 2000
+    Parameter combination 4, repetition 1 
+Number of spikes: 57404862
+Number of spikes: 2536
+Number of synapses: 2000
+Number of synapses: 2000
+Number of synapses: 2000
+    Parameter combination 4, repetition 2 
+Number of spikes: 57374198
+Number of spikes: 2536
+Number of synapses: 2000
+Number of synapses: 2000
+Number of synapses: 2000
+    Parameter combination 4, repetition 3 
+Number of spikes: 57278765
+Number of spikes: 2536
+Number of synapses: 2000
+Number of synapses: 2000
+Number of synapses: 2000
+    Parameter combination 4, repetition 4 
+Number of spikes: 57111369
+Number of spikes: 2506
+Number of synapses: 2000
+Number of synapses: 2000
+Number of synapses: 2000
+    Parameter combination 4, repetition 5 
+Number of spikes: 57480676
+Number of spikes: 2529
+Number of synapses: 2000
+Number of synapses: 2000
+Number of synapses: 2000
+    Parameter combination 4, repetition 6 
+Number of spikes: 57185607
+Number of spikes: 2519
+Number of synapses: 2000
+Number of synapses: 2000
+Number of synapses: 2000
+    Parameter combination 4, repetition 7 
+Number of spikes: 57553692
+Number of spikes: 2547
+Number of synapses: 2000
+Number of synapses: 2000
+Number of synapses: 2000
+    Parameter combination 4, repetition 8 
+Number of spikes: 57246747
+Number of spikes: 2516
+Number of synapses: 2000
+Number of synapses: 2000
+Number of synapses: 2000
+    Parameter combination 4, repetition 9 
+Number of spikes: 57331578
+Number of spikes: 2509
+Number of synapses: 2000
+Number of synapses: 2000
+Number of synapses: 2000
+    Parameter combination 5, repetition 0 
+Number of spikes: 57244437
+Number of spikes: 3109
+Number of synapses: 2000
+Number of synapses: 2000
+Number of synapses: 2000
+    Parameter combination 5, repetition 1 
+Number of spikes: 57342996
+Number of spikes: 3003
+Number of synapses: 2000
+Number of synapses: 2000
+Number of synapses: 2000
+    Parameter combination 5, repetition 2 
+Number of spikes: 57625575
+Number of spikes: 3387
+Number of synapses: 2000
+Number of synapses: 2000
+Number of synapses: 2000
+    Parameter combination 5, repetition 3 
+Number of spikes: 57530746
+Number of spikes: 3269
+Number of synapses: 2000
+Number of synapses: 2000
+Number of synapses: 2000
+    Parameter combination 5, repetition 4 
+Number of spikes: 57335637
+Number of spikes: 3206
+Number of synapses: 2000
+Number of synapses: 2000
+Number of synapses: 2000
+    Parameter combination 5, repetition 5 
+Number of spikes: 57470508
+Number of spikes: 3210
+Number of synapses: 2000
+Number of synapses: 2000
+Number of synapses: 2000
+    Parameter combination 5, repetition 6 
+Number of spikes: 57605279
+Number of spikes: 4670
+Number of synapses: 2000
+Number of synapses: 2000
+Number of synapses: 2000
+    Parameter combination 5, repetition 7 
+Number of spikes: 57403908
+Number of spikes: 3085
+Number of synapses: 2000
+Number of synapses: 2000
+Number of synapses: 2000
+    Parameter combination 5, repetition 8 
+Number of spikes: 57406011
+Number of spikes: 3344
+Number of synapses: 2000
+Number of synapses: 2000
+Number of synapses: 2000
+    Parameter combination 5, repetition 9 
+Number of spikes: 57358902
+Number of spikes: 3120
+Number of synapses: 2000
+Number of synapses: 2000
+Number of synapses: 2000
+    Parameter combination 6, repetition 0 
+Number of spikes: 57493644
+Number of spikes: 3355
+Number of synapses: 2000
+Number of synapses: 2000
+Number of synapses: 2000
+    Parameter combination 6, repetition 1 
+Number of spikes: 57483783
+Number of spikes: 3424
+Number of synapses: 2000
+Number of synapses: 2000
+Number of synapses: 2000
+    Parameter combination 6, repetition 2 
+Number of spikes: 57010689
+Number of spikes: 2874
+Number of synapses: 2000
+Number of synapses: 2000
+Number of synapses: 2000
+    Parameter combination 6, repetition 3 
+Number of spikes: 57294549
+Number of spikes: 3121
+Number of synapses: 2000
+Number of synapses: 2000
+Number of synapses: 2000
+    Parameter combination 6, repetition 4 
+Number of spikes: 57444062
+Number of spikes: 3231
+Number of synapses: 2000
+Number of synapses: 2000
+Number of synapses: 2000
+    Parameter combination 6, repetition 5 
+Number of spikes: 57530940
+Number of spikes: 3122
+Number of synapses: 2000
+Number of synapses: 2000
+Number of synapses: 2000
+    Parameter combination 6, repetition 6 
+Number of spikes: 57382458
+Number of spikes: 3080
+Number of synapses: 2000
+Number of synapses: 2000
+Number of synapses: 2000
+    Parameter combination 6, repetition 7 
+Number of spikes: 57292092
+Number of spikes: 3220
+Number of synapses: 2000
+Number of synapses: 2000
+Number of synapses: 2000
+    Parameter combination 6, repetition 8 
+Number of spikes: 57225465
+Number of spikes: 3082
+Number of synapses: 2000
+Number of synapses: 2000
+Number of synapses: 2000
+    Parameter combination 6, repetition 9 
+Number of spikes: 57213672
+Number of spikes: 2956
+Number of synapses: 2000
+Number of synapses: 2000
+Number of synapses: 2000
+    Parameter combination 7, repetition 0 
+Number of spikes: 57439500
+Number of spikes: 2993
+Number of synapses: 2000
+Number of synapses: 2000
+Number of synapses: 2000
+    Parameter combination 7, repetition 1 
+Number of spikes: 57274501
+Number of spikes: 2944
+Number of synapses: 2000
+Number of synapses: 2000
+Number of synapses: 2000
+    Parameter combination 7, repetition 2 
+Number of spikes: 57582405
+Number of spikes: 3252
+Number of synapses: 2000
+Number of synapses: 2000
+Number of synapses: 2000
+    Parameter combination 7, repetition 3 
+Number of spikes: 57482958
+Number of spikes: 3474
+Number of synapses: 2000
+Number of synapses: 2000
+Number of synapses: 2000
+    Parameter combination 7, repetition 4 
+Number of spikes: 57462162
+Number of spikes: 3162
+Number of synapses: 2000
+Number of synapses: 2000
+Number of synapses: 2000
+    Parameter combination 7, repetition 5 
+Number of spikes: 57446915
+Number of spikes: 3154
+Number of synapses: 2000
+Number of synapses: 2000
+Number of synapses: 2000
+    Parameter combination 7, repetition 6 
+Number of spikes: 57349474
+Number of spikes: 3072
+Number of synapses: 2000
+Number of synapses: 2000
+Number of synapses: 2000
+    Parameter combination 7, repetition 7 
+Number of spikes: 57857859
+Number of spikes: 3909
+Number of synapses: 2000
+Number of synapses: 2000
+Number of synapses: 2000
+    Parameter combination 7, repetition 8 
+Number of spikes: 57389775
+Number of spikes: 3541
+Number of synapses: 2000
+Number of synapses: 2000
+Number of synapses: 2000
+    Parameter combination 7, repetition 9 
+Number of spikes: 57556995
+Number of spikes: 3292
+Number of synapses: 2000
+Number of synapses: 2000
+Number of synapses: 2000
+    Parameter combination 8, repetition 0 
+Number of spikes: 57550212
+Number of spikes: 2859
+Number of synapses: 2000
+Number of synapses: 2000
+Number of synapses: 2000
+    Parameter combination 8, repetition 1 
+Number of spikes: 57385110
+Number of spikes: 2976
+Number of synapses: 2000
+Number of synapses: 2000
+Number of synapses: 2000
+    Parameter combination 8, repetition 2 
+Number of spikes: 57391239
+Number of spikes: 2972
+Number of synapses: 2000
+Number of synapses: 2000
+Number of synapses: 2000
+    Parameter combination 8, repetition 3 
+Number of spikes: 57522936
+Number of spikes: 2661
+Number of synapses: 2000
+Number of synapses: 2000
+Number of synapses: 2000
+    Parameter combination 8, repetition 4 
+Number of spikes: 57207213
+Number of spikes: 2730
+Number of synapses: 2000
+Number of synapses: 2000
+Number of synapses: 2000
+    Parameter combination 8, repetition 5 
+Number of spikes: 57991091
+Number of spikes: 3363
+Number of synapses: 2000
+Number of synapses: 2000
+Number of synapses: 2000
+    Parameter combination 8, repetition 6 
+Number of spikes: 57483882
+Number of spikes: 3039
+Number of synapses: 2000
+Number of synapses: 2000
+Number of synapses: 2000
+    Parameter combination 8, repetition 7 
+Number of spikes: 57489534
+Number of spikes: 2781
+Number of synapses: 2000
+Number of synapses: 2000
+Number of synapses: 2000
+    Parameter combination 8, repetition 8 
+Number of spikes: 57385209
+Number of spikes: 3171
+Number of synapses: 2000
+Number of synapses: 2000
+Number of synapses: 2000
+    Parameter combination 8, repetition 9 
+Number of spikes: 57474108
+Number of spikes: 3009
+Number of synapses: 2000
+Number of synapses: 2000
+Number of synapses: 2000
+    Parameter combination 9, repetition 0 
+Number of spikes: 57441644
+Number of spikes: 2790
+Number of synapses: 2000
+Number of synapses: 2000
+Number of synapses: 2000
+    Parameter combination 9, repetition 1 
+Number of spikes: 57551520
+Number of spikes: 2874
+Number of synapses: 2000
+Number of synapses: 2000
+Number of synapses: 2000
+    Parameter combination 9, repetition 2 
+Number of spikes: 57292821
+Number of spikes: 2634
+Number of synapses: 2000
+Number of synapses: 2000
+Number of synapses: 2000
+    Parameter combination 9, repetition 3 
+Number of spikes: 57459702
+Number of spikes: 2690
+Number of synapses: 2000
+Number of synapses: 2000
+Number of synapses: 2000
+    Parameter combination 9, repetition 4 
+Number of spikes: 57304008
+Number of spikes: 2296
+Number of synapses: 2000
+Number of synapses: 2000
+Number of synapses: 2000
+    Parameter combination 9, repetition 5 
+Number of spikes: 57489945
+Number of spikes: 2605
+Number of synapses: 2000
+Number of synapses: 2000
+Number of synapses: 2000
+    Parameter combination 9, repetition 6 
+Number of spikes: 57276212
+Number of spikes: 972
+Number of synapses: 2000
+Number of synapses: 2000
+Number of synapses: 2000
+    Parameter combination 9, repetition 7 
+Number of spikes: 57265617
+Number of spikes: 969
+Number of synapses: 2000
+Number of synapses: 2000
+Number of synapses: 2000
+    Parameter combination 9, repetition 8 
+Number of spikes: 57573079
+Number of spikes: 3267
+Number of synapses: 2000
+Number of synapses: 2000
+Number of synapses: 2000
+    Parameter combination 9, repetition 9 
+Number of spikes: 57680518
+Number of spikes: 2991
+Number of synapses: 2000
+Number of synapses: 2000
+Number of synapses: 2000
+    Parameter combination 10, repetition 0 
+Number of spikes: 57410085
+Number of spikes: 2100
+Number of synapses: 2000
+Number of synapses: 2000
+Number of synapses: 2000
+    Parameter combination 10, repetition 1 
+Number of spikes: 57271140
+Number of spikes: 2029
+Number of synapses: 2000
+Number of synapses: 2000
+Number of synapses: 2000
+    Parameter combination 10, repetition 2 
+Number of spikes: 57338556
+Number of spikes: 2463
+Number of synapses: 2000
+Number of synapses: 2000
+Number of synapses: 2000
+    Parameter combination 10, repetition 3 
+Number of spikes: 57647088
+Number of spikes: 2951
+Number of synapses: 2000
+Number of synapses: 2000
+Number of synapses: 2000
+    Parameter combination 10, repetition 4 
+Number of spikes: 57381273
+Number of spikes: 1923
+Number of synapses: 2000
+Number of synapses: 2000
+Number of synapses: 2000
+    Parameter combination 10, repetition 5 
+Number of spikes: 57463893
+Number of spikes: 2276
+Number of synapses: 2000
+Number of synapses: 2000
+Number of synapses: 2000
+    Parameter combination 10, repetition 6 
+Number of spikes: 57250224
+Number of spikes: 1845
+Number of synapses: 2000
+Number of synapses: 2000
+Number of synapses: 2000
+    Parameter combination 10, repetition 7 
+Number of spikes: 57571192
+Number of spikes: 1957
+Number of synapses: 2000
+Number of synapses: 2000
+Number of synapses: 2000
+    Parameter combination 10, repetition 8 
+Number of spikes: 57382959
+Number of spikes: 2495
+Number of synapses: 2000
+Number of synapses: 2000
+Number of synapses: 2000
+    Parameter combination 10, repetition 9 
+Number of spikes: 57184428
+Number of spikes: 960
+Number of synapses: 2000
+Number of synapses: 2000
+Number of synapses: 2000
+    Parameter combination 11, repetition 0 
+Number of spikes: 57215213
+Number of spikes: 191856
+Number of synapses: 2000
+Number of synapses: 2000
+Number of synapses: 2000
+    Parameter combination 11, repetition 1 
+Number of spikes: 57519375
+Number of spikes: 3994
+Number of synapses: 2000
+Number of synapses: 2000
+Number of synapses: 2000
+    Parameter combination 11, repetition 2 
+Number of spikes: 57437385
+Number of spikes: 194654
+Number of synapses: 2000
+Number of synapses: 2000
+Number of synapses: 2000
+    Parameter combination 11, repetition 3 
+Number of spikes: 57452697
+Number of spikes: 194451
+Number of synapses: 2000
+Number of synapses: 2000
+Number of synapses: 2000
+    Parameter combination 11, repetition 4 
+Number of spikes: 57398124
+Number of spikes: 195585
+Number of synapses: 2000
+Number of synapses: 2000
+Number of synapses: 2000
+    Parameter combination 11, repetition 5 
+Number of spikes: 57260472
+Number of spikes: 194660
+Number of synapses: 2000
+Number of synapses: 2000
+Number of synapses: 2000
+    Parameter combination 11, repetition 6 
+Number of spikes: 57444030
+Number of spikes: 3577
+Number of synapses: 2000
+Number of synapses: 2000
+Number of synapses: 2000
+    Parameter combination 11, repetition 7 
+Number of spikes: 57532263
+Number of spikes: 193427
+Number of synapses: 2000
+Number of synapses: 2000
+Number of synapses: 2000
+    Parameter combination 11, repetition 8 
+Number of spikes: 57454909
+Number of spikes: 194608
+Number of synapses: 2000
+Number of synapses: 2000
+Number of synapses: 2000
+    Parameter combination 11, repetition 9 
+Number of spikes: 57348558
+Number of spikes: 195717
+Number of synapses: 2000
+Number of synapses: 2000
+Number of synapses: 2000
+    Parameter combination 12, repetition 0 
+Number of spikes: 57451641
+Number of spikes: 80327
+Number of synapses: 2000
+Number of synapses: 2000
+Number of synapses: 2000
+    Parameter combination 12, repetition 1 
+Number of spikes: 57302619
+Number of spikes: 2850
+Number of synapses: 2000
+Number of synapses: 2000
+Number of synapses: 2000
+    Parameter combination 12, repetition 2 
+Number of spikes: 57575394
+Number of spikes: 79146
+Number of synapses: 2000
+Number of synapses: 2000
+Number of synapses: 2000
+    Parameter combination 12, repetition 3 
+Number of spikes: 57326376
+Number of spikes: 3230
+Number of synapses: 2000
+Number of synapses: 2000
+Number of synapses: 2000
+    Parameter combination 12, repetition 4 
+Number of spikes: 57470183
+Number of spikes: 2844
+Number of synapses: 2000
+Number of synapses: 2000
+Number of synapses: 2000
+    Parameter combination 12, repetition 5 
+Number of spikes: 57513951
+Number of spikes: 3267
+Number of synapses: 2000
+Number of synapses: 2000
+Number of synapses: 2000
+    Parameter combination 12, repetition 6 
+Number of spikes: 57574608
+Number of spikes: 3189
+Number of synapses: 2000
+Number of synapses: 2000
+Number of synapses: 2000
+    Parameter combination 12, repetition 7 
+Number of spikes: 57431703
+Number of spikes: 82179
+Number of synapses: 2000
+Number of synapses: 2000
+Number of synapses: 2000
+    Parameter combination 12, repetition 8 
+Number of spikes: 57513089
+Number of spikes: 2920
+Number of synapses: 2000
+Number of synapses: 2000
+Number of synapses: 2000
+    Parameter combination 12, repetition 9 
+Number of spikes: 57618245
+Number of spikes: 3263
+Number of synapses: 2000
+Number of synapses: 2000
+Number of synapses: 2000
+    Parameter combination 13, repetition 0 
+Number of spikes: 57386529
+Number of spikes: 2898
+Number of synapses: 2000
+Number of synapses: 2000
+Number of synapses: 2000
+    Parameter combination 13, repetition 1 
+Number of spikes: 57413130
+Number of spikes: 2990
+Number of synapses: 2000
+Number of synapses: 2000
+Number of synapses: 2000
+    Parameter combination 13, repetition 2 
+Number of spikes: 57400980
+Number of spikes: 2900
+Number of synapses: 2000
+Number of synapses: 2000
+Number of synapses: 2000
+    Parameter combination 13, repetition 3 
+Number of spikes: 57453246
+Number of spikes: 2913
+Number of synapses: 2000
+Number of synapses: 2000
+Number of synapses: 2000
+    Parameter combination 13, repetition 4 
+Number of spikes: 57596104
+Number of spikes: 3466
+Number of synapses: 2000
+Number of synapses: 2000
+Number of synapses: 2000
+    Parameter combination 13, repetition 5 
+Number of spikes: 57477264
+Number of spikes: 3420
+Number of synapses: 2000
+Number of synapses: 2000
+Number of synapses: 2000
+    Parameter combination 13, repetition 6 
+Number of spikes: 57558525
+Number of spikes: 3207
+Number of synapses: 2000
+Number of synapses: 2000
+Number of synapses: 2000
+    Parameter combination 13, repetition 7 
+Number of spikes: 57478968
+Number of spikes: 3108
+Number of synapses: 2000
+Number of synapses: 2000
+Number of synapses: 2000
+    Parameter combination 13, repetition 8 
+Number of spikes: 57573513
+Number of spikes: 3693
+Number of synapses: 2000
+Number of synapses: 2000
+Number of synapses: 2000
+    Parameter combination 13, repetition 9 
+Number of spikes: 57572598
+Number of spikes: 3174
+Number of synapses: 2000
+Number of synapses: 2000
+Number of synapses: 2000
+    Parameter combination 14, repetition 0 
+Number of spikes: 57346959
+Number of spikes: 3262
+Number of synapses: 2000
+Number of synapses: 2000
+Number of synapses: 2000
+    Parameter combination 14, repetition 1 
+Number of spikes: 57107289
+Number of spikes: 3289
+Number of synapses: 2000
+Number of synapses: 2000
+Number of synapses: 2000
+    Parameter combination 14, repetition 2 
+Number of spikes: 57074772
+Number of spikes: 3258
+Number of synapses: 2000
+Number of synapses: 2000
+Number of synapses: 2000
+    Parameter combination 14, repetition 3 
+Number of spikes: 57494181
+Number of spikes: 3399
+Number of synapses: 2000
+Number of synapses: 2000
+Number of synapses: 2000
+    Parameter combination 14, repetition 4 
+Number of spikes: 57202567
+Number of spikes: 3369
+Number of synapses: 2000
+Number of synapses: 2000
+Number of synapses: 2000
+    Parameter combination 14, repetition 5 
+Number of spikes: 57490844
+Number of spikes: 3607
+Number of synapses: 2000
+Number of synapses: 2000
+Number of synapses: 2000
+    Parameter combination 14, repetition 6 
+Number of spikes: 57285390
+Number of spikes: 3273
+Number of synapses: 2000
+Number of synapses: 2000
+Number of synapses: 2000
+    Parameter combination 14, repetition 7 
+Number of spikes: 57226218
+Number of spikes: 3411
+Number of synapses: 2000
+Number of synapses: 2000
+Number of synapses: 2000
+    Parameter combination 14, repetition 8 
+Number of spikes: 57430533
+Number of spikes: 3455
+Number of synapses: 2000
+Number of synapses: 2000
+Number of synapses: 2000
+    Parameter combination 14, repetition 9 
+Number of spikes: 57543487
+Number of spikes: 3331
+Number of synapses: 2000
+Number of synapses: 2000
+Number of synapses: 2000
+    Parameter combination 15, repetition 0 
+Number of spikes: 57537243
+Number of spikes: 1522
+Number of synapses: 2000
+Number of synapses: 2000
+Number of synapses: 2000
+    Parameter combination 15, repetition 1 
+Number of spikes: 57477363
+Number of spikes: 1349
+Number of synapses: 2000
+Number of synapses: 2000
+Number of synapses: 2000
+    Parameter combination 15, repetition 2 
+Number of spikes: 57426666
+Number of spikes: 1447
+Number of synapses: 2000
+Number of synapses: 2000
+Number of synapses: 2000
+    Parameter combination 15, repetition 3 
+Number of spikes: 57483861
+Number of spikes: 1492
+Number of synapses: 2000
+Number of synapses: 2000
+Number of synapses: 2000
+    Parameter combination 15, repetition 4 
+Number of spikes: 57484482
+Number of spikes: 1338
+Number of synapses: 2000
+Number of synapses: 2000
+Number of synapses: 2000
+    Parameter combination 15, repetition 5 
+Number of spikes: 57382563
+Number of spikes: 841
+Number of synapses: 2000
+Number of synapses: 2000
+Number of synapses: 2000
+    Parameter combination 15, repetition 6 
+Number of spikes: 57473025
+Number of spikes: 904
+Number of synapses: 2000
+Number of synapses: 2000
+Number of synapses: 2000
+    Parameter combination 15, repetition 7 
+Number of spikes: 57432387
+Number of spikes: 1317
+Number of synapses: 2000
+Number of synapses: 2000
+Number of synapses: 2000
+    Parameter combination 15, repetition 8 
+Number of spikes: 57530862
+Number of spikes: 1315
+Number of synapses: 2000
+Number of synapses: 2000
+Number of synapses: 2000
+    Parameter combination 15, repetition 9 
+Number of spikes: 57517326
+Number of spikes: 1282
+Number of synapses: 2000
+Number of synapses: 2000
+Number of synapses: 2000
+    Parameter combination 16, repetition 0 
+Number of spikes: 57564568
+Number of spikes: 2028
+Number of synapses: 2000
+Number of synapses: 2000
+Number of synapses: 2000
+    Parameter combination 16, repetition 1 
+Number of spikes: 57463587
+Number of spikes: 1790
+Number of synapses: 2000
+Number of synapses: 2000
+Number of synapses: 2000
+    Parameter combination 16, repetition 2 
+Number of spikes: 57525351
+Number of spikes: 1807
+Number of synapses: 2000
+Number of synapses: 2000
+Number of synapses: 2000
+    Parameter combination 16, repetition 3 
+Number of spikes: 57538794
+Number of spikes: 1737
+Number of synapses: 2000
+Number of synapses: 2000
+Number of synapses: 2000
+    Parameter combination 16, repetition 4 
+Number of spikes: 57443043
+Number of spikes: 2112
+Number of synapses: 2000
+Number of synapses: 2000
+Number of synapses: 2000
+    Parameter combination 16, repetition 5 
+Number of spikes: 57430404
+Number of spikes: 1667
+Number of synapses: 2000
+Number of synapses: 2000
+Number of synapses: 2000
+    Parameter combination 16, repetition 6 
+Number of spikes: 57419697
+Number of spikes: 1768
+Number of synapses: 2000
+Number of synapses: 2000
+Number of synapses: 2000
+    Parameter combination 16, repetition 7 
+Number of spikes: 57456978
+Number of spikes: 1893
+Number of synapses: 2000
+Number of synapses: 2000
+Number of synapses: 2000
+    Parameter combination 16, repetition 8 
+Number of spikes: 57417582
+Number of spikes: 1852
+Number of synapses: 2000
+Number of synapses: 2000
+Number of synapses: 2000
+    Parameter combination 16, repetition 9 
+Number of spikes: 57404727
+Number of spikes: 1785
+Number of synapses: 2000
+Number of synapses: 2000
+Number of synapses: 2000
+    Parameter combination 17, repetition 0 
+Number of spikes: 57430744
+Number of spikes: 2309
+Number of synapses: 2000
+Number of synapses: 2000
+Number of synapses: 2000
+    Parameter combination 17, repetition 1 
+Number of spikes: 57411003
+Number of spikes: 2296
+Number of synapses: 2000
+Number of synapses: 2000
+Number of synapses: 2000
+    Parameter combination 17, repetition 2 
+Number of spikes: 57420624
+Number of spikes: 2349
+Number of synapses: 2000
+Number of synapses: 2000
+Number of synapses: 2000
+    Parameter combination 17, repetition 3 
+Number of spikes: 57567225
+Number of spikes: 2212
+Number of synapses: 2000
+Number of synapses: 2000
+Number of synapses: 2000
+    Parameter combination 17, repetition 4 
+Number of spikes: 57568908
+Number of spikes: 2470
+Number of synapses: 2000
+Number of synapses: 2000
+Number of synapses: 2000
+    Parameter combination 17, repetition 5 
+Number of spikes: 57498210
+Number of spikes: 2778
+Number of synapses: 2000
+Number of synapses: 2000
+Number of synapses: 2000
+    Parameter combination 17, repetition 6 
+Number of spikes: 57413823
+Number of spikes: 2152
+Number of synapses: 2000
+Number of synapses: 2000
+Number of synapses: 2000
+    Parameter combination 17, repetition 7 
+Number of spikes: 57495804
+Number of spikes: 2237
+Number of synapses: 2000
+Number of synapses: 2000
+Number of synapses: 2000
+    Parameter combination 17, repetition 8 
+Number of spikes: 57466218
+Number of spikes: 2300
+Number of synapses: 2000
+Number of synapses: 2000
+Number of synapses: 2000
+    Parameter combination 17, repetition 9 
+Number of spikes: 57417846
+Number of spikes: 2315
+Number of synapses: 2000
+Number of synapses: 2000
+Number of synapses: 2000
+    Parameter combination 18, repetition 0 
+Number of spikes: 56610979
+Number of spikes: 5213
+Number of synapses: 2000
+Number of synapses: 2000
+Number of synapses: 2000
+    Parameter combination 18, repetition 1 
+Number of spikes: 57647108
+Number of spikes: 51606
+Number of synapses: 2000
+Number of synapses: 2000
+Number of synapses: 2000
+    Parameter combination 18, repetition 2 
+Number of spikes: 57045212
+Number of spikes: 5396
+Number of synapses: 2000
+Number of synapses: 2000
+Number of synapses: 2000
+    Parameter combination 18, repetition 3 
+Number of spikes: 57330120
+Number of spikes: 5931
+Number of synapses: 2000
+Number of synapses: 2000
+Number of synapses: 2000
+    Parameter combination 18, repetition 4 
+Number of spikes: 57610489
+Number of spikes: 52351
+Number of synapses: 2000
+Number of synapses: 2000
+Number of synapses: 2000
+    Parameter combination 18, repetition 5 
+Number of spikes: 56895714
+Number of spikes: 5212
+Number of synapses: 2000
+Number of synapses: 2000
+Number of synapses: 2000
+    Parameter combination 18, repetition 6 
+Number of spikes: 57207811
+Number of spikes: 9885
+Number of synapses: 2000
+Number of synapses: 2000
+Number of synapses: 2000
+    Parameter combination 18, repetition 7 
+Number of spikes: 57118512
+Number of spikes: 5375
+Number of synapses: 2000
+Number of synapses: 2000
+Number of synapses: 2000
+    Parameter combination 18, repetition 8 
+Number of spikes: 56975811
+Number of spikes: 5327
+Number of synapses: 2000
+Number of synapses: 2000
+Number of synapses: 2000
+    Parameter combination 18, repetition 9 
+Number of spikes: 57242630
+Number of spikes: 6081
+Number of synapses: 2000
+Number of synapses: 2000
+Number of synapses: 2000
+    Parameter combination 19, repetition 0 
+Number of spikes: 57435528
+Number of spikes: 2992
+Number of synapses: 2000
+Number of synapses: 2000
+Number of synapses: 2000
+    Parameter combination 19, repetition 1 
+Number of spikes: 57397095
+Number of spikes: 3039
+Number of synapses: 2000
+Number of synapses: 2000
+Number of synapses: 2000
+    Parameter combination 19, repetition 2 
+Number of spikes: 57514299
+Number of spikes: 2993
+Number of synapses: 2000
+Number of synapses: 2000
+Number of synapses: 2000
+    Parameter combination 19, repetition 3 
+Number of spikes: 57283899
+Number of spikes: 3115
+Number of synapses: 2000
+Number of synapses: 2000
+Number of synapses: 2000
+    Parameter combination 19, repetition 4 
+Number of spikes: 57385845
+Number of spikes: 3025
+Number of synapses: 2000
+Number of synapses: 2000
+Number of synapses: 2000
+    Parameter combination 19, repetition 5 
+Number of spikes: 57392901
+Number of spikes: 2956
+Number of synapses: 2000
+Number of synapses: 2000
+Number of synapses: 2000
+    Parameter combination 19, repetition 6 
+Number of spikes: 57461409
+Number of spikes: 3103
+Number of synapses: 2000
+Number of synapses: 2000
+Number of synapses: 2000
+    Parameter combination 19, repetition 7 
+Number of spikes: 57470106
+Number of spikes: 3269
+Number of synapses: 2000
+Number of synapses: 2000
+Number of synapses: 2000
+    Parameter combination 19, repetition 8 
+Number of spikes: 57520035
+Number of spikes: 3304
+Number of synapses: 2000
+Number of synapses: 2000
+Number of synapses: 2000
+    Parameter combination 19, repetition 9 
+Number of spikes: 57330156
+Number of spikes: 3114
+Number of synapses: 2000
+Number of synapses: 2000
+Number of synapses: 2000
+    Parameter combination 20, repetition 0 
+Number of spikes: 57026331
+Number of spikes: 2895
+Number of synapses: 2000
+Number of synapses: 2000
+Number of synapses: 2000
+    Parameter combination 20, repetition 1 
+Number of spikes: 57825267
+Number of spikes: 63837
+Number of synapses: 2000
+Number of synapses: 2000
+Number of synapses: 2000
+    Parameter combination 20, repetition 2 
+Number of spikes: 57342042
+Number of spikes: 2969
+Number of synapses: 2000
+Number of synapses: 2000
+Number of synapses: 2000
+    Parameter combination 20, repetition 3 
+Number of spikes: 57495039
+Number of spikes: 3643
+Number of synapses: 2000
+Number of synapses: 2000
+Number of synapses: 2000
+    Parameter combination 20, repetition 4 
+Number of spikes: 57198984
+Number of spikes: 2865
+Number of synapses: 2000
+Number of synapses: 2000
+Number of synapses: 2000
+    Parameter combination 20, repetition 5 
+Number of spikes: 57433229
+Number of spikes: 3002
+Number of synapses: 2000
+Number of synapses: 2000
+Number of synapses: 2000
+    Parameter combination 20, repetition 6 
+Number of spikes: 57759162
+Number of spikes: 63258
+Number of synapses: 2000
+Number of synapses: 2000
+Number of synapses: 2000
+    Parameter combination 20, repetition 7 
+Number of spikes: 57499946
+Number of spikes: 3030
+Number of synapses: 2000
+Number of synapses: 2000
+Number of synapses: 2000
+    Parameter combination 20, repetition 8 
+Number of spikes: 57329961
+Number of spikes: 2861
+Number of synapses: 2000
+Number of synapses: 2000
+Number of synapses: 2000
+    Parameter combination 20, repetition 9 
+Number of spikes: 57469623
+Number of spikes: 3041
+Number of synapses: 2000
+Number of synapses: 2000
+Number of synapses: 2000
+    Parameter combination 21, repetition 0 
+Number of spikes: 57216543
+Number of spikes: 2678
+Number of synapses: 2000
+Number of synapses: 2000
+Number of synapses: 2000
+    Parameter combination 21, repetition 1 
+Number of spikes: 57458412
+Number of spikes: 3343
+Number of synapses: 2000
+Number of synapses: 2000
+Number of synapses: 2000
+    Parameter combination 21, repetition 2 
+Number of spikes: 57429600
+Number of spikes: 2956
+Number of synapses: 2000
+Number of synapses: 2000
+Number of synapses: 2000
+    Parameter combination 21, repetition 3 
+Number of spikes: 57383573
+Number of spikes: 2834
+Number of synapses: 2000
+Number of synapses: 2000
+Number of synapses: 2000
+    Parameter combination 21, repetition 4 
+Number of spikes: 57477372
+Number of spikes: 3148
+Number of synapses: 2000
+Number of synapses: 2000
+Number of synapses: 2000
+    Parameter combination 21, repetition 5 
+Number of spikes: 57577741
+Number of spikes: 70565
+Number of synapses: 2000
+Number of synapses: 2000
+Number of synapses: 2000
+    Parameter combination 21, repetition 6 
+Number of spikes: 57343200
+Number of spikes: 3080
+Number of synapses: 2000
+Number of synapses: 2000
+Number of synapses: 2000
+    Parameter combination 21, repetition 7 
+Number of spikes: 57136909
+Number of spikes: 2594
+Number of synapses: 2000
+Number of synapses: 2000
+Number of synapses: 2000
+    Parameter combination 21, repetition 8 
+Number of spikes: 57380018
+Number of spikes: 70822
+Number of synapses: 2000
+Number of synapses: 2000
+Number of synapses: 2000
+    Parameter combination 21, repetition 9 
+Number of spikes: 57351738
+Number of spikes: 2884
+Number of synapses: 2000
+Number of synapses: 2000
+Number of synapses: 2000
+00:04 Preparing Figure 6
+Preparing Figure 6: Time of finding pattern
+    Start rep 0 at resolution 0.0001
+WARNING    /home/daniel/miniconda3/envs/HathwayGoodman/lib/python3.6/site-packages/sympy/matrices/matrices.py:1391: SymPyDeprecationWarning: 
+
+Dot product of non row/column vectors has been deprecated since SymPy
+1.2. Use * to take matrix products instead. See
+https://github.com/sympy/sympy/issues/13815 for more info.
+
+  useinstead="* to take matrix products").warn()
+ [py.warnings]
+Number of spikes: 1480
+Number of synapses: 2000
+Number of synapses: 2000
+Number of synapses: 2000
+    Start rep 1 at resolution 0.0001
+Number of spikes: 1200
+Number of synapses: 2000
+Number of synapses: 2000
+Number of synapses: 2000
+    Start rep 2 at resolution 0.0001
+Number of spikes: 1200
+Number of synapses: 2000
+Number of synapses: 2000
+Number of synapses: 2000
+    Start rep 3 at resolution 0.0001
+Number of spikes: 924
+Number of synapses: 2000
+Number of synapses: 2000
+Number of synapses: 2000
+    Start rep 4 at resolution 0.0001
+Number of spikes: 1061
+Number of synapses: 2000
+Number of synapses: 2000
+Number of synapses: 2000
+    Start rep 5 at resolution 0.0001
+Number of spikes: 1739
+Number of synapses: 2000
+Number of synapses: 2000
+Number of synapses: 2000
+    Start rep 6 at resolution 0.0001
+Number of spikes: 1226
+Number of synapses: 2000
+Number of synapses: 2000
+Number of synapses: 2000
+    Start rep 7 at resolution 0.0001
+Number of spikes: 1170
+Number of synapses: 2000
+Number of synapses: 2000
+Number of synapses: 2000
+    Start rep 8 at resolution 0.0001
+Number of spikes: 1109
+Number of synapses: 2000
+Number of synapses: 2000
+Number of synapses: 2000
+    Start rep 9 at resolution 0.0001
+Number of spikes: 1255
+Number of synapses: 2000
+Number of synapses: 2000
+Number of synapses: 2000
+    Start rep 0 at resolution 1e-05
+Number of spikes: 796
+Number of synapses: 2000
+Number of synapses: 2000
+Number of synapses: 2000
+    Start rep 1 at resolution 1e-05
+Number of spikes: 861
+Number of synapses: 2000
+Number of synapses: 2000
+Number of synapses: 2000
+    Start rep 2 at resolution 1e-05
+Number of spikes: 757
+Number of synapses: 2000
+Number of synapses: 2000
+Number of synapses: 2000
+    Start rep 3 at resolution 1e-05
+Number of spikes: 763
+Number of synapses: 2000
+Number of synapses: 2000
+Number of synapses: 2000
+    Start rep 4 at resolution 1e-05
+Number of spikes: 779
+Number of synapses: 2000
+Number of synapses: 2000
+Number of synapses: 2000
+    Start rep 5 at resolution 1e-05
+Number of spikes: 839
+Number of synapses: 2000
+Number of synapses: 2000
+Number of synapses: 2000
+    Start rep 6 at resolution 1e-05
+Number of spikes: 820
+Number of synapses: 2000
+Number of synapses: 2000
+Number of synapses: 2000
+    Start rep 7 at resolution 1e-05
+Number of spikes: 825
+Number of synapses: 2000
+Number of synapses: 2000
+Number of synapses: 2000
+    Start rep 8 at resolution 1e-05
+Number of spikes: 738
+Number of synapses: 2000
+Number of synapses: 2000
+Number of synapses: 2000
+    Start rep 9 at resolution 1e-05
+Number of spikes: 764
+Number of synapses: 2000
+Number of synapses: 2000
+Number of synapses: 2000
+    Start rep 0 at resolution 1e-06
+Number of spikes: 809
+Number of synapses: 2000
+Number of synapses: 2000
+Number of synapses: 2000
+    Start rep 1 at resolution 1e-06
+Number of spikes: 819
+Number of synapses: 2000
+Number of synapses: 2000
+Number of synapses: 2000
+    Start rep 2 at resolution 1e-06
+Number of spikes: 775
+Number of synapses: 2000
+Number of synapses: 2000
+Number of synapses: 2000
+    Start rep 3 at resolution 1e-06
+Number of spikes: 724
+Number of synapses: 2000
+Number of synapses: 2000
+Number of synapses: 2000
+    Start rep 4 at resolution 1e-06
+Number of spikes: 782
+Number of synapses: 2000
+Number of synapses: 2000
+Number of synapses: 2000
+    Start rep 5 at resolution 1e-06
+Number of spikes: 865
+Number of synapses: 2000
+Number of synapses: 2000
+Number of synapses: 2000
+    Start rep 6 at resolution 1e-06
+Number of spikes: 778
+Number of synapses: 2000
+Number of synapses: 2000
+Number of synapses: 2000
+    Start rep 7 at resolution 1e-06
+Number of spikes: 783
+Number of synapses: 2000
+Number of synapses: 2000
+Number of synapses: 2000
+    Start rep 8 at resolution 1e-06
+Number of spikes: 731
+Number of synapses: 2000
+Number of synapses: 2000
+Number of synapses: 2000
+    Start rep 9 at resolution 1e-06
+Number of spikes: 724
+Number of synapses: 2000
+Number of synapses: 2000
+Number of synapses: 2000
+01:47 Preparing Figure 7 C and D: success with ATA rule
+WARNING    /home/daniel/miniconda3/envs/HathwayGoodman/lib/python3.6/site-packages/sympy/matrices/matrices.py:1391: SymPyDeprecationWarning: 
+
+Dot product of non row/column vectors has been deprecated since SymPy
+1.2. Use * to take matrix products instead. See
+https://github.com/sympy/sympy/issues/13815 for more info.
+
+  useinstead="* to take matrix products").warn()
+ [py.warnings]
+Number of spikes: 1032
+Number of synapses: 2000
+Number of synapses: 2000
+Number of synapses: 2000
+01:48 Preparing Figure 8: EPSP shape
+WARNING    /home/daniel/miniconda3/envs/HathwayGoodman/lib/python3.6/site-packages/sympy/matrices/matrices.py:1391: SymPyDeprecationWarning: 
+
+Dot product of non row/column vectors has been deprecated since SymPy
+1.2. Use * to take matrix products instead. See
+https://github.com/sympy/sympy/issues/13815 for more info.
+
+  useinstead="* to take matrix products").warn()
+ [py.warnings]
+Number of spikes: 1
+Number of spikes: 1
+Number of synapses: 1
+Number of synapses: 1
+libGL error: MESA-LOADER: failed to open radeonsi: /home/daniel/miniconda3/envs/HathwayGoodman/lib/python3.6/site-packages/matplotlib/../../../libstdc++.so.6: version `GLIBCXX_3.4.30' not found (required by /opt/amdgpu/lib/x86_64-linux-gnu/libLLVM-15.so) (search paths /opt/amdgpu/lib/x86_64-linux-gnu/dri, suffix _dri)
+libGL error: failed to load driver: radeonsi
+libGL error: MESA-LOADER: failed to open swrast: /home/daniel/miniconda3/envs/HathwayGoodman/lib/python3.6/site-packages/matplotlib/../../../libstdc++.so.6: version `GLIBCXX_3.4.30' not found (required by /opt/amdgpu/lib/x86_64-linux-gnu/libLLVM-15.so) (search paths /opt/amdgpu/lib/x86_64-linux-gnu/dri, suffix _dri)
+libGL error: failed to load driver: swrast

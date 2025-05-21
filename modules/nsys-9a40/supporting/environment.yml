@@ -1,0 +1,11 @@
+name: HathwayGoodman
+channels:
+  - brian-team
+  - defaults
+dependencies:
+  - brian2=2.*
+  - matplotlib
+  - numba
+  - numpy
+  - python=3.6.5
+
