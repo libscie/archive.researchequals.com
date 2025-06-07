@@ -1,0 +1,126 @@
+---
+title: "Reproducibility review of: Measuring Landmark Salience in Rural Areas: A Comparative Study of Two Models"
+author: "Daniel Nüst \\orcid{0000-0002-0024-5046}"
+date: "`r format(Sys.time(), '%Y-%m-%d')`"
+output:
+  pdf_document:
+    toc: false
+papersize: a4
+header-includes:
+  - |
+    % https://tex.stackexchange.com/questions/445563/ieeetran-how-to-include-orcid-in-tex-pdf-with-pdflatex/445583 (works with pdflatex)
+    \usepackage{scalerel}
+    \usepackage{tikz}
+    \usetikzlibrary{svg.path}
+    \definecolor{orcidlogocol}{HTML}{A6CE39}
+    \tikzset{
+      orcidlogo/.pic={
+        \fill[orcidlogocol] svg{M256,128c0,70.7-57.3,128-128,128C57.3,256,0,198.7,0,128C0,57.3,57.3,0,128,0C198.7,0,256,57.3,256,128z};
+        \fill[white] svg{M86.3,186.2H70.9V79.1h15.4v48.4V186.2z}
+                     svg{M108.9,79.1h41.6c39.6,0,57,28.3,57,53.6c0,27.5-21.5,53.6-56.8,53.6h-41.8V79.1z     M124.3,172.4h24.5c34.9,0,42.9-26.5,42.9-39.7c0-21.5-13.7-39.7-43.7-39.7h-23.7V172.4z}
+                     svg{M88.7,56.8c0,5.5-4.5,10.1-10.1,10.1c-5.6,0-10.1-4.6-10.1-10.1c0-5.6,4.5-10.1,10.1-10.1C84.2,46.7,88.7,51.3,88.7,56.8z};
+      }
+    }
+    \newcommand\orcid[1]{\href{https://orcid.org/#1}{\raisebox{0.15 em}{\mbox{\scalerel*{
+    \begin{tikzpicture}[yscale=-1, transform shape]
+    \pic{orcidlogo};
+    \end{tikzpicture}
+    }{|}}}}}
+    \definecolor{agileblue}{RGB}{0,77,155}
+urlcolor: agileblue
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+
+def.chunk.hook  <- knitr::knit_hooks$get("chunk")
+knitr::knit_hooks$set(chunk = function(x, options) {
+  x <- def.chunk.hook(x, options)
+  ifelse(options$size != "normalsize", paste0("\n \\", options$size,"\n\n", x, "\n\n \\normalsize"), x)
+})
+
+library("here")
+here::i_am("reproreview_AGILE-2025_submission-08.Rmd")
+```
+
+```{r logo, eval=TRUE, echo=FALSE, message=FALSE, warning=FALSE, fig.align='center', out.width='0.3\\linewidth', fig.pos='H'}
+temp <- tempfile(fileext = ".pdf")
+download.file(url = "https://reproducible-agile.github.io/public/images/reproducible-AGILE-logo-square.pdf", destfile = temp)
+knitr::include_graphics(temp)
+```
+
+This report is part of the reproducibility review at the AGILE conference.
+For more information see [https://reproducible-agile.github.io/](https://reproducible-agile.github.io/).
+This document is published on ResearchEquals at <https://doi.org/10.53962/wxh7-8yjd>.
+To cite the report use
+
+> Nüst, D. (2025). Reproducibility review of: Measuring Landmark Salience in Rural Areas: A Comparative Study of Two Models. In ResearchEquals. Liberate Science GmbH. <https://doi.org/10.53962/wxh7-8yjd>
+
+# Reviewed paper
+
+Nuhn, E., Ehrig, M., Engemann, L., Heißerer, F., Maltan, J., Ruf,  J., and Timpf,  S.: Measuring Landmark Salience in Rural Areas: A Comparative Study of Two Models, AGILE GIScience Ser., 6, 7, <https://doi.org/10.5194/agile-giss-6-7-2025>, 2025.
+
+# Summary
+
+The reproduction of the visualisations and statistics presented in the manuscript was successful.
+The authors provided a link to an online repo with several data files which seem to have been the basis for the illustrative map in the paper, as well as a spreadsheet which includes the model calculations, plots, and statistical tests presented in the paper.
+
+\clearpage
+
+# Reproducibility reviewer notes
+
+The Data and Software Availability (DASA) section of the paper provides the starting point for this review.
+
+For the data for the water areas in Figure 4, the DASA points to the generic download page of Geofabrik at https://download.geofabrik.de/, which is not helpful since the lake is not identified precisely by name nor coordinates in the first submitted version - this was deanonymised by the authors during the reproducibility review.
+Since Figure 4 is mostly a map providing context, this is unfortunate but not critical, though sharing the map file or creating it with code would be readily possible.
+
+The DASA mentions an anonymised URL, which was provided by the authors after contacting them, of a Figshare record, namely <https://figshare.com/s/90b5d7623e46e288eb2e>, which was eventually published with the following DOI and full citation:
+
+> Nuhn, Eva (2025). Dataset for AGILE paper "Measuring Landmark Salience in Rural Areas: A Comparative Study of Two Models". figshare. Dataset. <https://doi.org/10.6084/m9.figshare.28545578.v1>
+
+The record contains a README describing the following contents:
+
+- `Folder Figure 4`: contains several shapefiles that could be loaded in QGIS and indeed provide the data for Figure 4, see map below.
+- `Intersection`: Images of the 10 intersections shown to survey participants
+  - The higher resolution photos (Figure 9) in the repository finally give away the lake as the Bachtelsee near Kaufbeuren in Bavaria, Germany (<https://www.openstreetmap.org/way/10032155>).
+- `LMI_Nuhn_Binski_AGILE`: Computations for the Nuhn and Binski models and analysis of the results
+  - The spreadsheet has multiple tables, which are described in the README as follows:
+  	- Attributes - Attributes for the objects at the intersections
+  	- Survey - Survey results
+  	- Nuhn - Landmark identification using the Nuhn model
+  	- Nuhn_aidSheet - Aidsheet for Nuhns model calculations
+  	- Binski - Landmark identification using the Binski model
+  	- Binski_aidSheet - Aidsheet for Binskis model calculations
+  	- McNemar - McNemar's test
+  	- Analyses - Analyses of results
+
+```{r fig4, fig.align = 'center', out.width = "30%", fig.cap = "QGIS map loading the three shapefiles from the folder 'Figure 4' using an OpenStreetMap background map.", size="scriptsize"}
+knitr::include_graphics(here::here("fig4-qgis.png"))
+```
+
+Furthermore, the description of the Figshare repo gives some more information:
+
+> _The paper focuses on measures for calculating the landmark salience of geographic features in rural areas. Two models are examined: one explicitly designed to identify landmarks in rural areas, and one originally focused on urban areas. The identified landmarks are compared with those from a survey. The results show that the differences between the models and the survey results are not statistically significant. The results of the two models are statistically significantly different. The first model identifies highly semantically salient geographic features as landmarks, while the second model does not consider semantic salience and prefers natural geographic features._
+
+The figure created in table "Analyses" matches Figure 7 from the paper, see manually exported figure below, though the group names are missing.
+
+```{r fig7, fig.align = 'center', out.width = "50%", fig.cap = "Figure exported from table 'Analyses'", size="scriptsize"}
+knitr::include_graphics(here::here("fig7-spreadsheet.png"))
+```
+
+The table "McNemar" seems to be used to calculate the statistics in the manuscript's Table 2, see screenshot below:
+
+```{r table2, fig.align = 'center', out.width = "100%", fig.cap = "Figure exported from table 'Analyses'", size="scriptsize"}
+knitr::include_graphics(here::here("table2-mcnemar.png"))
+```
+
+No detailed evaluation of the formulae within the spreadsheet was conducted.
+
+## Recommendations
+
+- Provide data in a more sustainable data format than ShapeFile, e.g., GeoPackage or also as a text-based format such as GeoJSON, since geographic precision is not an issue here
+- The spreadsheet-based calculations require knowledge of the used models and are not readily accessible for evaluation - I understand there are limitations here, but for the sake of documentation, something like a codebook or textual descriptions of the formulas, or even linking to the original papers, could be helpful
+
+```{r, echo=FALSE, eval=FALSE, results='hide'}
+# upload PDF as main file and the other files as supporting files to to https://www.researchequals.com/drafts?suffix=wxh7-8yjd
+```
