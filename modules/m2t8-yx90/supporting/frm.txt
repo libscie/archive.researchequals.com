@@ -1,0 +1,1 @@
+ The full mathematical framework is S' = (w₁·ΔA + w₂·R + w₃·M) × C × e^(-λt) × (1 - kφ).
